@@ -58,6 +58,14 @@ def build_body():
         pelvis=pelvis.cut(cyl_y(x,73,3.1,-25,-5.7))
         nut=cq.Workplane('XZ',origin=(x,5.7,73)).polygon(6,6.8).extrude(-20).val()
         pelvis=pelvis.cut(nut)
+        # DIN 433 rear washer has an OD of 6 mm: the hexagonal nut cavity
+        # alone clipped its rim. Keep the captive hex nut seat and open the
+        # round washer pocket plus a tool/installation counterbore behind it.
+        pelvis=pelvis.cut(cyl_y(x,73,3.15,5.7,6.2))
+        pelvis=pelvis.cut(cyl_y(x,73,4.2,8.6,25))
+    # A 2.5 mm Allen key reaches the neck screw after joining the waist.
+    # Install the screw before gluing: its 5.5 mm head cannot pass this hole.
+    pelvis=pelvis.cut(cq.Solid.makeCylinder(2,20,cq.Vector(0,0,62)))
     # Torso and pelvis share a gluing face at z81; two loose registration dowels.
     for x in (-7,7):
         pelvis=pelvis.cut(cq.Solid.makeCylinder(1.7,3.2,cq.Vector(x,0,77.8)))

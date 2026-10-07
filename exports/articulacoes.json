@@ -1,0 +1,946 @@
+[
+  {
+    "name": "ombro_E",
+    "pivot_xyz_mm": [
+      -28.0,
+      0.0,
+      84.75
+    ],
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "parent_parts": [
+      "torso_branco"
+    ],
+    "moving_groups": [
+      "left_upper_arm",
+      "left_forearm",
+      "left_hand"
+    ],
+    "bore_diameter_mm": 3.3,
+    "ear_thickness_mm": 3.0,
+    "ear_center_offsets_y_mm": [
+      -4.2,
+      4.2
+    ],
+    "clevis_gap_mm": 5.4,
+    "clevis_outside_width_mm": 11.4,
+    "tongue_thickness_mm": 4.8,
+    "free_gap_each_side_mm": 0.30000000000000027,
+    "pivot_outer_radius_mm": 6.0,
+    "screw": "ISO 4762 M3x16",
+    "screw_head_diameter_mm": 5.5,
+    "screw_head_height_mm": 3.0,
+    "allen_key_af_mm": 2.5,
+    "washer": "ISO 7092 M3 3.2x6x0.5",
+    "washer_count": 2,
+    "nut": "ISO 4032 M3 normal",
+    "nut_af_mm": 5.5,
+    "nut_height_mm": 2.4,
+    "screw_head_y_mm": [
+      -9.2,
+      -6.2
+    ],
+    "front_washer_y_mm": [
+      -6.2,
+      -5.7
+    ],
+    "ear_front_y_mm": [
+      -5.7,
+      -2.7
+    ],
+    "tongue_y_mm": [
+      -2.4,
+      2.4
+    ],
+    "ear_rear_y_mm": [
+      2.7,
+      5.7
+    ],
+    "rear_washer_y_mm": [
+      5.7,
+      6.2
+    ],
+    "nut_y_mm": [
+      6.2,
+      8.6
+    ],
+    "screw_shank_y_mm": [
+      -6.2,
+      9.8
+    ],
+    "purchased_hardware": true,
+    "fixed_fingers": true
+  },
+  {
+    "name": "ombro_D",
+    "pivot_xyz_mm": [
+      28.0,
+      0.0,
+      84.75
+    ],
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "parent_parts": [
+      "torso_branco"
+    ],
+    "moving_groups": [
+      "right_upper_arm",
+      "right_forearm",
+      "right_hand"
+    ],
+    "bore_diameter_mm": 3.3,
+    "ear_thickness_mm": 3.0,
+    "ear_center_offsets_y_mm": [
+      -4.2,
+      4.2
+    ],
+    "clevis_gap_mm": 5.4,
+    "clevis_outside_width_mm": 11.4,
+    "tongue_thickness_mm": 4.8,
+    "free_gap_each_side_mm": 0.30000000000000027,
+    "pivot_outer_radius_mm": 6.0,
+    "screw": "ISO 4762 M3x16",
+    "screw_head_diameter_mm": 5.5,
+    "screw_head_height_mm": 3.0,
+    "allen_key_af_mm": 2.5,
+    "washer": "ISO 7092 M3 3.2x6x0.5",
+    "washer_count": 2,
+    "nut": "ISO 4032 M3 normal",
+    "nut_af_mm": 5.5,
+    "nut_height_mm": 2.4,
+    "screw_head_y_mm": [
+      -9.2,
+      -6.2
+    ],
+    "front_washer_y_mm": [
+      -6.2,
+      -5.7
+    ],
+    "ear_front_y_mm": [
+      -5.7,
+      -2.7
+    ],
+    "tongue_y_mm": [
+      -2.4,
+      2.4
+    ],
+    "ear_rear_y_mm": [
+      2.7,
+      5.7
+    ],
+    "rear_washer_y_mm": [
+      5.7,
+      6.2
+    ],
+    "nut_y_mm": [
+      6.2,
+      8.6
+    ],
+    "screw_shank_y_mm": [
+      -6.2,
+      9.8
+    ],
+    "purchased_hardware": true,
+    "fixed_fingers": true
+  },
+  {
+    "name": "cotovelo_E",
+    "pivot_xyz_mm": [
+      -51.0,
+      0.0,
+      69.75
+    ],
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "parent_parts": [
+      "left_upper_arm_frame"
+    ],
+    "moving_groups": [
+      "left_forearm",
+      "left_hand"
+    ],
+    "bore_diameter_mm": 3.3,
+    "ear_thickness_mm": 3.0,
+    "ear_center_offsets_y_mm": [
+      -4.2,
+      4.2
+    ],
+    "clevis_gap_mm": 5.4,
+    "clevis_outside_width_mm": 11.4,
+    "tongue_thickness_mm": 4.8,
+    "free_gap_each_side_mm": 0.30000000000000027,
+    "pivot_outer_radius_mm": 6.0,
+    "screw": "ISO 4762 M3x16",
+    "screw_head_diameter_mm": 5.5,
+    "screw_head_height_mm": 3.0,
+    "allen_key_af_mm": 2.5,
+    "washer": "ISO 7092 M3 3.2x6x0.5",
+    "washer_count": 2,
+    "nut": "ISO 4032 M3 normal",
+    "nut_af_mm": 5.5,
+    "nut_height_mm": 2.4,
+    "screw_head_y_mm": [
+      -9.2,
+      -6.2
+    ],
+    "front_washer_y_mm": [
+      -6.2,
+      -5.7
+    ],
+    "ear_front_y_mm": [
+      -5.7,
+      -2.7
+    ],
+    "tongue_y_mm": [
+      -2.4,
+      2.4
+    ],
+    "ear_rear_y_mm": [
+      2.7,
+      5.7
+    ],
+    "rear_washer_y_mm": [
+      5.7,
+      6.2
+    ],
+    "nut_y_mm": [
+      6.2,
+      8.6
+    ],
+    "screw_shank_y_mm": [
+      -6.2,
+      9.8
+    ],
+    "purchased_hardware": true,
+    "fixed_fingers": true
+  },
+  {
+    "name": "cotovelo_D",
+    "pivot_xyz_mm": [
+      43.0,
+      0.0,
+      66.75
+    ],
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "parent_parts": [
+      "right_upper_arm_frame"
+    ],
+    "moving_groups": [
+      "right_forearm",
+      "right_hand"
+    ],
+    "bore_diameter_mm": 3.3,
+    "ear_thickness_mm": 3.0,
+    "ear_center_offsets_y_mm": [
+      -4.2,
+      4.2
+    ],
+    "clevis_gap_mm": 5.4,
+    "clevis_outside_width_mm": 11.4,
+    "tongue_thickness_mm": 4.8,
+    "free_gap_each_side_mm": 0.30000000000000027,
+    "pivot_outer_radius_mm": 6.0,
+    "screw": "ISO 4762 M3x16",
+    "screw_head_diameter_mm": 5.5,
+    "screw_head_height_mm": 3.0,
+    "allen_key_af_mm": 2.5,
+    "washer": "ISO 7092 M3 3.2x6x0.5",
+    "washer_count": 2,
+    "nut": "ISO 4032 M3 normal",
+    "nut_af_mm": 5.5,
+    "nut_height_mm": 2.4,
+    "screw_head_y_mm": [
+      -9.2,
+      -6.2
+    ],
+    "front_washer_y_mm": [
+      -6.2,
+      -5.7
+    ],
+    "ear_front_y_mm": [
+      -5.7,
+      -2.7
+    ],
+    "tongue_y_mm": [
+      -2.4,
+      2.4
+    ],
+    "ear_rear_y_mm": [
+      2.7,
+      5.7
+    ],
+    "rear_washer_y_mm": [
+      5.7,
+      6.2
+    ],
+    "nut_y_mm": [
+      6.2,
+      8.6
+    ],
+    "screw_shank_y_mm": [
+      -6.2,
+      9.8
+    ],
+    "purchased_hardware": true,
+    "fixed_fingers": true
+  },
+  {
+    "name": "punho_E",
+    "pivot_xyz_mm": [
+      -61.02711942075802,
+      0.0,
+      88.06548186976956
+    ],
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "parent_parts": [
+      "left_forearm_frame"
+    ],
+    "moving_groups": [
+      "left_hand"
+    ],
+    "bore_diameter_mm": 3.3,
+    "ear_thickness_mm": 3.0,
+    "ear_center_offsets_y_mm": [
+      -4.2,
+      4.2
+    ],
+    "clevis_gap_mm": 5.4,
+    "clevis_outside_width_mm": 11.4,
+    "tongue_thickness_mm": 4.8,
+    "free_gap_each_side_mm": 0.30000000000000027,
+    "pivot_outer_radius_mm": 4.5,
+    "screw": "ISO 4762 M3x16",
+    "screw_head_diameter_mm": 5.5,
+    "screw_head_height_mm": 3.0,
+    "allen_key_af_mm": 2.5,
+    "washer": "ISO 7092 M3 3.2x6x0.5",
+    "washer_count": 2,
+    "nut": "ISO 4032 M3 normal",
+    "nut_af_mm": 5.5,
+    "nut_height_mm": 2.4,
+    "screw_head_y_mm": [
+      -9.2,
+      -6.2
+    ],
+    "front_washer_y_mm": [
+      -6.2,
+      -5.7
+    ],
+    "ear_front_y_mm": [
+      -5.7,
+      -2.7
+    ],
+    "tongue_y_mm": [
+      -2.4,
+      2.4
+    ],
+    "ear_rear_y_mm": [
+      2.7,
+      5.7
+    ],
+    "rear_washer_y_mm": [
+      5.7,
+      6.2
+    ],
+    "nut_y_mm": [
+      6.2,
+      8.6
+    ],
+    "screw_shank_y_mm": [
+      -6.2,
+      9.8
+    ],
+    "purchased_hardware": true,
+    "fixed_fingers": true
+  },
+  {
+    "name": "punho_D",
+    "pivot_xyz_mm": [
+      31.0,
+      -1.0,
+      59.75
+    ],
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "parent_parts": [
+      "right_forearm_frame"
+    ],
+    "moving_groups": [
+      "right_hand"
+    ],
+    "bore_diameter_mm": 3.3,
+    "ear_thickness_mm": 3.0,
+    "ear_center_offsets_y_mm": [
+      -4.2,
+      4.2
+    ],
+    "clevis_gap_mm": 5.4,
+    "clevis_outside_width_mm": 11.4,
+    "tongue_thickness_mm": 4.8,
+    "free_gap_each_side_mm": 0.30000000000000027,
+    "pivot_outer_radius_mm": 4.5,
+    "screw": "ISO 4762 M3x16",
+    "screw_head_diameter_mm": 5.5,
+    "screw_head_height_mm": 3.0,
+    "allen_key_af_mm": 2.5,
+    "washer": "ISO 7092 M3 3.2x6x0.5",
+    "washer_count": 2,
+    "nut": "ISO 4032 M3 normal",
+    "nut_af_mm": 5.5,
+    "nut_height_mm": 2.4,
+    "screw_head_y_mm": [
+      -10.2,
+      -7.2
+    ],
+    "front_washer_y_mm": [
+      -7.2,
+      -6.7
+    ],
+    "ear_front_y_mm": [
+      -6.7,
+      -3.7
+    ],
+    "tongue_y_mm": [
+      -3.4,
+      1.4
+    ],
+    "ear_rear_y_mm": [
+      1.7000000000000002,
+      4.7
+    ],
+    "rear_washer_y_mm": [
+      4.7,
+      5.2
+    ],
+    "nut_y_mm": [
+      5.2,
+      7.6
+    ],
+    "screw_shank_y_mm": [
+      -7.2,
+      8.8
+    ],
+    "purchased_hardware": true,
+    "fixed_fingers": true
+  },
+  {
+    "name": "quadril_E",
+    "pivot_xyz_mm": [
+      -14.0,
+      0.0,
+      54.75
+    ],
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "parent_parts": [
+      "pelve_azul"
+    ],
+    "moving_groups": [
+      "left_thigh",
+      "left_shin",
+      "left_boot"
+    ],
+    "bore_diameter_mm": 3.3,
+    "ear_thickness_mm": 3.0,
+    "ear_center_offsets_y_mm": [
+      -4.2,
+      4.2
+    ],
+    "clevis_gap_mm": 5.4,
+    "clevis_outside_width_mm": 11.4,
+    "tongue_thickness_mm": 4.8,
+    "free_gap_each_side_mm": 0.30000000000000027,
+    "pivot_outer_radius_mm": 6.0,
+    "screw": "ISO 4762 M3x16",
+    "screw_head_diameter_mm": 5.5,
+    "screw_head_height_mm": 3.0,
+    "allen_key_af_mm": 2.5,
+    "washer": "ISO 7092 M3 3.2x6x0.5",
+    "washer_count": 2,
+    "nut": "ISO 4032 M3 normal",
+    "nut_af_mm": 5.5,
+    "nut_height_mm": 2.4,
+    "screw_head_y_mm": [
+      -9.2,
+      -6.2
+    ],
+    "front_washer_y_mm": [
+      -6.2,
+      -5.7
+    ],
+    "ear_front_y_mm": [
+      -5.7,
+      -2.7
+    ],
+    "tongue_y_mm": [
+      -2.4,
+      2.4
+    ],
+    "ear_rear_y_mm": [
+      2.7,
+      5.7
+    ],
+    "rear_washer_y_mm": [
+      5.7,
+      6.2
+    ],
+    "nut_y_mm": [
+      6.2,
+      8.6
+    ],
+    "screw_shank_y_mm": [
+      -6.2,
+      9.8
+    ],
+    "purchased_hardware": true,
+    "fixed_fingers": true
+  },
+  {
+    "name": "quadril_D",
+    "pivot_xyz_mm": [
+      14.0,
+      0.0,
+      54.75
+    ],
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "parent_parts": [
+      "pelve_azul"
+    ],
+    "moving_groups": [
+      "right_thigh",
+      "right_shin",
+      "right_boot"
+    ],
+    "bore_diameter_mm": 3.3,
+    "ear_thickness_mm": 3.0,
+    "ear_center_offsets_y_mm": [
+      -4.2,
+      4.2
+    ],
+    "clevis_gap_mm": 5.4,
+    "clevis_outside_width_mm": 11.4,
+    "tongue_thickness_mm": 4.8,
+    "free_gap_each_side_mm": 0.30000000000000027,
+    "pivot_outer_radius_mm": 6.0,
+    "screw": "ISO 4762 M3x16",
+    "screw_head_diameter_mm": 5.5,
+    "screw_head_height_mm": 3.0,
+    "allen_key_af_mm": 2.5,
+    "washer": "ISO 7092 M3 3.2x6x0.5",
+    "washer_count": 2,
+    "nut": "ISO 4032 M3 normal",
+    "nut_af_mm": 5.5,
+    "nut_height_mm": 2.4,
+    "screw_head_y_mm": [
+      -9.2,
+      -6.2
+    ],
+    "front_washer_y_mm": [
+      -6.2,
+      -5.7
+    ],
+    "ear_front_y_mm": [
+      -5.7,
+      -2.7
+    ],
+    "tongue_y_mm": [
+      -2.4,
+      2.4
+    ],
+    "ear_rear_y_mm": [
+      2.7,
+      5.7
+    ],
+    "rear_washer_y_mm": [
+      5.7,
+      6.2
+    ],
+    "nut_y_mm": [
+      6.2,
+      8.6
+    ],
+    "screw_shank_y_mm": [
+      -6.2,
+      9.8
+    ],
+    "purchased_hardware": true,
+    "fixed_fingers": true
+  },
+  {
+    "name": "joelho_E",
+    "pivot_xyz_mm": [
+      -15.0,
+      0.0,
+      34.5
+    ],
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "parent_parts": [
+      "left_thigh_frame"
+    ],
+    "moving_groups": [
+      "left_shin",
+      "left_boot"
+    ],
+    "bore_diameter_mm": 3.3,
+    "ear_thickness_mm": 3.0,
+    "ear_center_offsets_y_mm": [
+      -4.2,
+      4.2
+    ],
+    "clevis_gap_mm": 5.4,
+    "clevis_outside_width_mm": 11.4,
+    "tongue_thickness_mm": 4.8,
+    "free_gap_each_side_mm": 0.30000000000000027,
+    "pivot_outer_radius_mm": 6.0,
+    "screw": "ISO 4762 M3x16",
+    "screw_head_diameter_mm": 5.5,
+    "screw_head_height_mm": 3.0,
+    "allen_key_af_mm": 2.5,
+    "washer": "ISO 7092 M3 3.2x6x0.5",
+    "washer_count": 2,
+    "nut": "ISO 4032 M3 normal",
+    "nut_af_mm": 5.5,
+    "nut_height_mm": 2.4,
+    "screw_head_y_mm": [
+      -9.2,
+      -6.2
+    ],
+    "front_washer_y_mm": [
+      -6.2,
+      -5.7
+    ],
+    "ear_front_y_mm": [
+      -5.7,
+      -2.7
+    ],
+    "tongue_y_mm": [
+      -2.4,
+      2.4
+    ],
+    "ear_rear_y_mm": [
+      2.7,
+      5.7
+    ],
+    "rear_washer_y_mm": [
+      5.7,
+      6.2
+    ],
+    "nut_y_mm": [
+      6.2,
+      8.6
+    ],
+    "screw_shank_y_mm": [
+      -6.2,
+      9.8
+    ],
+    "purchased_hardware": true,
+    "fixed_fingers": true
+  },
+  {
+    "name": "joelho_D",
+    "pivot_xyz_mm": [
+      15.0,
+      0.0,
+      34.5
+    ],
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "parent_parts": [
+      "right_thigh_frame"
+    ],
+    "moving_groups": [
+      "right_shin",
+      "right_boot"
+    ],
+    "bore_diameter_mm": 3.3,
+    "ear_thickness_mm": 3.0,
+    "ear_center_offsets_y_mm": [
+      -4.2,
+      4.2
+    ],
+    "clevis_gap_mm": 5.4,
+    "clevis_outside_width_mm": 11.4,
+    "tongue_thickness_mm": 4.8,
+    "free_gap_each_side_mm": 0.30000000000000027,
+    "pivot_outer_radius_mm": 6.0,
+    "screw": "ISO 4762 M3x16",
+    "screw_head_diameter_mm": 5.5,
+    "screw_head_height_mm": 3.0,
+    "allen_key_af_mm": 2.5,
+    "washer": "ISO 7092 M3 3.2x6x0.5",
+    "washer_count": 2,
+    "nut": "ISO 4032 M3 normal",
+    "nut_af_mm": 5.5,
+    "nut_height_mm": 2.4,
+    "screw_head_y_mm": [
+      -9.2,
+      -6.2
+    ],
+    "front_washer_y_mm": [
+      -6.2,
+      -5.7
+    ],
+    "ear_front_y_mm": [
+      -5.7,
+      -2.7
+    ],
+    "tongue_y_mm": [
+      -2.4,
+      2.4
+    ],
+    "ear_rear_y_mm": [
+      2.7,
+      5.7
+    ],
+    "rear_washer_y_mm": [
+      5.7,
+      6.2
+    ],
+    "nut_y_mm": [
+      6.2,
+      8.6
+    ],
+    "screw_shank_y_mm": [
+      -6.2,
+      9.8
+    ],
+    "purchased_hardware": true,
+    "fixed_fingers": true
+  },
+  {
+    "name": "tornozelo_E",
+    "pivot_xyz_mm": [
+      -15.0,
+      0.0,
+      17.25
+    ],
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "parent_parts": [
+      "left_shin_frame"
+    ],
+    "moving_groups": [
+      "left_boot"
+    ],
+    "bore_diameter_mm": 3.3,
+    "ear_thickness_mm": 3.0,
+    "ear_center_offsets_y_mm": [
+      -4.2,
+      4.2
+    ],
+    "clevis_gap_mm": 5.4,
+    "clevis_outside_width_mm": 11.4,
+    "tongue_thickness_mm": 4.8,
+    "free_gap_each_side_mm": 0.30000000000000027,
+    "pivot_outer_radius_mm": 6.0,
+    "screw": "ISO 4762 M3x16",
+    "screw_head_diameter_mm": 5.5,
+    "screw_head_height_mm": 3.0,
+    "allen_key_af_mm": 2.5,
+    "washer": "ISO 7092 M3 3.2x6x0.5",
+    "washer_count": 2,
+    "nut": "ISO 4032 M3 normal",
+    "nut_af_mm": 5.5,
+    "nut_height_mm": 2.4,
+    "screw_head_y_mm": [
+      -9.2,
+      -6.2
+    ],
+    "front_washer_y_mm": [
+      -6.2,
+      -5.7
+    ],
+    "ear_front_y_mm": [
+      -5.7,
+      -2.7
+    ],
+    "tongue_y_mm": [
+      -2.4,
+      2.4
+    ],
+    "ear_rear_y_mm": [
+      2.7,
+      5.7
+    ],
+    "rear_washer_y_mm": [
+      5.7,
+      6.2
+    ],
+    "nut_y_mm": [
+      6.2,
+      8.6
+    ],
+    "screw_shank_y_mm": [
+      -6.2,
+      9.8
+    ],
+    "purchased_hardware": true,
+    "fixed_fingers": true
+  },
+  {
+    "name": "tornozelo_D",
+    "pivot_xyz_mm": [
+      15.0,
+      0.0,
+      17.25
+    ],
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "parent_parts": [
+      "right_shin_frame"
+    ],
+    "moving_groups": [
+      "right_boot"
+    ],
+    "bore_diameter_mm": 3.3,
+    "ear_thickness_mm": 3.0,
+    "ear_center_offsets_y_mm": [
+      -4.2,
+      4.2
+    ],
+    "clevis_gap_mm": 5.4,
+    "clevis_outside_width_mm": 11.4,
+    "tongue_thickness_mm": 4.8,
+    "free_gap_each_side_mm": 0.30000000000000027,
+    "pivot_outer_radius_mm": 6.0,
+    "screw": "ISO 4762 M3x16",
+    "screw_head_diameter_mm": 5.5,
+    "screw_head_height_mm": 3.0,
+    "allen_key_af_mm": 2.5,
+    "washer": "ISO 7092 M3 3.2x6x0.5",
+    "washer_count": 2,
+    "nut": "ISO 4032 M3 normal",
+    "nut_af_mm": 5.5,
+    "nut_height_mm": 2.4,
+    "screw_head_y_mm": [
+      -9.2,
+      -6.2
+    ],
+    "front_washer_y_mm": [
+      -6.2,
+      -5.7
+    ],
+    "ear_front_y_mm": [
+      -5.7,
+      -2.7
+    ],
+    "tongue_y_mm": [
+      -2.4,
+      2.4
+    ],
+    "ear_rear_y_mm": [
+      2.7,
+      5.7
+    ],
+    "rear_washer_y_mm": [
+      5.7,
+      6.2
+    ],
+    "nut_y_mm": [
+      6.2,
+      8.6
+    ],
+    "screw_shank_y_mm": [
+      -6.2,
+      9.8
+    ],
+    "purchased_hardware": true,
+    "fixed_fingers": true
+  },
+  {
+    "axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "pivot_xyz_mm": [
+      0.0,
+      0.0,
+      95.65
+    ],
+    "shaft_bore_diameter_mm": 3.3,
+    "printed_head_bottom_z_mm": 95.8,
+    "printed_head_boss_radius_mm": 7.5,
+    "printed_head_boss_top_z_mm": 104.0,
+    "nut_pocket_bottom_z_mm": 98.8,
+    "nut_pocket_top_z_mm": 101.5,
+    "nut_pocket_across_flats_mm": 5.888972745734183,
+    "nut_retaining_roof_thickness_mm": 2.5,
+    "nut_seat_floor_thickness_mm": 3.0,
+    "nut_axial_clearance_mm": 0.30000000000000293,
+    "nut_iso4032_across_flats_mm": 5.5,
+    "nut_iso4032_height_mm": 2.4,
+    "nut_installed_z_mm": [
+      98.8,
+      101.2
+    ],
+    "screw_iso4762_size": "M3x16",
+    "screw_shaft_z_mm": [
+      86.25,
+      102.25
+    ],
+    "screw_head_z_mm": [
+      83.25,
+      86.25
+    ],
+    "screw_head_diameter_mm": 5.5,
+    "screw_head_socket_across_flats_mm": 2.5,
+    "washer_din433_z_mm": [
+      86.25,
+      86.75
+    ],
+    "washer_din433_outer_diameter_mm": 6.0,
+    "washer_din433_inner_diameter_mm": 3.2,
+    "bearing_washer_material": "smooth PTFE or PET sheet, cut to size",
+    "bearing_washer_z_mm": [
+      95.5,
+      95.8
+    ],
+    "bearing_washer_outer_diameter_mm": 12.0,
+    "bearing_washer_inner_diameter_mm": 3.3,
+    "shaft_projection_beyond_nut_mm": 1.05,
+    "nut_insertion": "Side-load into the half-hex pocket through open head seam Y=0, then close both white shells.",
+    "tool_access": "2.5 mm Allen key inserted upward along Z through the pelvis service hole and torso counterbore.",
+    "assembly": "Insert nut while head is open. Insert screw and DIN433 washer through torso underside before closing waist. Place bearing washer between torso collar and head. Tighten only enough to hold the head pose; keep moving bearing surfaces free of glue."
+  }
+]

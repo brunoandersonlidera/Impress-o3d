@@ -9,10 +9,11 @@ import numpy as np
 from OCP.Bnd import Bnd_Box
 from OCP.BRepBndLib import BRepBndLib
 from body import build_body, build_base
-from head import build_head
-from limbs import build_limbs
+from head import build_head, neck_joint_spec
+from limbs import build_limbs, limb_joint_specs
 from fit_coupon import build_coupons
 from logo import logo_metadata
+from hardware import build_hardware, hardware_bom, JOINT_AXES
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'exports'
@@ -72,14 +73,8 @@ def inspect_overlap(parts):
 
 def inspect_bores(parts):
     """Direct geometry checks that the 13 actual M3 axes are unobstructed."""
-    axes=[('ombro_E',-28,84.75),('ombro_D',28,84.75),
-          ('cotovelo_E',-51,69.75),('cotovelo_D',43,66.75),
-          ('punho_E',-61.027119,88.065481),('punho_D',31,59.75),
-          ('quadril_E',-14,54.75),('quadril_D',14,54.75),
-          ('joelho_E',-15,34.5),('joelho_D',15,34.5),
-          ('tornozelo_E',-15,17.25),('tornozelo_D',15,17.25)]
     result=[]
-    probes=[(name,cq.Solid.makeCylinder(1.5,44,cq.Vector(x,-22,z),cq.Vector(0,1,0))) for name,x,z in axes]
+    probes=[(name,cq.Solid.makeCylinder(1.5,44,cq.Vector(x,y-22,z),cq.Vector(0,1,0))) for name,x,y,z in JOINT_AXES]
     probes.append(('pescoco',cq.Solid.makeCylinder(1.5,17,cq.Vector(0,0,86.75))))
     for name,probe in probes:
         b=probe.BoundingBox(); hits=[]
@@ -90,11 +85,67 @@ def inspect_bores(parts):
         result.append({'joint':name,'probe_diameter_mm':3.0,'unobstructed':not hits,'hits':hits})
     return result
 
+def inspect_mechanisms(printed,hardware):
+    """Verify purchased stacks, supporting faces and straight tool access."""
+    report={'hardware_components':len(hardware),'joints':hardware_bom(),
+            'thread_geometry':'nominal cylinders, not a helical thread fit',
+            'physical_test':False,'washer_contacts':[],'tool_access':[]}
+    def volume_inside(probe):
+        hits=[]
+        for p in printed:
+            a,b=probe.BoundingBox(),p['shape'].BoundingBox()
+            if any(min(getattr(a,axis+'max'),getattr(b,axis+'max'))-
+                   max(getattr(a,axis+'min'),getattr(b,axis+'min'))<=1e-7
+                   for axis in ('x','y','z')):continue
+            cut=probe.intersect(p['shape'])
+            volume=cut.Volume() if cut.Solids() else 0
+            if volume>.000001:hits.append({'part':p['name'],'volume_mm3':volume})
+        return hits
+    # Washers actually bear on the printed ears/neck seat. A 0.001 mm inward
+    # displacement measures contact area without treating intended face
+    # contact as interpenetration in the mounted assembly.
+    for p in hardware:
+        if p['kind'] not in ('washer','bearing'):continue
+        neck=p['joint']=='pescoco'
+        offsets=([(0,0,-.001),(0,0,.001)] if p['kind']=='bearing' else
+                 [(0,0,.001)] if neck else
+                 [(0,-.001 if 'traseira' in p['name'] else .001,0)])
+        thickness=.3 if p['kind']=='bearing' else .5
+        for offset in offsets:
+            area=sum(h['volume_mm3'] for h in volume_inside(p['shape'].translate(offset)))/.001
+            nominal_area=p['shape'].Volume()/thickness
+            ratio=area/nominal_area
+            report['washer_contacts'].append(dict(part=p['name'],offset=offset,
+                    supported_fraction=ratio,supported=ratio>.90))
+    # Allen-key bounding cylinder: across-flats 2.5 has a 2.887 mm corner
+    # diameter, so a 3 mm cylinder provides a conservative straight corridor.
+    for joint,x,y,z in JOINT_AXES:
+        tools=[('Allen_2p5',cq.Solid.makeCylinder(1.5,20.8,
+                  cq.Vector(x,y-30,z),cq.Vector(0,1,0))),
+               ('socket_traseiro_OD8p2',cq.Solid.makeCylinder(4.1,21.4,
+                  cq.Vector(x,y+8.6,z),cq.Vector(0,1,0)))]
+        for name,probe in tools:
+            hits=volume_inside(probe)
+            report['tool_access'].append(dict(joint=joint,tool=name,clear=not hits,hits=hits))
+    probe=cq.Solid.makeCylinder(1.5,38.5,cq.Vector(0,0,44.75))
+    hits=volume_inside(probe)
+    report['tool_access'].append(dict(joint='pescoco',tool='Allen_2p5_via_pelve',clear=not hits,hits=hits))
+    for joint in report['joints']:
+        end=joint['shaft_range_mm'][1]; top=joint['nut_range_mm'][1]
+        joint['thread_protrusion_mm']=end-top
+        joint['full_nut_engagement']=joint['shaft_range_mm'][0]<joint['nut_range_mm'][0] and end>=top
+    report['all_washers_supported']=all(p['supported'] for p in report['washer_contacts'])
+    report['all_tools_accessible']=all(p['clear'] for p in report['tool_access'])
+    report['all_nuts_engaged']=all(p['full_nut_engagement'] for p in report['joints'])
+    return report
+
 def main():
     OUT.mkdir(exist_ok=True); (OUT/'STL').mkdir(exist_ok=True); (OUT/'cupons').mkdir(exist_ok=True)
     previous=json.loads((OUT/'pecas.json').read_text()) if (OUT/'pecas.json').exists() else []
     print('Modelando peças...',flush=True)
-    parts=build_body()+build_base()+build_head()+build_limbs()
+    printed=build_body()+build_base()+build_head()+build_limbs()
+    hardware=build_hardware()
+    parts=printed+hardware
     brand=logo_metadata()
     by_name={p['name']:p for p in parts}
     torso=by_name['torso_branco']['shape']
@@ -115,22 +166,31 @@ def main():
     if len({p['name'] for p in parts})!=len(parts): raise ValueError('Nomes duplicados')
     rows=[]; mesh=[]
     asm=cq.Assembly(name='Lidera_articulado_180mm')
+    hardware_assemblies={j:cq.Assembly(name='ferragens_'+j) for j in [r['joint'] for r in hardware_bom()]}
     for i,p in enumerate(parts):
         s=p['shape']
         if not isinstance(s,cq.Shape): raise TypeError(p['name'])
         if not s.isValid() or s.Volume()<=0: raise ValueError('Sólido inválido: '+p['name'])
         b=s.BoundingBox()
-        asm.add(s,name=p['name'],color=cq.Color(*p['color']))
-        flat=print_orientation(p)
-        removed=export_print_stl(flat,OUT/'STL'/(p['name']+'.stl'))
-        cq.exporters.export(s,str(OUT/'STL'/(p['name']+'_montagem.stl')),tolerance=.075,angularTolerance=.12) if '--assembly-stl' in sys.argv else None
-        rows.append(dict(name=p['name'],group=p['group'],color=p['color'],volume_mm3=round(s.Volume(),3),solids=len(s.Solids()),bbox_mm=[round(v,3) for v in exact_bounds(s)],stl_degenerate_facets_removed=removed,notes=p.get('notes','')))
+        purchased=p['group']=='hardware'
+        target=hardware_assemblies[p['joint']] if purchased else asm
+        target.add(s,name=p['name'],color=cq.Color(*p['color']))
+        removed=0
+        if not purchased:
+            flat=print_orientation(p)
+            removed=export_print_stl(flat,OUT/'STL'/(p['name']+'.stl'))
+        cq.exporters.export(s,str(OUT/'STL'/(p['name']+'_montagem.stl')),tolerance=.075,angularTolerance=.12) if not purchased and '--assembly-stl' in sys.argv else None
+        row=dict(name=p['name'],group=p['group'],color=p['color'],volume_mm3=round(s.Volume(),3),solids=len(s.Solids()),bbox_mm=[round(v,3) for v in exact_bounds(s)],stl_degenerate_facets_removed=removed,notes=p.get('notes',''),printable=not purchased)
+        for key in ('joint','kind','standard','length_mm','purchased'):
+            if key in p:row[key]=p[key]
+        rows.append(row)
         v,f=s.tessellate(.18,.18)
-        mesh.append(dict(name=p['name'],color=p['color'],vertices=[vv.toTuple() for vv in v],faces=f))
+        mesh.append(dict(name=p['name'],group=p['group'],kind=p.get('kind'),color=p['color'],vertices=[vv.toTuple() for vv in v],faces=f))
         # Cached editable BREP avoids expensive re-generation during inspection.
         (OUT/'BREP').mkdir(exist_ok=True)
         s.exportBrep(str(OUT/'BREP'/(p['name']+'.brep')))
     print('Exportando STEP com nomes e cores...',flush=True)
+    for group in hardware_assemblies.values():asm.add(group)
     asm.export(str(OUT/'Lidera_articulado_180mm.step'))
     for p in coupons:
         if not p['shape'].isValid(): raise ValueError(p['name'])
@@ -143,11 +203,15 @@ def main():
             if old.exists(): old.unlink()
     (OUT/'pecas.json').write_text(json.dumps(rows,indent=2,ensure_ascii=False))
     (OUT/'render_meshes.json').write_text(json.dumps(mesh))
+    (OUT/'ferragens.json').write_text(json.dumps(hardware_bom(),indent=2,ensure_ascii=False))
+    (OUT/'articulacoes.json').write_text(json.dumps(limb_joint_specs()+[neck_joint_spec()],indent=2,ensure_ascii=False))
     print('Inspecionando interferências da pose...',flush=True)
     overlaps=inspect_overlap(parts)
-    bore_tests=inspect_bores(parts)
+    bore_tests=inspect_bores(printed)
+    mechanisms=inspect_mechanisms(printed,hardware)
+    (OUT/'validacao_articulacoes.json').write_text(json.dumps(mechanisms,indent=2,ensure_ascii=False))
     compound=cq.Compound.makeCompound([p['shape'] for p in parts]); b=compound.BoundingBox()
-    report={'cadquery_version':cq.__version__,'parts':len(parts),'solids':len(compound.Solids()),'all_valid':all(p['shape'].isValid() for p in parts),'bounds_mm':exact_bounds(compound),'overlaps':overlaps,'bore_tests':bore_tests,'physical_test':False,'range_of_motion_verified':False}
+    report={'cadquery_version':cq.__version__,'parts':len(parts),'printable_parts':len(printed),'hardware_components':len(hardware),'solids':len(compound.Solids()),'all_valid':all(p['shape'].isValid() for p in parts),'bounds_mm':exact_bounds(compound),'overlaps':overlaps,'bore_tests':bore_tests,'bore_scope':'printed pieces; purchased screw occupies each bore in assembled STEP','physical_test':False,'range_of_motion_verified':False}
     (OUT/'validacao.json').write_text(json.dumps(report,indent=2,ensure_ascii=False))
     print(json.dumps(report,indent=2),flush=True)
     print('Reimportando STEP...',flush=True)
@@ -161,6 +225,8 @@ def main():
     if not re.isValid() or len(re.Solids())!=len(compound.Solids()) or report['step_bounds_error_mm']>.001: raise ValueError('Reimportação STEP divergente')
     if overlaps or not all(r['unobstructed'] for r in bore_tests):
         raise ValueError('Montagem requer correção de interferência ou eixo bloqueado')
+    if not all(mechanisms[k] for k in ('all_washers_supported','all_tools_accessible','all_nuts_engaged')):
+        raise ValueError('Articulação requer correção de apoio, engate da porca ou acesso de ferramenta')
     print('STEP reimportado e válido.',flush=True)
 
 if __name__=='__main__': main()

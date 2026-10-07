@@ -92,8 +92,8 @@
       "height_mm": 4.849229494235104,
       "outer_count": 1,
       "hole_count": 1,
-      "filled_area_svg": 8693.970629999998,
-      "expected_volume_mm3": 6.904638900190426,
+      "filled_area_svg": 8693.970629999996,
+      "expected_volume_mm3": 6.904638900190425,
       "relief_mm": 0.7,
       "color_rgb": [
         0.9058823529411765,
@@ -103,7 +103,7 @@
       "line_count": 3,
       "cubic_bezier_count": 13,
       "actual_volume_mm3": 6.90463890019042,
-      "volume_error_mm3": 5.329070518200751e-15,
+      "volume_error_mm3": 4.440892098500626e-15,
       "bounds_cad_mm": [
         -16.02787275304509,
         -18.7000001,

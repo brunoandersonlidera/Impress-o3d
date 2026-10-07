@@ -15,6 +15,52 @@ CYAN = (0.0, 0.82, 0.97)
 BLACK = (0.003, 0.015, 0.065)
 CORAL = (1.0, 0.20, 0.28)
 
+# Final-coordinate dimensions of the serviceable M3 head swivel. Hardware
+# remains separate from the printed head: no adhesive on these bearing faces.
+NECK_BOTTOM_Z = 95.8
+NECK_BORE_DIAMETER = 3.3
+NECK_NUT_BOTTOM_Z = 98.8
+NECK_NUT_POCKET_TOP_Z = 101.5
+NECK_BOSS_TOP_Z = 104.0
+NECK_NUT_VERTEX_DIAMETER = 6.8
+
+
+def neck_joint_spec():
+    """Dimensions and assembly intent for the purchased neck hardware."""
+    return {
+        "axis": [0.0, 0.0, 1.0],
+        "pivot_xyz_mm": [0.0, 0.0, 95.65],
+        "shaft_bore_diameter_mm": NECK_BORE_DIAMETER,
+        "printed_head_bottom_z_mm": NECK_BOTTOM_Z,
+        "printed_head_boss_radius_mm": 7.5,
+        "printed_head_boss_top_z_mm": NECK_BOSS_TOP_Z,
+        "nut_pocket_bottom_z_mm": NECK_NUT_BOTTOM_Z,
+        "nut_pocket_top_z_mm": NECK_NUT_POCKET_TOP_Z,
+        "nut_pocket_across_flats_mm": NECK_NUT_VERTEX_DIAMETER * math.sqrt(3) / 2,
+        "nut_retaining_roof_thickness_mm": NECK_BOSS_TOP_Z - NECK_NUT_POCKET_TOP_Z,
+        "nut_seat_floor_thickness_mm": NECK_NUT_BOTTOM_Z - NECK_BOTTOM_Z,
+        "nut_axial_clearance_mm": NECK_NUT_POCKET_TOP_Z - NECK_NUT_BOTTOM_Z - 2.4,
+        "nut_iso4032_across_flats_mm": 5.5,
+        "nut_iso4032_height_mm": 2.4,
+        "nut_installed_z_mm": [98.8, 101.2],
+        "screw_iso4762_size": "M3x16",
+        "screw_shaft_z_mm": [86.25, 102.25],
+        "screw_head_z_mm": [83.25, 86.25],
+        "screw_head_diameter_mm": 5.5,
+        "screw_head_socket_across_flats_mm": 2.5,
+        "washer_din433_z_mm": [86.25, 86.75],
+        "washer_din433_outer_diameter_mm": 6.0,
+        "washer_din433_inner_diameter_mm": 3.2,
+        "bearing_washer_material": "smooth PTFE or PET sheet, cut to size",
+        "bearing_washer_z_mm": [95.5, 95.8],
+        "bearing_washer_outer_diameter_mm": 12.0,
+        "bearing_washer_inner_diameter_mm": 3.3,
+        "shaft_projection_beyond_nut_mm": 1.05,
+        "nut_insertion": "Side-load into the half-hex pocket through open head seam Y=0, then close both white shells.",
+        "tool_access": "2.5 mm Allen key inserted upward along Z through the pelvis service hole and torso counterbore.",
+        "assembly": "Insert nut while head is open. Insert screw and DIN433 washer through torso underside before closing waist. Place bearing washer between torso collar and head. Tighten only enough to hold the head pose; keep moving bearing surfaces free of glue.",
+    }
+
 
 def _box(w, d, h, xyz):
     return cq.Workplane("XY").box(w, d, h).translate(xyz).val()
@@ -251,9 +297,12 @@ def build_head():
         result["shape"] = item["shape"].scale(factor).translate(offset)
         if "shell" in result["name"]:
             result["notes"] = (
-                "3.9 mm shell; bottom Z95.8; rebuilt M3 bore 3.3 mm and "
-                "captive-nut pocket 5.89 mm across flats. Insert nut before "
-                "closing the shells. Head seam Y=0; alignment dowels 3.9 mm "
+                "3.9 mm shell; bottom Z95.8; M3 bore 3.3 mm. Captive-nut "
+                "pocket AF5.89 at Z98.8..101.5, seat floor 3 mm and retaining "
+                "roof 2.5 mm. Insert ISO4032 M3 nut sideways through open "
+                "head seam Y=0 before closing shells. Use M3x16 with DIN433 "
+                "washer and separate 0.3 mm PTFE/PET bearing washer below "
+                "head; do not glue bearing surfaces. Alignment dowels 3.9 mm "
                 "and sockets 4.29 mm. Remove ears and crown cover to open.")
         elif result["name"] == "head_visor_navy":
             result["notes"] = (
@@ -277,14 +326,18 @@ def build_head():
     front_mask = _box(180, 100, 150, (0, -50, 135))
     rear_mask = _box(180, 100, 150, (0, 50, 135))
 
-    # Fill the oversized bore AND old oversized hexagon, then cut true M3
-    # dimensions. The local boss is 6.7 mm tall with a 3 mm nut seat below it.
-    boss = _cylinder(7.5, 6.7, (0, 0, 95.8), (0, 0, 1))
+    # Fill the scaled old bore/hex completely, then cut true M3 dimensions.
+    # The new 8.2 mm boss leaves a 3 mm nut seat and a 2.5 mm retaining roof.
+    # Its external bearing face remains Z95.8, preserving the 180 mm figure.
+    boss = _cylinder(7.5, NECK_BOSS_TOP_Z - NECK_BOTTOM_Z,
+                     (0, 0, NECK_BOTTOM_Z), (0, 0, 1))
     front = front.fuse(boss.intersect(front_mask))
     rear = rear.fuse(boss.intersect(rear_mask))
-    bore = _cylinder(1.65, 10, (0, 0, 94.5), (0, 0, 1))
-    nut = (cq.Workplane("XY", origin=(0, 0, 98.8))
-           .polygon(6, 6.8).extrude(7).val())
+    bore = _cylinder(NECK_BORE_DIAMETER / 2, NECK_BOSS_TOP_Z - 94.0,
+                     (0, 0, 94.5), (0, 0, 1))
+    nut = (cq.Workplane("XY", origin=(0, 0, NECK_NUT_BOTTOM_Z))
+           .polygon(6, NECK_NUT_VERTEX_DIAMETER)
+           .extrude(NECK_NUT_POCKET_TOP_Z - NECK_NUT_BOTTOM_Z).val())
     front = front.cut(bore).cut(nut)
     rear = rear.cut(bore).cut(nut)
 

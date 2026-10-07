@@ -1,716 +1,3184 @@
 {
-  "method": "Rigid rotation of final BREP child groups around the Y axis against the immediate parent group only. Common volume tolerance 0.01 mm3; discrete angle samples.",
+  "generated_utc": "2026-10-07T18:21:37.569969+00:00",
+  "method": "Discrete rigid rotations of final-build BREP descendants against all stationary assembly components, including hardware and base.",
+  "parts_manifest_sha256": "b335febf386fdd9d3e58c17b3e5bbd430d029e93bbbffe235e716ebbba170119",
+  "parts": 171,
+  "hardware_parts": 52,
+  "common_volume_tolerance_mm3": 0.01,
+  "bbox_overlap_tolerance_mm": 0.001,
   "physical_test": false,
   "full_range_verified": false,
-  "other_robot_components_checked": false,
+  "other_robot_components_checked": true,
+  "base_checked": true,
+  "sampling_does_not_certify_continuous_motion_between_angles": true,
+  "simultaneous_joint_motion_checked": false,
+  "own_joint_hardware_moves_with": "stationary parent",
+  "neck_hardware_exception": "Neck screw and captive nut move together with the head as a locked threaded pair. The lower washer and circular sliding bearing stay with the body; rotation occurs at washer interfaces, not between nut and thread.",
+  "downstream_joint_hardware_moves_with": "moving descendant assembly",
+  "angle_sign_convention": "CadQuery positive rotation about global +Y; neck about global +Z. Zero is the delivered pose.",
+  "base_removal_note": "The presentation base is stationary. Inclining a foot can intersect it; without-base flags report only removal of the base, not any other component.",
   "joints": [
     {
-      "joint": "left_elbow",
+      "joint": "ombro_E",
       "pivot_xyz_mm": [
-        -51,
+        -28.0,
+        0.0,
+        84.75
+      ],
+      "axis_xyz": [
         0,
+        1,
+        0
+      ],
+      "moving_groups": [
+        "left_upper_arm",
+        "left_forearm",
+        "left_hand"
+      ],
+      "moving_hardware_joints": [
+        "cotovelo_E",
+        "punho_E"
+      ],
+      "own_joint_hardware_moves_with": "stationary parent",
+      "moving_parts": [
+        "arruela_M3_frontal_cotovelo_E",
+        "arruela_M3_frontal_punho_E",
+        "arruela_M3_traseira_cotovelo_E",
+        "arruela_M3_traseira_punho_E",
+        "left_forearm_cyan_back",
+        "left_forearm_cyan_front",
+        "left_forearm_frame",
+        "left_forearm_white_back",
+        "left_forearm_white_front",
+        "left_hand_glove_white_back_1",
+        "left_hand_glove_white_back_2",
+        "left_hand_glove_white_front_1",
+        "left_hand_glove_white_front_2",
+        "left_hand_navy",
+        "left_hand_palm_cyan",
+        "left_upper_arm_cyan_back",
+        "left_upper_arm_cyan_front",
+        "left_upper_arm_frame",
+        "left_upper_arm_white_back",
+        "left_upper_arm_white_front",
+        "parafuso_M3x16_cotovelo_E",
+        "parafuso_M3x16_punho_E",
+        "porca_M3_cotovelo_E",
+        "porca_M3_punho_E"
+      ],
+      "stationary_parts": 147,
+      "tests": [
+        {
+          "angle_deg_from_delivered_pose": 0,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 12
+        },
+        {
+          "angle_deg_from_delivered_pose": -5,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 11
+        },
+        {
+          "angle_deg_from_delivered_pose": 5,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 13
+        },
+        {
+          "angle_deg_from_delivered_pose": -10,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 11
+        },
+        {
+          "angle_deg_from_delivered_pose": 10,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 16
+        },
+        {
+          "angle_deg_from_delivered_pose": -20,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 13
+        },
+        {
+          "angle_deg_from_delivered_pose": 20,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
+          "collision_pairs": [
+            {
+              "moving": "left_hand_navy",
+              "fixed": "head_white_front_shell",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 5.579262
+            },
+            {
+              "moving": "left_hand_navy",
+              "fixed": "head_white_rear_shell",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 0.791052
+            },
+            {
+              "moving": "left_hand_navy",
+              "fixed": "head_ear_left_white",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 228.119059
+            },
+            {
+              "moving": "left_hand_navy",
+              "fixed": "head_ear_left_outer_navy",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 57.300931
+            },
+            {
+              "moving": "left_hand_navy",
+              "fixed": "head_ear_left_navy_ring",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 25.69902
+            },
+            {
+              "moving": "left_hand_navy",
+              "fixed": "head_ear_left_cyan_ring",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 16.203527
+            },
+            {
+              "moving": "left_hand_navy",
+              "fixed": "head_ear_left_navy_center",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 7.237962
+            },
+            {
+              "moving": "left_hand_palm_cyan",
+              "fixed": "head_ear_left_white",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 2.021773
+            },
+            {
+              "moving": "left_hand_palm_cyan",
+              "fixed": "head_ear_left_outer_navy",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 1.245677
+            },
+            {
+              "moving": "left_hand_glove_white_front_1",
+              "fixed": "head_ear_left_white",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 3.331911
+            },
+            {
+              "moving": "left_hand_glove_white_front_1",
+              "fixed": "head_ear_left_navy_ring",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 1.112338
+            },
+            {
+              "moving": "left_hand_glove_white_front_2",
+              "fixed": "head_white_front_shell",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 2.706991
+            },
+            {
+              "moving": "left_hand_glove_white_back_1",
+              "fixed": "head_ear_left_white",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 3.923214
+            },
+            {
+              "moving": "left_hand_glove_white_back_1",
+              "fixed": "head_ear_left_navy_ring",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 0.64121
+            },
+            {
+              "moving": "left_hand_glove_white_back_1",
+              "fixed": "head_ear_left_cyan_ring",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 0.602979
+            },
+            {
+              "moving": "left_hand_glove_white_back_2",
+              "fixed": "head_white_front_shell",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 1.033383
+            },
+            {
+              "moving": "left_hand_glove_white_back_2",
+              "fixed": "head_white_rear_shell",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 2.043222
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 37
+        }
+      ],
+      "clear_nonzero_sample_angles_full_assembly": [
+        -5,
+        5,
+        -10,
+        10,
+        -20
+      ],
+      "clear_nonzero_sample_angles_without_base": [
+        -5,
+        5,
+        -10,
+        10,
+        -20
+      ]
+    },
+    {
+      "joint": "ombro_D",
+      "pivot_xyz_mm": [
+        28.0,
+        0.0,
+        84.75
+      ],
+      "axis_xyz": [
+        0,
+        1,
+        0
+      ],
+      "moving_groups": [
+        "right_upper_arm",
+        "right_forearm",
+        "right_hand"
+      ],
+      "moving_hardware_joints": [
+        "cotovelo_D",
+        "punho_D"
+      ],
+      "own_joint_hardware_moves_with": "stationary parent",
+      "moving_parts": [
+        "arruela_M3_frontal_cotovelo_D",
+        "arruela_M3_frontal_punho_D",
+        "arruela_M3_traseira_cotovelo_D",
+        "arruela_M3_traseira_punho_D",
+        "parafuso_M3x16_cotovelo_D",
+        "parafuso_M3x16_punho_D",
+        "porca_M3_cotovelo_D",
+        "porca_M3_punho_D",
+        "right_forearm_cyan_back",
+        "right_forearm_cyan_front",
+        "right_forearm_frame",
+        "right_forearm_white_back",
+        "right_forearm_white_front",
+        "right_hand_glove_white_back_1",
+        "right_hand_glove_white_back_2",
+        "right_hand_glove_white_back_3",
+        "right_hand_glove_white_front_1",
+        "right_hand_glove_white_front_2",
+        "right_hand_navy",
+        "right_hand_palm_cyan",
+        "right_upper_arm_cyan_back",
+        "right_upper_arm_cyan_front",
+        "right_upper_arm_frame",
+        "right_upper_arm_white_back",
+        "right_upper_arm_white_front"
+      ],
+      "stationary_parts": 146,
+      "tests": [
+        {
+          "angle_deg_from_delivered_pose": 0,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 30
+        },
+        {
+          "angle_deg_from_delivered_pose": -5,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 25
+        },
+        {
+          "angle_deg_from_delivered_pose": 5,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
+          "collision_pairs": [
+            {
+              "moving": "right_upper_arm_white_front",
+              "fixed": "torso_branco",
+              "moving_group": "right_upper_arm",
+              "fixed_group": "body",
+              "common_volume_mm3": 0.016786
+            },
+            {
+              "moving": "right_upper_arm_white_back",
+              "fixed": "torso_branco",
+              "moving_group": "right_upper_arm",
+              "fixed_group": "body",
+              "common_volume_mm3": 0.016786
+            },
+            {
+              "moving": "right_hand_navy",
+              "fixed": "pelve_azul",
+              "moving_group": "right_hand",
+              "fixed_group": "body",
+              "common_volume_mm3": 2.917882
+            },
+            {
+              "moving": "right_hand_glove_white_back_1",
+              "fixed": "pelve_azul",
+              "moving_group": "right_hand",
+              "fixed_group": "body",
+              "common_volume_mm3": 0.609938
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 33
+        },
+        {
+          "angle_deg_from_delivered_pose": -10,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 20
+        },
+        {
+          "angle_deg_from_delivered_pose": 10,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
+          "collision_pairs": [
+            {
+              "moving": "right_upper_arm_white_front",
+              "fixed": "torso_branco",
+              "moving_group": "right_upper_arm",
+              "fixed_group": "body",
+              "common_volume_mm3": 1.28881
+            },
+            {
+              "moving": "right_upper_arm_white_back",
+              "fixed": "torso_branco",
+              "moving_group": "right_upper_arm",
+              "fixed_group": "body",
+              "common_volume_mm3": 1.28881
+            },
+            {
+              "moving": "right_hand_navy",
+              "fixed": "pelve_azul",
+              "moving_group": "right_hand",
+              "fixed_group": "body",
+              "common_volume_mm3": 83.808923
+            },
+            {
+              "moving": "right_hand_navy",
+              "fixed": "right_thigh_frame",
+              "moving_group": "right_hand",
+              "fixed_group": "right_thigh",
+              "common_volume_mm3": 7.711923
+            },
+            {
+              "moving": "right_hand_navy",
+              "fixed": "parafuso_M3x16_quadril_D",
+              "moving_group": "right_hand",
+              "fixed_group": "hardware",
+              "common_volume_mm3": 2.337201
+            },
+            {
+              "moving": "right_hand_navy",
+              "fixed": "arruela_M3_frontal_quadril_D",
+              "moving_group": "right_hand",
+              "fixed_group": "hardware",
+              "common_volume_mm3": 0.84288
+            },
+            {
+              "moving": "right_hand_glove_white_front_1",
+              "fixed": "pelve_azul",
+              "moving_group": "right_hand",
+              "fixed_group": "body",
+              "common_volume_mm3": 0.978851
+            },
+            {
+              "moving": "right_hand_glove_white_back_1",
+              "fixed": "pelve_azul",
+              "moving_group": "right_hand",
+              "fixed_group": "body",
+              "common_volume_mm3": 1.946619
+            },
+            {
+              "moving": "right_hand_glove_white_back_3",
+              "fixed": "pelve_azul",
+              "moving_group": "right_hand",
+              "fixed_group": "body",
+              "common_volume_mm3": 0.35848
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 40
+        },
+        {
+          "angle_deg_from_delivered_pose": -20,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 14
+        },
+        {
+          "angle_deg_from_delivered_pose": 20,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
+          "collision_pairs": [
+            {
+              "moving": "right_upper_arm_white_front",
+              "fixed": "torso_branco",
+              "moving_group": "right_upper_arm",
+              "fixed_group": "body",
+              "common_volume_mm3": 16.053228
+            },
+            {
+              "moving": "right_upper_arm_white_back",
+              "fixed": "torso_branco",
+              "moving_group": "right_upper_arm",
+              "fixed_group": "body",
+              "common_volume_mm3": 16.053225
+            },
+            {
+              "moving": "right_forearm_frame",
+              "fixed": "pelve_azul",
+              "moving_group": "right_forearm",
+              "fixed_group": "body",
+              "common_volume_mm3": 24.575707
+            },
+            {
+              "moving": "right_forearm_frame",
+              "fixed": "right_thigh_frame",
+              "moving_group": "right_forearm",
+              "fixed_group": "right_thigh",
+              "common_volume_mm3": 0.925135
+            },
+            {
+              "moving": "right_hand_navy",
+              "fixed": "torso_branco",
+              "moving_group": "right_hand",
+              "fixed_group": "body",
+              "common_volume_mm3": 50.875915
+            },
+            {
+              "moving": "right_hand_navy",
+              "fixed": "pelve_azul",
+              "moving_group": "right_hand",
+              "fixed_group": "body",
+              "common_volume_mm3": 260.386256
+            },
+            {
+              "moving": "right_hand_navy",
+              "fixed": "right_thigh_frame",
+              "moving_group": "right_hand",
+              "fixed_group": "right_thigh",
+              "common_volume_mm3": 60.111888
+            },
+            {
+              "moving": "right_hand_navy",
+              "fixed": "parafuso_M3x16_quadril_D",
+              "moving_group": "right_hand",
+              "fixed_group": "hardware",
+              "common_volume_mm3": 48.867157
+            },
+            {
+              "moving": "right_hand_navy",
+              "fixed": "arruela_M3_frontal_quadril_D",
+              "moving_group": "right_hand",
+              "fixed_group": "hardware",
+              "common_volume_mm3": 5.964677
+            },
+            {
+              "moving": "right_hand_palm_cyan",
+              "fixed": "pelve_azul",
+              "moving_group": "right_hand",
+              "fixed_group": "body",
+              "common_volume_mm3": 5.095581
+            },
+            {
+              "moving": "right_hand_glove_white_front_1",
+              "fixed": "pelve_azul",
+              "moving_group": "right_hand",
+              "fixed_group": "body",
+              "common_volume_mm3": 7.389766
+            },
+            {
+              "moving": "right_hand_glove_white_front_2",
+              "fixed": "torso_branco",
+              "moving_group": "right_hand",
+              "fixed_group": "body",
+              "common_volume_mm3": 2.957755
+            },
+            {
+              "moving": "right_hand_glove_white_back_1",
+              "fixed": "pelve_azul",
+              "moving_group": "right_hand",
+              "fixed_group": "body",
+              "common_volume_mm3": 1.946619
+            },
+            {
+              "moving": "right_hand_glove_white_back_2",
+              "fixed": "pelve_azul",
+              "moving_group": "right_hand",
+              "fixed_group": "body",
+              "common_volume_mm3": 0.186821
+            },
+            {
+              "moving": "right_hand_glove_white_back_3",
+              "fixed": "torso_branco",
+              "moving_group": "right_hand",
+              "fixed_group": "body",
+              "common_volume_mm3": 5.334283
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 53
+        }
+      ],
+      "clear_nonzero_sample_angles_full_assembly": [
+        -5,
+        -10,
+        -20
+      ],
+      "clear_nonzero_sample_angles_without_base": [
+        -5,
+        -10,
+        -20
+      ]
+    },
+    {
+      "joint": "cotovelo_E",
+      "pivot_xyz_mm": [
+        -51.0,
+        0.0,
         69.75
       ],
-      "axis": "Y",
-      "fixed_groups": [
-        "left_upper_arm"
+      "axis_xyz": [
+        0,
+        1,
+        0
       ],
       "moving_groups": [
         "left_forearm",
         "left_hand"
       ],
+      "moving_hardware_joints": [
+        "punho_E"
+      ],
+      "own_joint_hardware_moves_with": "stationary parent",
+      "moving_parts": [
+        "arruela_M3_frontal_punho_E",
+        "arruela_M3_traseira_punho_E",
+        "left_forearm_cyan_back",
+        "left_forearm_cyan_front",
+        "left_forearm_frame",
+        "left_forearm_white_back",
+        "left_forearm_white_front",
+        "left_hand_glove_white_back_1",
+        "left_hand_glove_white_back_2",
+        "left_hand_glove_white_front_1",
+        "left_hand_glove_white_front_2",
+        "left_hand_navy",
+        "left_hand_palm_cyan",
+        "parafuso_M3x16_punho_E",
+        "porca_M3_punho_E"
+      ],
+      "stationary_parts": 156,
       "tests": [
         {
-          "angle_deg_from_delivered_pose": -10,
-          "collision_free_local": true,
-          "collision_pairs": []
+          "angle_deg_from_delivered_pose": 0,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 31
         },
         {
-          "angle_deg_from_delivered_pose": 10,
-          "collision_free_local": false,
-          "collision_pairs": [
-            {
-              "moving": "left_forearm_frame",
-              "fixed": "left_upper_arm_white_front",
-              "common_volume_mm3": 2.01265
-            },
-            {
-              "moving": "left_forearm_frame",
-              "fixed": "left_upper_arm_white_back",
-              "common_volume_mm3": 2.01265
-            },
-            {
-              "moving": "left_forearm_white_front",
-              "fixed": "left_upper_arm_white_front",
-              "common_volume_mm3": 31.71242
-            },
-            {
-              "moving": "left_forearm_white_front",
-              "fixed": "left_upper_arm_cyan_front",
-              "common_volume_mm3": 8.61616
-            },
-            {
-              "moving": "left_forearm_white_back",
-              "fixed": "left_upper_arm_white_back",
-              "common_volume_mm3": 31.71293
-            },
-            {
-              "moving": "left_forearm_white_back",
-              "fixed": "left_upper_arm_cyan_back",
-              "common_volume_mm3": 8.61616
-            }
-          ]
-        },
-        {
-          "angle_deg_from_delivered_pose": -20,
-          "collision_free_local": true,
-          "collision_pairs": []
+          "angle_deg_from_delivered_pose": -5,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 25
         },
         {
           "angle_deg_from_delivered_pose": 5,
-          "collision_free_local": false,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
           "collision_pairs": [
             {
               "moving": "left_forearm_frame",
               "fixed": "left_upper_arm_white_front",
-              "common_volume_mm3": 0.33983
+              "moving_group": "left_forearm",
+              "fixed_group": "left_upper_arm",
+              "common_volume_mm3": 0.339827
             },
             {
               "moving": "left_forearm_frame",
               "fixed": "left_upper_arm_white_back",
-              "common_volume_mm3": 0.33983
+              "moving_group": "left_forearm",
+              "fixed_group": "left_upper_arm",
+              "common_volume_mm3": 0.339827
             },
             {
               "moving": "left_forearm_white_front",
               "fixed": "left_upper_arm_white_front",
-              "common_volume_mm3": 11.3532
+              "moving_group": "left_forearm",
+              "fixed_group": "left_upper_arm",
+              "common_volume_mm3": 11.353198
             },
             {
               "moving": "left_forearm_white_front",
               "fixed": "left_upper_arm_cyan_front",
-              "common_volume_mm3": 3.88327
+              "moving_group": "left_forearm",
+              "fixed_group": "left_upper_arm",
+              "common_volume_mm3": 3.883274
             },
             {
               "moving": "left_forearm_white_back",
               "fixed": "left_upper_arm_white_back",
-              "common_volume_mm3": 11.35316
+              "moving_group": "left_forearm",
+              "fixed_group": "left_upper_arm",
+              "common_volume_mm3": 11.353157
             },
             {
               "moving": "left_forearm_white_back",
               "fixed": "left_upper_arm_cyan_back",
-              "common_volume_mm3": 3.88327
+              "moving_group": "left_forearm",
+              "fixed_group": "left_upper_arm",
+              "common_volume_mm3": 3.883274
             }
-          ]
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 35
+        },
+        {
+          "angle_deg_from_delivered_pose": -10,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 21
+        },
+        {
+          "angle_deg_from_delivered_pose": 10,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
+          "collision_pairs": [
+            {
+              "moving": "left_forearm_frame",
+              "fixed": "left_upper_arm_white_front",
+              "moving_group": "left_forearm",
+              "fixed_group": "left_upper_arm",
+              "common_volume_mm3": 2.012645
+            },
+            {
+              "moving": "left_forearm_frame",
+              "fixed": "left_upper_arm_white_back",
+              "moving_group": "left_forearm",
+              "fixed_group": "left_upper_arm",
+              "common_volume_mm3": 2.012645
+            },
+            {
+              "moving": "left_forearm_white_front",
+              "fixed": "left_upper_arm_white_front",
+              "moving_group": "left_forearm",
+              "fixed_group": "left_upper_arm",
+              "common_volume_mm3": 31.712423
+            },
+            {
+              "moving": "left_forearm_white_front",
+              "fixed": "left_upper_arm_cyan_front",
+              "moving_group": "left_forearm",
+              "fixed_group": "left_upper_arm",
+              "common_volume_mm3": 8.616158
+            },
+            {
+              "moving": "left_forearm_white_back",
+              "fixed": "left_upper_arm_white_back",
+              "moving_group": "left_forearm",
+              "fixed_group": "left_upper_arm",
+              "common_volume_mm3": 31.712928
+            },
+            {
+              "moving": "left_forearm_white_back",
+              "fixed": "left_upper_arm_cyan_back",
+              "moving_group": "left_forearm",
+              "fixed_group": "left_upper_arm",
+              "common_volume_mm3": 8.616159
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 42
+        },
+        {
+          "angle_deg_from_delivered_pose": -20,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 21
+        },
+        {
+          "angle_deg_from_delivered_pose": 20,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
+          "collision_pairs": [
+            {
+              "moving": "left_forearm_frame",
+              "fixed": "left_upper_arm_white_front",
+              "moving_group": "left_forearm",
+              "fixed_group": "left_upper_arm",
+              "common_volume_mm3": 9.738909
+            },
+            {
+              "moving": "left_forearm_frame",
+              "fixed": "left_upper_arm_white_back",
+              "moving_group": "left_forearm",
+              "fixed_group": "left_upper_arm",
+              "common_volume_mm3": 9.73891
+            },
+            {
+              "moving": "left_forearm_white_front",
+              "fixed": "left_upper_arm_frame",
+              "moving_group": "left_forearm",
+              "fixed_group": "left_upper_arm",
+              "common_volume_mm3": 0.66155
+            },
+            {
+              "moving": "left_forearm_white_front",
+              "fixed": "left_upper_arm_white_front",
+              "moving_group": "left_forearm",
+              "fixed_group": "left_upper_arm",
+              "common_volume_mm3": 92.177418
+            },
+            {
+              "moving": "left_forearm_white_front",
+              "fixed": "left_upper_arm_cyan_front",
+              "moving_group": "left_forearm",
+              "fixed_group": "left_upper_arm",
+              "common_volume_mm3": 11.908621
+            },
+            {
+              "moving": "left_forearm_white_back",
+              "fixed": "left_upper_arm_frame",
+              "moving_group": "left_forearm",
+              "fixed_group": "left_upper_arm",
+              "common_volume_mm3": 0.661554
+            },
+            {
+              "moving": "left_forearm_white_back",
+              "fixed": "left_upper_arm_white_back",
+              "moving_group": "left_forearm",
+              "fixed_group": "left_upper_arm",
+              "common_volume_mm3": 92.169065
+            },
+            {
+              "moving": "left_forearm_white_back",
+              "fixed": "left_upper_arm_cyan_back",
+              "moving_group": "left_forearm",
+              "fixed_group": "left_upper_arm",
+              "common_volume_mm3": 11.90862
+            },
+            {
+              "moving": "left_hand_navy",
+              "fixed": "head_white_front_shell",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 34.889206
+            },
+            {
+              "moving": "left_hand_navy",
+              "fixed": "head_white_rear_shell",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 24.088021
+            },
+            {
+              "moving": "left_hand_navy",
+              "fixed": "head_ear_left_white",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 44.811246
+            },
+            {
+              "moving": "left_hand_navy",
+              "fixed": "head_ear_left_outer_navy",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 23.249281
+            },
+            {
+              "moving": "left_hand_glove_white_front_1",
+              "fixed": "head_white_front_shell",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 1.393019
+            },
+            {
+              "moving": "left_hand_glove_white_front_2",
+              "fixed": "head_white_front_shell",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 0.019096
+            },
+            {
+              "moving": "left_hand_glove_white_back_1",
+              "fixed": "head_white_front_shell",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 0.618055
+            },
+            {
+              "moving": "left_hand_glove_white_back_1",
+              "fixed": "head_white_rear_shell",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 1.228979
+            },
+            {
+              "moving": "left_hand_glove_white_back_1",
+              "fixed": "head_ear_left_outer_navy",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 0.362034
+            },
+            {
+              "moving": "left_hand_glove_white_back_2",
+              "fixed": "head_white_front_shell",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 0.029514
+            },
+            {
+              "moving": "left_hand_glove_white_back_2",
+              "fixed": "head_white_rear_shell",
+              "moving_group": "left_hand",
+              "fixed_group": "head",
+              "common_volume_mm3": 0.0309
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 56
         }
+      ],
+      "clear_nonzero_sample_angles_full_assembly": [
+        -5,
+        -10,
+        -20
+      ],
+      "clear_nonzero_sample_angles_without_base": [
+        -5,
+        -10,
+        -20
       ]
     },
     {
-      "joint": "right_elbow",
+      "joint": "cotovelo_D",
       "pivot_xyz_mm": [
-        43,
-        0,
+        43.0,
+        0.0,
         66.75
       ],
-      "axis": "Y",
-      "fixed_groups": [
-        "right_upper_arm"
+      "axis_xyz": [
+        0,
+        1,
+        0
       ],
       "moving_groups": [
         "right_forearm",
         "right_hand"
       ],
+      "moving_hardware_joints": [
+        "punho_D"
+      ],
+      "own_joint_hardware_moves_with": "stationary parent",
+      "moving_parts": [
+        "arruela_M3_frontal_punho_D",
+        "arruela_M3_traseira_punho_D",
+        "parafuso_M3x16_punho_D",
+        "porca_M3_punho_D",
+        "right_forearm_cyan_back",
+        "right_forearm_cyan_front",
+        "right_forearm_frame",
+        "right_forearm_white_back",
+        "right_forearm_white_front",
+        "right_hand_glove_white_back_1",
+        "right_hand_glove_white_back_2",
+        "right_hand_glove_white_back_3",
+        "right_hand_glove_white_front_1",
+        "right_hand_glove_white_front_2",
+        "right_hand_navy",
+        "right_hand_palm_cyan"
+      ],
+      "stationary_parts": 155,
       "tests": [
         {
-          "angle_deg_from_delivered_pose": -10,
-          "collision_free_local": true,
-          "collision_pairs": []
+          "angle_deg_from_delivered_pose": 0,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 55
         },
         {
-          "angle_deg_from_delivered_pose": 10,
-          "collision_free_local": false,
+          "angle_deg_from_delivered_pose": -5,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 44
+        },
+        {
+          "angle_deg_from_delivered_pose": 5,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
           "collision_pairs": [
             {
               "moving": "right_forearm_frame",
               "fixed": "right_upper_arm_white_front",
-              "common_volume_mm3": 10.02746
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 2.976298
             },
             {
               "moving": "right_forearm_frame",
               "fixed": "right_upper_arm_white_back",
-              "common_volume_mm3": 9.78082
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 2.963805
             },
             {
               "moving": "right_forearm_white_front",
               "fixed": "right_upper_arm_white_front",
-              "common_volume_mm3": 19.85691
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 7.788009
             },
             {
               "moving": "right_forearm_white_front",
               "fixed": "right_upper_arm_cyan_front",
-              "common_volume_mm3": 11.28668
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 4.655513
             },
             {
               "moving": "right_forearm_white_back",
               "fixed": "right_upper_arm_white_front",
-              "common_volume_mm3": 2.24649
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 0.883732
             },
             {
               "moving": "right_forearm_white_back",
               "fixed": "right_upper_arm_white_back",
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 7.863527
+            },
+            {
+              "moving": "right_forearm_white_back",
+              "fixed": "right_upper_arm_cyan_front",
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 0.486385
+            },
+            {
+              "moving": "right_forearm_white_back",
+              "fixed": "right_upper_arm_cyan_back",
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 3.985369
+            },
+            {
+              "moving": "right_forearm_cyan_front",
+              "fixed": "right_upper_arm_white_front",
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 0.816669
+            },
+            {
+              "moving": "right_forearm_cyan_front",
+              "fixed": "right_upper_arm_cyan_front",
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 0.659331
+            },
+            {
+              "moving": "right_forearm_cyan_back",
+              "fixed": "right_upper_arm_white_back",
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 0.333708
+            },
+            {
+              "moving": "right_forearm_cyan_back",
+              "fixed": "right_upper_arm_cyan_back",
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 1.156736
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 55
+        },
+        {
+          "angle_deg_from_delivered_pose": -10,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 40
+        },
+        {
+          "angle_deg_from_delivered_pose": 10,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
+          "collision_pairs": [
+            {
+              "moving": "right_forearm_frame",
+              "fixed": "right_upper_arm_white_front",
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 10.027462
+            },
+            {
+              "moving": "right_forearm_frame",
+              "fixed": "right_upper_arm_white_back",
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 9.780821
+            },
+            {
+              "moving": "right_forearm_white_front",
+              "fixed": "right_upper_arm_white_front",
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 19.856911
+            },
+            {
+              "moving": "right_forearm_white_front",
+              "fixed": "right_upper_arm_cyan_front",
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 11.286676
+            },
+            {
+              "moving": "right_forearm_white_back",
+              "fixed": "right_upper_arm_white_front",
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 2.246486
+            },
+            {
+              "moving": "right_forearm_white_back",
+              "fixed": "right_upper_arm_white_back",
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
               "common_volume_mm3": 19.60259
             },
             {
               "moving": "right_forearm_white_back",
               "fixed": "right_upper_arm_cyan_front",
-              "common_volume_mm3": 0.89964
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 0.899635
             },
             {
               "moving": "right_forearm_white_back",
               "fixed": "right_upper_arm_cyan_back",
-              "common_volume_mm3": 9.74194
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 9.741935
             },
             {
               "moving": "right_forearm_cyan_front",
               "fixed": "right_upper_arm_white_front",
-              "common_volume_mm3": 2.3259
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 2.325899
             },
             {
               "moving": "right_forearm_cyan_front",
               "fixed": "right_upper_arm_cyan_front",
-              "common_volume_mm3": 0.77681
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 0.776814
             },
             {
               "moving": "right_forearm_cyan_back",
               "fixed": "right_upper_arm_white_back",
-              "common_volume_mm3": 1.36794
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 1.367944
             },
             {
               "moving": "right_forearm_cyan_back",
               "fixed": "right_upper_arm_cyan_back",
-              "common_volume_mm3": 1.78608
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 1.786078
             }
-          ]
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 58
         },
         {
           "angle_deg_from_delivered_pose": -20,
-          "collision_free_local": true,
-          "collision_pairs": []
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 29
         },
         {
-          "angle_deg_from_delivered_pose": 5,
-          "collision_free_local": false,
+          "angle_deg_from_delivered_pose": 20,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
           "collision_pairs": [
             {
               "moving": "right_forearm_frame",
               "fixed": "right_upper_arm_white_front",
-              "common_volume_mm3": 2.9763
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 28.670458
             },
             {
               "moving": "right_forearm_frame",
               "fixed": "right_upper_arm_white_back",
-              "common_volume_mm3": 2.9638
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 26.532372
+            },
+            {
+              "moving": "right_forearm_frame",
+              "fixed": "right_upper_arm_cyan_front",
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 0.181669
+            },
+            {
+              "moving": "right_forearm_frame",
+              "fixed": "right_upper_arm_cyan_back",
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 0.169772
+            },
+            {
+              "moving": "right_forearm_white_front",
+              "fixed": "right_upper_arm_frame",
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 0.272169
             },
             {
               "moving": "right_forearm_white_front",
               "fixed": "right_upper_arm_white_front",
-              "common_volume_mm3": 7.78801
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 52.086112
             },
             {
               "moving": "right_forearm_white_front",
               "fixed": "right_upper_arm_cyan_front",
-              "common_volume_mm3": 4.65551
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 9.390322
+            },
+            {
+              "moving": "right_forearm_white_back",
+              "fixed": "right_upper_arm_frame",
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 0.213884
             },
             {
               "moving": "right_forearm_white_back",
               "fixed": "right_upper_arm_white_front",
-              "common_volume_mm3": 0.88373
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 5.024683
             },
             {
               "moving": "right_forearm_white_back",
               "fixed": "right_upper_arm_white_back",
-              "common_volume_mm3": 7.86353
-            },
-            {
-              "moving": "right_forearm_white_back",
-              "fixed": "right_upper_arm_cyan_front",
-              "common_volume_mm3": 0.48638
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 50.728485
             },
             {
               "moving": "right_forearm_white_back",
               "fixed": "right_upper_arm_cyan_back",
-              "common_volume_mm3": 3.98537
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 6.310933
             },
             {
               "moving": "right_forearm_cyan_front",
               "fixed": "right_upper_arm_white_front",
-              "common_volume_mm3": 0.81667
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 4.93553
             },
             {
               "moving": "right_forearm_cyan_front",
               "fixed": "right_upper_arm_cyan_front",
-              "common_volume_mm3": 0.65933
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 0.621186
             },
             {
               "moving": "right_forearm_cyan_back",
               "fixed": "right_upper_arm_white_back",
-              "common_volume_mm3": 0.33371
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 4.100398
             },
             {
               "moving": "right_forearm_cyan_back",
               "fixed": "right_upper_arm_cyan_back",
-              "common_volume_mm3": 1.15674
+              "moving_group": "right_forearm",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 1.695078
+            },
+            {
+              "moving": "right_hand_navy",
+              "fixed": "right_upper_arm_white_front",
+              "moving_group": "right_hand",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 0.113224
+            },
+            {
+              "moving": "right_hand_navy",
+              "fixed": "right_upper_arm_white_back",
+              "moving_group": "right_hand",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 0.110207
+            },
+            {
+              "moving": "right_hand_navy",
+              "fixed": "right_upper_arm_cyan_front",
+              "moving_group": "right_hand",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 0.548035
+            },
+            {
+              "moving": "right_hand_navy",
+              "fixed": "right_upper_arm_cyan_back",
+              "moving_group": "right_hand",
+              "fixed_group": "right_upper_arm",
+              "common_volume_mm3": 0.474465
             }
-          ]
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 67
         }
+      ],
+      "clear_nonzero_sample_angles_full_assembly": [
+        -5,
+        -10,
+        -20
+      ],
+      "clear_nonzero_sample_angles_without_base": [
+        -5,
+        -10,
+        -20
       ]
     },
     {
-      "joint": "left_wrist",
+      "joint": "punho_E",
       "pivot_xyz_mm": [
-        -61.02711942075802,
-        0,
-        88.06548186976956
+        -61.027119,
+        0.0,
+        88.065481
       ],
-      "axis": "Y",
-      "fixed_groups": [
-        "left_forearm"
+      "axis_xyz": [
+        0,
+        1,
+        0
       ],
       "moving_groups": [
         "left_hand"
       ],
+      "moving_hardware_joints": [],
+      "own_joint_hardware_moves_with": "stationary parent",
+      "moving_parts": [
+        "left_hand_glove_white_back_1",
+        "left_hand_glove_white_back_2",
+        "left_hand_glove_white_front_1",
+        "left_hand_glove_white_front_2",
+        "left_hand_navy",
+        "left_hand_palm_cyan"
+      ],
+      "stationary_parts": 165,
       "tests": [
         {
+          "angle_deg_from_delivered_pose": 0,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 11
+        },
+        {
+          "angle_deg_from_delivered_pose": -5,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 10
+        },
+        {
+          "angle_deg_from_delivered_pose": 5,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 11
+        },
+        {
           "angle_deg_from_delivered_pose": -10,
-          "collision_free_local": true,
-          "collision_pairs": []
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 10
         },
         {
           "angle_deg_from_delivered_pose": 10,
-          "collision_free_local": true,
-          "collision_pairs": []
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 12
         },
         {
           "angle_deg_from_delivered_pose": -20,
-          "collision_free_local": true,
-          "collision_pairs": []
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 11
         },
         {
           "angle_deg_from_delivered_pose": 20,
-          "collision_free_local": true,
-          "collision_pairs": []
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 12
         }
+      ],
+      "clear_nonzero_sample_angles_full_assembly": [
+        -5,
+        5,
+        -10,
+        10,
+        -20,
+        20
+      ],
+      "clear_nonzero_sample_angles_without_base": [
+        -5,
+        5,
+        -10,
+        10,
+        -20,
+        20
       ]
     },
     {
-      "joint": "right_wrist",
+      "joint": "punho_D",
       "pivot_xyz_mm": [
-        31,
-        -1,
+        31.0,
+        -1.0,
         59.75
       ],
-      "axis": "Y",
-      "fixed_groups": [
-        "right_forearm"
+      "axis_xyz": [
+        0,
+        1,
+        0
       ],
       "moving_groups": [
         "right_hand"
       ],
+      "moving_hardware_joints": [],
+      "own_joint_hardware_moves_with": "stationary parent",
+      "moving_parts": [
+        "right_hand_glove_white_back_1",
+        "right_hand_glove_white_back_2",
+        "right_hand_glove_white_back_3",
+        "right_hand_glove_white_front_1",
+        "right_hand_glove_white_front_2",
+        "right_hand_navy",
+        "right_hand_palm_cyan"
+      ],
+      "stationary_parts": 164,
       "tests": [
         {
+          "angle_deg_from_delivered_pose": 0,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 27
+        },
+        {
+          "angle_deg_from_delivered_pose": -5,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 25
+        },
+        {
+          "angle_deg_from_delivered_pose": 5,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 29
+        },
+        {
           "angle_deg_from_delivered_pose": -10,
-          "collision_free_local": true,
-          "collision_pairs": []
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 22
         },
         {
           "angle_deg_from_delivered_pose": 10,
-          "collision_free_local": false,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
           "collision_pairs": [
             {
               "moving": "right_hand_navy",
               "fixed": "right_forearm_white_front",
-              "common_volume_mm3": 0.1482
+              "moving_group": "right_hand",
+              "fixed_group": "right_forearm",
+              "common_volume_mm3": 0.148201
             }
-          ]
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 29
         },
         {
           "angle_deg_from_delivered_pose": -20,
-          "collision_free_local": true,
-          "collision_pairs": []
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 20
         },
         {
-          "angle_deg_from_delivered_pose": 5,
-          "collision_free_local": true,
-          "collision_pairs": []
+          "angle_deg_from_delivered_pose": 20,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
+          "collision_pairs": [
+            {
+              "moving": "right_hand_navy",
+              "fixed": "right_forearm_white_front",
+              "moving_group": "right_hand",
+              "fixed_group": "right_forearm",
+              "common_volume_mm3": 1.447938
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 32
         }
+      ],
+      "clear_nonzero_sample_angles_full_assembly": [
+        -5,
+        5,
+        -10,
+        -20
+      ],
+      "clear_nonzero_sample_angles_without_base": [
+        -5,
+        5,
+        -10,
+        -20
       ]
     },
     {
-      "joint": "left_hip",
+      "joint": "quadril_E",
       "pivot_xyz_mm": [
-        -14,
-        0,
+        -14.0,
+        0.0,
         54.75
       ],
-      "axis": "Y",
-      "fixed_groups": [
-        "pelve_azul"
+      "axis_xyz": [
+        0,
+        1,
+        0
       ],
       "moving_groups": [
         "left_thigh",
         "left_shin",
         "left_boot"
       ],
+      "moving_hardware_joints": [
+        "joelho_E",
+        "tornozelo_E"
+      ],
+      "own_joint_hardware_moves_with": "stationary parent",
+      "moving_parts": [
+        "arruela_M3_frontal_joelho_E",
+        "arruela_M3_frontal_tornozelo_E",
+        "arruela_M3_traseira_joelho_E",
+        "arruela_M3_traseira_tornozelo_E",
+        "left_boot_cyan_left",
+        "left_boot_cyan_right",
+        "left_boot_sole_and_joint",
+        "left_boot_toe_navy",
+        "left_boot_white_left",
+        "left_boot_white_right",
+        "left_shin_cyan_back",
+        "left_shin_cyan_front",
+        "left_shin_frame",
+        "left_shin_white_back",
+        "left_shin_white_front",
+        "left_thigh_cyan_back",
+        "left_thigh_cyan_front",
+        "left_thigh_frame",
+        "left_thigh_white_back",
+        "left_thigh_white_front",
+        "parafuso_M3x16_joelho_E",
+        "parafuso_M3x16_tornozelo_E",
+        "porca_M3_joelho_E",
+        "porca_M3_tornozelo_E"
+      ],
+      "stationary_parts": 147,
       "tests": [
         {
-          "angle_deg_from_delivered_pose": -10,
-          "collision_free_local": false,
+          "angle_deg_from_delivered_pose": 0,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 6
+        },
+        {
+          "angle_deg_from_delivered_pose": -5,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
           "collision_pairs": [
             {
               "moving": "left_thigh_white_front",
               "fixed": "pelve_azul",
-              "common_volume_mm3": 16.73186
+              "moving_group": "left_thigh",
+              "fixed_group": "body",
+              "common_volume_mm3": 1.503447
             },
             {
               "moving": "left_thigh_white_back",
               "fixed": "pelve_azul",
-              "common_volume_mm3": 16.7322
+              "moving_group": "left_thigh",
+              "fixed_group": "body",
+              "common_volume_mm3": 1.503447
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 185.365632
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "right_boot_sole_and_joint",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 11.67779
             }
-          ]
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 9
+        },
+        {
+          "angle_deg_from_delivered_pose": 5,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 125.02589
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 8
+        },
+        {
+          "angle_deg_from_delivered_pose": -10,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
+          "collision_pairs": [
+            {
+              "moving": "left_thigh_white_front",
+              "fixed": "pelve_azul",
+              "moving_group": "left_thigh",
+              "fixed_group": "body",
+              "common_volume_mm3": 16.731865
+            },
+            {
+              "moving": "left_thigh_white_back",
+              "fixed": "pelve_azul",
+              "moving_group": "left_thigh",
+              "fixed_group": "body",
+              "common_volume_mm3": 16.732204
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_superior_azul",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 5.863098
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 224.695658
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "right_boot_sole_and_joint",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 83.464823
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "right_boot_toe_navy",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 30.38955
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "right_boot_white_left",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 129.027041
+            },
+            {
+              "moving": "left_boot_toe_navy",
+              "fixed": "right_boot_toe_navy",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 2.400885
+            },
+            {
+              "moving": "left_boot_white_right",
+              "fixed": "right_boot_white_left",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 75.528621
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 26
         },
         {
           "angle_deg_from_delivered_pose": 10,
-          "collision_free_local": true,
-          "collision_pairs": []
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 137.719814
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 10
+        },
+        {
+          "angle_deg_from_delivered_pose": -20,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
+          "collision_pairs": [
+            {
+              "moving": "left_thigh_frame",
+              "fixed": "pelve_azul",
+              "moving_group": "left_thigh",
+              "fixed_group": "body",
+              "common_volume_mm3": 6.72671
+            },
+            {
+              "moving": "left_thigh_white_front",
+              "fixed": "pelve_azul",
+              "moving_group": "left_thigh",
+              "fixed_group": "body",
+              "common_volume_mm3": 64.177864
+            },
+            {
+              "moving": "left_thigh_white_back",
+              "fixed": "pelve_azul",
+              "moving_group": "left_thigh",
+              "fixed_group": "body",
+              "common_volume_mm3": 64.179427
+            },
+            {
+              "moving": "left_thigh_cyan_front",
+              "fixed": "pelve_azul",
+              "moving_group": "left_thigh",
+              "fixed_group": "body",
+              "common_volume_mm3": 2.317213
+            },
+            {
+              "moving": "left_thigh_cyan_back",
+              "fixed": "pelve_azul",
+              "moving_group": "left_thigh",
+              "fixed_group": "body",
+              "common_volume_mm3": 2.317287
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_superior_azul",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 0.578536
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 95.476256
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "right_boot_sole_and_joint",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 76.110502
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "right_boot_toe_navy",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 264.628042
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "right_boot_white_left",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 627.050395
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "right_boot_white_right",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 12.829506
+            },
+            {
+              "moving": "left_boot_toe_navy",
+              "fixed": "right_boot_toe_navy",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 131.741481
+            },
+            {
+              "moving": "left_boot_white_right",
+              "fixed": "right_shin_frame",
+              "moving_group": "left_boot",
+              "fixed_group": "right_shin",
+              "common_volume_mm3": 26.997516
+            },
+            {
+              "moving": "left_boot_white_right",
+              "fixed": "right_boot_sole_and_joint",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 39.405067
+            },
+            {
+              "moving": "left_boot_white_right",
+              "fixed": "right_boot_white_left",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 518.381154
+            },
+            {
+              "moving": "left_boot_white_right",
+              "fixed": "right_boot_cyan_left",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 37.197733
+            },
+            {
+              "moving": "left_boot_cyan_right",
+              "fixed": "right_shin_frame",
+              "moving_group": "left_boot",
+              "fixed_group": "right_shin",
+              "common_volume_mm3": 0.055122
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 52
+        },
+        {
+          "angle_deg_from_delivered_pose": 20,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 24.55387
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 10
         }
+      ],
+      "clear_nonzero_sample_angles_full_assembly": [],
+      "clear_nonzero_sample_angles_without_base": [
+        5,
+        10,
+        20
       ]
     },
     {
-      "joint": "left_knee",
+      "joint": "quadril_D",
       "pivot_xyz_mm": [
-        -15,
-        0,
-        34.5
-      ],
-      "axis": "Y",
-      "fixed_groups": [
-        "left_thigh"
-      ],
-      "moving_groups": [
-        "left_shin",
-        "left_boot"
-      ],
-      "tests": [
-        {
-          "angle_deg_from_delivered_pose": -10,
-          "collision_free_local": true,
-          "collision_pairs": []
-        },
-        {
-          "angle_deg_from_delivered_pose": 10,
-          "collision_free_local": true,
-          "collision_pairs": []
-        }
-      ]
-    },
-    {
-      "joint": "left_ankle",
-      "pivot_xyz_mm": [
-        -15,
-        0,
-        17.25
-      ],
-      "axis": "Y",
-      "fixed_groups": [
-        "left_shin"
-      ],
-      "moving_groups": [
-        "left_boot"
-      ],
-      "tests": [
-        {
-          "angle_deg_from_delivered_pose": -10,
-          "collision_free_local": true,
-          "collision_pairs": []
-        },
-        {
-          "angle_deg_from_delivered_pose": 10,
-          "collision_free_local": true,
-          "collision_pairs": []
-        }
-      ],
-      "boot_revision": "Outer dome centered Z3.18, semi-height14; ankle axis unchanged Z17.25."
-    },
-    {
-      "joint": "right_hip",
-      "pivot_xyz_mm": [
-        14,
-        0,
+        14.0,
+        0.0,
         54.75
       ],
-      "axis": "Y",
-      "fixed_groups": [
-        "pelve_azul"
+      "axis_xyz": [
+        0,
+        1,
+        0
       ],
       "moving_groups": [
         "right_thigh",
         "right_shin",
         "right_boot"
       ],
+      "moving_hardware_joints": [
+        "joelho_D",
+        "tornozelo_D"
+      ],
+      "own_joint_hardware_moves_with": "stationary parent",
+      "moving_parts": [
+        "arruela_M3_frontal_joelho_D",
+        "arruela_M3_frontal_tornozelo_D",
+        "arruela_M3_traseira_joelho_D",
+        "arruela_M3_traseira_tornozelo_D",
+        "parafuso_M3x16_joelho_D",
+        "parafuso_M3x16_tornozelo_D",
+        "porca_M3_joelho_D",
+        "porca_M3_tornozelo_D",
+        "right_boot_cyan_left",
+        "right_boot_cyan_right",
+        "right_boot_sole_and_joint",
+        "right_boot_toe_navy",
+        "right_boot_white_left",
+        "right_boot_white_right",
+        "right_shin_cyan_back",
+        "right_shin_cyan_front",
+        "right_shin_frame",
+        "right_shin_white_back",
+        "right_shin_white_front",
+        "right_thigh_cyan_back",
+        "right_thigh_cyan_front",
+        "right_thigh_frame",
+        "right_thigh_white_back",
+        "right_thigh_white_front"
+      ],
+      "stationary_parts": 147,
       "tests": [
         {
-          "angle_deg_from_delivered_pose": -10,
-          "collision_free_local": true,
-          "collision_pairs": []
+          "angle_deg_from_delivered_pose": 0,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 8
         },
         {
-          "angle_deg_from_delivered_pose": 10,
-          "collision_free_local": false,
+          "angle_deg_from_delivered_pose": -5,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 125.02589
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 12
+        },
+        {
+          "angle_deg_from_delivered_pose": 5,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
           "collision_pairs": [
             {
               "moving": "right_thigh_white_front",
               "fixed": "pelve_azul",
-              "common_volume_mm3": 16.73201
+              "moving_group": "right_thigh",
+              "fixed_group": "body",
+              "common_volume_mm3": 1.503446
             },
             {
               "moving": "right_thigh_white_back",
               "fixed": "pelve_azul",
-              "common_volume_mm3": 16.73209
+              "moving_group": "right_thigh",
+              "fixed_group": "body",
+              "common_volume_mm3": 1.503447
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 185.365632
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "left_boot_sole_and_joint",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 11.67779
             }
-          ]
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 9
+        },
+        {
+          "angle_deg_from_delivered_pose": -10,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 137.719814
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 14
+        },
+        {
+          "angle_deg_from_delivered_pose": 10,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
+          "collision_pairs": [
+            {
+              "moving": "right_thigh_white_front",
+              "fixed": "pelve_azul",
+              "moving_group": "right_thigh",
+              "fixed_group": "body",
+              "common_volume_mm3": 16.732014
+            },
+            {
+              "moving": "right_thigh_white_back",
+              "fixed": "pelve_azul",
+              "moving_group": "right_thigh",
+              "fixed_group": "body",
+              "common_volume_mm3": 16.732089
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_superior_azul",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 5.863098
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 224.695658
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "left_boot_sole_and_joint",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 83.464822
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "left_boot_toe_navy",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 30.389592
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "left_boot_white_right",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 129.027808
+            },
+            {
+              "moving": "right_boot_toe_navy",
+              "fixed": "left_boot_toe_navy",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 2.400867
+            },
+            {
+              "moving": "right_boot_white_left",
+              "fixed": "left_boot_white_right",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 75.529305
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 26
+        },
+        {
+          "angle_deg_from_delivered_pose": -20,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 24.55387
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 17
+        },
+        {
+          "angle_deg_from_delivered_pose": 20,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
+          "collision_pairs": [
+            {
+              "moving": "right_thigh_frame",
+              "fixed": "pelve_azul",
+              "moving_group": "right_thigh",
+              "fixed_group": "body",
+              "common_volume_mm3": 6.72671
+            },
+            {
+              "moving": "right_thigh_white_front",
+              "fixed": "pelve_azul",
+              "moving_group": "right_thigh",
+              "fixed_group": "body",
+              "common_volume_mm3": 64.178188
+            },
+            {
+              "moving": "right_thigh_white_back",
+              "fixed": "pelve_azul",
+              "moving_group": "right_thigh",
+              "fixed_group": "body",
+              "common_volume_mm3": 64.177816
+            },
+            {
+              "moving": "right_thigh_cyan_front",
+              "fixed": "pelve_azul",
+              "moving_group": "right_thigh",
+              "fixed_group": "body",
+              "common_volume_mm3": 2.317213
+            },
+            {
+              "moving": "right_thigh_cyan_back",
+              "fixed": "pelve_azul",
+              "moving_group": "right_thigh",
+              "fixed_group": "body",
+              "common_volume_mm3": 2.317213
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_superior_azul",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 0.578536
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 95.476256
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "left_boot_sole_and_joint",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 76.110503
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "left_boot_toe_navy",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 264.627721
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "left_boot_white_left",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 12.829506
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "left_boot_white_right",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 627.040821
+            },
+            {
+              "moving": "right_boot_toe_navy",
+              "fixed": "left_boot_toe_navy",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 131.741134
+            },
+            {
+              "moving": "right_boot_white_left",
+              "fixed": "left_shin_frame",
+              "moving_group": "right_boot",
+              "fixed_group": "left_shin",
+              "common_volume_mm3": 26.997547
+            },
+            {
+              "moving": "right_boot_white_left",
+              "fixed": "left_boot_sole_and_joint",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 39.405112
+            },
+            {
+              "moving": "right_boot_white_left",
+              "fixed": "left_boot_white_right",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 518.390728
+            },
+            {
+              "moving": "right_boot_white_left",
+              "fixed": "left_boot_cyan_right",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 37.196537
+            },
+            {
+              "moving": "right_boot_cyan_left",
+              "fixed": "left_shin_frame",
+              "moving_group": "right_boot",
+              "fixed_group": "left_shin",
+              "common_volume_mm3": 0.05513
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 52
         }
+      ],
+      "clear_nonzero_sample_angles_full_assembly": [],
+      "clear_nonzero_sample_angles_without_base": [
+        -5,
+        -10,
+        -20
       ]
     },
     {
-      "joint": "right_knee",
+      "joint": "joelho_E",
       "pivot_xyz_mm": [
-        15,
-        0,
+        -15.0,
+        0.0,
         34.5
       ],
-      "axis": "Y",
-      "fixed_groups": [
-        "right_thigh"
+      "axis_xyz": [
+        0,
+        1,
+        0
+      ],
+      "moving_groups": [
+        "left_shin",
+        "left_boot"
+      ],
+      "moving_hardware_joints": [
+        "tornozelo_E"
+      ],
+      "own_joint_hardware_moves_with": "stationary parent",
+      "moving_parts": [
+        "arruela_M3_frontal_tornozelo_E",
+        "arruela_M3_traseira_tornozelo_E",
+        "left_boot_cyan_left",
+        "left_boot_cyan_right",
+        "left_boot_sole_and_joint",
+        "left_boot_toe_navy",
+        "left_boot_white_left",
+        "left_boot_white_right",
+        "left_shin_cyan_back",
+        "left_shin_cyan_front",
+        "left_shin_frame",
+        "left_shin_white_back",
+        "left_shin_white_front",
+        "parafuso_M3x16_tornozelo_E",
+        "porca_M3_tornozelo_E"
+      ],
+      "stationary_parts": 156,
+      "tests": [
+        {
+          "angle_deg_from_delivered_pose": 0,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 16
+        },
+        {
+          "angle_deg_from_delivered_pose": -5,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 181.545283
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 16
+        },
+        {
+          "angle_deg_from_delivered_pose": 5,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 181.545283
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 16
+        },
+        {
+          "angle_deg_from_delivered_pose": -10,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
+          "collision_pairs": [
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_superior_azul",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 13.668786
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 259.120304
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "right_boot_sole_and_joint",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 14.593857
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "right_boot_white_left",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 7.6089
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 21
+        },
+        {
+          "angle_deg_from_delivered_pose": 10,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_superior_azul",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 13.668786
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 259.120304
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 17
+        },
+        {
+          "angle_deg_from_delivered_pose": -20,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
+          "collision_pairs": [
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_superior_azul",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 46.308815
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 214.02967
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "right_boot_toe_navy",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 59.616108
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "right_boot_white_left",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 235.940816
+            },
+            {
+              "moving": "left_boot_toe_navy",
+              "fixed": "right_boot_toe_navy",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 2.588048
+            },
+            {
+              "moving": "left_boot_white_right",
+              "fixed": "right_boot_white_left",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 64.123888
+            },
+            {
+              "moving": "left_boot_white_right",
+              "fixed": "right_boot_cyan_left",
+              "moving_group": "left_boot",
+              "fixed_group": "right_boot",
+              "common_volume_mm3": 2.68162
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 34
+        },
+        {
+          "angle_deg_from_delivered_pose": 20,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_superior_azul",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 46.308815
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 214.02967
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 17
+        }
+      ],
+      "clear_nonzero_sample_angles_full_assembly": [],
+      "clear_nonzero_sample_angles_without_base": [
+        -5,
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "joint": "joelho_D",
+      "pivot_xyz_mm": [
+        15.0,
+        0.0,
+        34.5
+      ],
+      "axis_xyz": [
+        0,
+        1,
+        0
       ],
       "moving_groups": [
         "right_shin",
         "right_boot"
       ],
+      "moving_hardware_joints": [
+        "tornozelo_D"
+      ],
+      "own_joint_hardware_moves_with": "stationary parent",
+      "moving_parts": [
+        "arruela_M3_frontal_tornozelo_D",
+        "arruela_M3_traseira_tornozelo_D",
+        "parafuso_M3x16_tornozelo_D",
+        "porca_M3_tornozelo_D",
+        "right_boot_cyan_left",
+        "right_boot_cyan_right",
+        "right_boot_sole_and_joint",
+        "right_boot_toe_navy",
+        "right_boot_white_left",
+        "right_boot_white_right",
+        "right_shin_cyan_back",
+        "right_shin_cyan_front",
+        "right_shin_frame",
+        "right_shin_white_back",
+        "right_shin_white_front"
+      ],
+      "stationary_parts": 156,
       "tests": [
         {
+          "angle_deg_from_delivered_pose": 0,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 16
+        },
+        {
+          "angle_deg_from_delivered_pose": -5,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 181.545283
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 16
+        },
+        {
+          "angle_deg_from_delivered_pose": 5,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 181.545283
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 16
+        },
+        {
           "angle_deg_from_delivered_pose": -10,
-          "collision_free_local": true,
-          "collision_pairs": []
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_superior_azul",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 13.668786
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 259.120304
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 17
         },
         {
           "angle_deg_from_delivered_pose": 10,
-          "collision_free_local": true,
-          "collision_pairs": []
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
+          "collision_pairs": [
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_superior_azul",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 13.668786
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 259.120304
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "left_boot_sole_and_joint",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 14.593857
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "left_boot_white_right",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 7.609042
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 21
+        },
+        {
+          "angle_deg_from_delivered_pose": -20,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_superior_azul",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 46.308815
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 214.02967
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 17
+        },
+        {
+          "angle_deg_from_delivered_pose": 20,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": false,
+          "collision_pairs": [
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_superior_azul",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 46.308815
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 214.02967
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "left_boot_toe_navy",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 59.616109
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "left_boot_white_right",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 235.941663
+            },
+            {
+              "moving": "right_boot_toe_navy",
+              "fixed": "left_boot_toe_navy",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 2.588021
+            },
+            {
+              "moving": "right_boot_white_left",
+              "fixed": "left_boot_white_right",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 64.124757
+            },
+            {
+              "moving": "right_boot_white_left",
+              "fixed": "left_boot_cyan_right",
+              "moving_group": "right_boot",
+              "fixed_group": "left_boot",
+              "common_volume_mm3": 2.681616
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 34
         }
+      ],
+      "clear_nonzero_sample_angles_full_assembly": [],
+      "clear_nonzero_sample_angles_without_base": [
+        -5,
+        5,
+        -10,
+        -20
       ]
     },
     {
-      "joint": "right_ankle",
+      "joint": "tornozelo_E",
       "pivot_xyz_mm": [
-        15,
-        0,
+        -15.0,
+        0.0,
         17.25
       ],
-      "axis": "Y",
-      "fixed_groups": [
-        "right_shin"
+      "axis_xyz": [
+        0,
+        1,
+        0
+      ],
+      "moving_groups": [
+        "left_boot"
+      ],
+      "moving_hardware_joints": [],
+      "own_joint_hardware_moves_with": "stationary parent",
+      "moving_parts": [
+        "left_boot_cyan_left",
+        "left_boot_cyan_right",
+        "left_boot_sole_and_joint",
+        "left_boot_toe_navy",
+        "left_boot_white_left",
+        "left_boot_white_right"
+      ],
+      "stationary_parts": 165,
+      "tests": [
+        {
+          "angle_deg_from_delivered_pose": 0,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 22
+        },
+        {
+          "angle_deg_from_delivered_pose": -5,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 207.092172
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 22
+        },
+        {
+          "angle_deg_from_delivered_pose": 5,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 207.092172
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 22
+        },
+        {
+          "angle_deg_from_delivered_pose": -10,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_superior_azul",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 38.937242
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 326.763798
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 19
+        },
+        {
+          "angle_deg_from_delivered_pose": 10,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_superior_azul",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 38.937242
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 326.763798
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 19
+        },
+        {
+          "angle_deg_from_delivered_pose": -20,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_superior_azul",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 203.246076
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 345.067232
+            },
+            {
+              "moving": "left_boot_white_left",
+              "fixed": "base_tampo_branco",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 0.190449
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 23
+        },
+        {
+          "angle_deg_from_delivered_pose": 20,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_superior_azul",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 203.246076
+            },
+            {
+              "moving": "left_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 345.067232
+            },
+            {
+              "moving": "left_boot_white_right",
+              "fixed": "base_tampo_branco",
+              "moving_group": "left_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 0.190449
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 21
+        }
+      ],
+      "clear_nonzero_sample_angles_full_assembly": [],
+      "clear_nonzero_sample_angles_without_base": [
+        -5,
+        5,
+        -10,
+        10,
+        -20,
+        20
+      ]
+    },
+    {
+      "joint": "tornozelo_D",
+      "pivot_xyz_mm": [
+        15.0,
+        0.0,
+        17.25
+      ],
+      "axis_xyz": [
+        0,
+        1,
+        0
       ],
       "moving_groups": [
         "right_boot"
       ],
+      "moving_hardware_joints": [],
+      "own_joint_hardware_moves_with": "stationary parent",
+      "moving_parts": [
+        "right_boot_cyan_left",
+        "right_boot_cyan_right",
+        "right_boot_sole_and_joint",
+        "right_boot_toe_navy",
+        "right_boot_white_left",
+        "right_boot_white_right"
+      ],
+      "stationary_parts": 165,
       "tests": [
         {
+          "angle_deg_from_delivered_pose": 0,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 22
+        },
+        {
+          "angle_deg_from_delivered_pose": -5,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 207.092172
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 22
+        },
+        {
+          "angle_deg_from_delivered_pose": 5,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 207.092172
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 22
+        },
+        {
           "angle_deg_from_delivered_pose": -10,
-          "collision_free_local": true,
-          "collision_pairs": []
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_superior_azul",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 38.937242
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 326.763798
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 19
         },
         {
           "angle_deg_from_delivered_pose": 10,
-          "collision_free_local": true,
-          "collision_pairs": []
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_superior_azul",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 38.937242
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 326.763798
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 19
+        },
+        {
+          "angle_deg_from_delivered_pose": -20,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_superior_azul",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 203.246076
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 345.067232
+            },
+            {
+              "moving": "right_boot_white_left",
+              "fixed": "base_tampo_branco",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 0.190449
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 21
+        },
+        {
+          "angle_deg_from_delivered_pose": 20,
+          "collision_free_full_assembly": false,
+          "collision_free_without_base": true,
+          "collision_pairs": [
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_superior_azul",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 203.246076
+            },
+            {
+              "moving": "right_boot_sole_and_joint",
+              "fixed": "base_tampo_branco",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 345.067232
+            },
+            {
+              "moving": "right_boot_white_right",
+              "fixed": "base_tampo_branco",
+              "moving_group": "right_boot",
+              "fixed_group": "base",
+              "common_volume_mm3": 0.190449
+            }
+          ],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 23
         }
       ],
-      "boot_revision": "Outer dome centered Z3.18, semi-height14; ankle axis unchanged Z17.25."
+      "clear_nonzero_sample_angles_full_assembly": [],
+      "clear_nonzero_sample_angles_without_base": [
+        -5,
+        5,
+        -10,
+        10,
+        -20,
+        20
+      ]
+    },
+    {
+      "joint": "pescoco",
+      "pivot_xyz_mm": [
+        0,
+        0,
+        95.5
+      ],
+      "axis_xyz": [
+        0,
+        0,
+        1
+      ],
+      "moving_groups": [
+        "head"
+      ],
+      "moving_hardware_joints": [],
+      "own_joint_hardware_moves_with": "screw and captive nut with head; washers/bearing with body",
+      "moving_parts": [
+        "head_antenna_left_ball",
+        "head_antenna_left_stem",
+        "head_antenna_right_ball",
+        "head_antenna_right_stem",
+        "head_back_navy_panel",
+        "head_brow_left_cyan",
+        "head_brow_right_cyan",
+        "head_ear_left_cyan_ring",
+        "head_ear_left_navy_center",
+        "head_ear_left_navy_ring",
+        "head_ear_left_outer_navy",
+        "head_ear_left_white",
+        "head_ear_right_cyan_ring",
+        "head_ear_right_navy_center",
+        "head_ear_right_navy_ring",
+        "head_ear_right_outer_navy",
+        "head_ear_right_white",
+        "head_eye_left_cyan",
+        "head_eye_left_highlight_large",
+        "head_eye_left_highlight_small",
+        "head_eye_left_pupil",
+        "head_eye_left_white",
+        "head_eye_right_cyan",
+        "head_eye_right_highlight_large",
+        "head_eye_right_highlight_small",
+        "head_eye_right_pupil",
+        "head_eye_right_white",
+        "head_lash_left_cyan",
+        "head_lash_right_cyan",
+        "head_smile_mouth_dark",
+        "head_smile_teeth_white",
+        "head_smile_tongue_coral",
+        "head_top_navy_panel",
+        "head_visor_cyan_bezel",
+        "head_visor_navy",
+        "head_white_front_shell",
+        "head_white_rear_shell",
+        "parafuso_M3x16_pescoco",
+        "porca_M3_pescoco"
+      ],
+      "stationary_parts": 132,
+      "tests": [
+        {
+          "angle_deg_from_delivered_pose": 0,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 8
+        },
+        {
+          "angle_deg_from_delivered_pose": -15,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 8
+        },
+        {
+          "angle_deg_from_delivered_pose": 15,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 8
+        },
+        {
+          "angle_deg_from_delivered_pose": -30,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 7
+        },
+        {
+          "angle_deg_from_delivered_pose": 30,
+          "collision_free_full_assembly": true,
+          "collision_free_without_base": true,
+          "collision_pairs": [],
+          "boolean_errors": [],
+          "bbox_candidates_checked": 7
+        }
+      ],
+      "clear_nonzero_sample_angles_full_assembly": [
+        -15,
+        15,
+        -30,
+        30
+      ],
+      "clear_nonzero_sample_angles_without_base": [
+        -15,
+        15,
+        -30,
+        30
+      ]
     }
   ],
-  "all_tested_joints_have_a_collision_free_nonzero_sample": true,
-  "base_checked": false,
-  "sampling_does_not_certify_continuous_motion_between_angles": true,
-  "boot_revision_validation": {
-    "all_valid_single_solids": true,
-    "parts": [
-      {
-        "name": "left_boot_sole_and_joint",
-        "valid": true,
-        "solids": 1,
-        "volume_mm3": 3346.27494,
-        "bbox_mm": [
-          -27.8,
-          -21.5,
-          0.0,
-          -2.2,
-          12.5,
-          23.25
-        ]
-      },
-      {
-        "name": "left_boot_toe_navy",
-        "valid": true,
-        "solids": 1,
-        "volume_mm3": 1259.59586,
-        "bbox_mm": [
-          -26.5035,
-          -20.5,
-          3.18,
-          -3.4965,
-          -10.0,
-          14.4796
-        ]
-      },
-      {
-        "name": "left_boot_white_left",
-        "valid": true,
-        "solids": 1,
-        "volume_mm3": 1570.89967,
-        "bbox_mm": [
-          -27.25,
-          -10.0,
-          3.1799,
-          -15.0,
-          11.5001,
-          15.2621
-        ]
-      },
-      {
-        "name": "left_boot_white_right",
-        "valid": true,
-        "solids": 1,
-        "volume_mm3": 1570.87344,
-        "bbox_mm": [
-          -15.0,
-          -10.0,
-          3.1799,
-          -2.75,
-          11.5001,
-          15.2621
-        ]
-      },
-      {
-        "name": "left_boot_cyan_left",
-        "valid": true,
-        "solids": 1,
-        "volume_mm3": 39.13952,
-        "bbox_mm": [
-          -24.9162,
-          -10.0,
-          11.4,
-          -17.8333,
-          7.9118,
-          13.0
-        ]
-      },
-      {
-        "name": "left_boot_cyan_right",
-        "valid": true,
-        "solids": 1,
-        "volume_mm3": 39.15054,
-        "bbox_mm": [
-          -12.1667,
-          -10.0,
-          11.4,
-          -5.0838,
-          7.9118,
-          13.0
-        ]
-      },
-      {
-        "name": "right_boot_sole_and_joint",
-        "valid": true,
-        "solids": 1,
-        "volume_mm3": 3346.27494,
-        "bbox_mm": [
-          2.2,
-          -21.5,
-          0.0,
-          27.8,
-          12.5,
-          23.25
-        ]
-      },
-      {
-        "name": "right_boot_toe_navy",
-        "valid": true,
-        "solids": 1,
-        "volume_mm3": 1259.59586,
-        "bbox_mm": [
-          3.4965,
-          -20.5,
-          3.18,
-          26.5035,
-          -10.0,
-          14.4796
-        ]
-      },
-      {
-        "name": "right_boot_white_left",
-        "valid": true,
-        "solids": 1,
-        "volume_mm3": 1570.89967,
-        "bbox_mm": [
-          2.75,
-          -10.0,
-          3.1799,
-          15.0,
-          11.5001,
-          15.2621
-        ]
-      },
-      {
-        "name": "right_boot_white_right",
-        "valid": true,
-        "solids": 1,
-        "volume_mm3": 1570.87344,
-        "bbox_mm": [
-          15.0,
-          -10.0,
-          3.1799,
-          27.25,
-          11.5001,
-          15.2621
-        ]
-      },
-      {
-        "name": "right_boot_cyan_left",
-        "valid": true,
-        "solids": 1,
-        "volume_mm3": 39.13952,
-        "bbox_mm": [
-          5.0838,
-          -10.0,
-          11.4,
-          12.1667,
-          7.9118,
-          13.0
-        ]
-      },
-      {
-        "name": "right_boot_cyan_right",
-        "valid": true,
-        "solids": 1,
-        "volume_mm3": 39.15054,
-        "bbox_mm": [
-          17.8333,
-          -10.0,
-          11.4,
-          24.9162,
-          7.9118,
-          13.0
-        ]
-      }
-    ]
-  }
+  "elapsed_seconds": 387.6,
+  "all_13_joints_checked": true,
+  "all_tested_joints_have_a_collision_free_nonzero_sample": false,
+  "all_tested_joints_have_a_collision_free_nonzero_sample_without_base": true,
+  "zero_pose_collision_pairs": [],
+  "boolean_errors": []
 }

@@ -14,8 +14,9 @@ for p in data:
     mat=bpy.data.materials.new(p['name']); mat.diffuse_color=(*p['color'],1); mat.use_nodes=True
     shader=mat.node_tree.nodes.get('Principled BSDF')
     shader.inputs['Base Color'].default_value=(*(linear(v) for v in p['color']),1)
-    shader.inputs['Roughness'].default_value=.32
-    shader.inputs['Metallic'].default_value=.08
+    metal=p.get('group')=='hardware' and p.get('kind')!='bearing'
+    shader.inputs['Roughness'].default_value=.22 if metal else .32
+    shader.inputs['Metallic'].default_value=.80 if metal else .08
     ob.data.materials.append(mat)
     bpy.context.view_layer.objects.active=ob; ob.select_set(True)
     try: bpy.ops.object.shade_smooth_by_angle(angle=math.radians(35))

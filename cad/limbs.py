@@ -19,6 +19,68 @@ EAR_Y = 4.2
 JOINT_R = 6.0
 WRIST_R = 4.5
 COVER_GAP = 0.18
+HARDWARE_ACCESS_R = 3.1
+
+
+def limb_joint_specs():
+    """The twelve real Y-axis pivots, with their purchased M3 stack.
+
+    The thirteenth pivot is the Z-axis neck, owned by head/body. These records
+    describe mechanical interfaces and groups for an exploded assembly; they
+    do not turn the fixed fingers into additional movable joints.
+    """
+    left_wrist = (-51 - 6 * math.cos(math.radians(12)) - 20 * math.sin(math.radians(12)),
+                  0.0, 69.75 - 6 * math.sin(math.radians(12)) + 20 * math.cos(math.radians(12)))
+    axes = [
+        ("ombro_E", (-28.0, 0.0, 84.75), ["torso_branco"],
+         ["left_upper_arm", "left_forearm", "left_hand"], JOINT_R),
+        ("ombro_D", (28.0, 0.0, 84.75), ["torso_branco"],
+         ["right_upper_arm", "right_forearm", "right_hand"], JOINT_R),
+        ("cotovelo_E", (-51.0, 0.0, 69.75), ["left_upper_arm_frame"],
+         ["left_forearm", "left_hand"], JOINT_R),
+        ("cotovelo_D", (43.0, 0.0, 66.75), ["right_upper_arm_frame"],
+         ["right_forearm", "right_hand"], JOINT_R),
+        ("punho_E", left_wrist, ["left_forearm_frame"], ["left_hand"], WRIST_R),
+        ("punho_D", (31.0, -1.0, 59.75), ["right_forearm_frame"], ["right_hand"], WRIST_R),
+        ("quadril_E", (-14.0, 0.0, 54.75), ["pelve_azul"],
+         ["left_thigh", "left_shin", "left_boot"], JOINT_R),
+        ("quadril_D", (14.0, 0.0, 54.75), ["pelve_azul"],
+         ["right_thigh", "right_shin", "right_boot"], JOINT_R),
+        ("joelho_E", (-15.0, 0.0, 34.5), ["left_thigh_frame"],
+         ["left_shin", "left_boot"], JOINT_R),
+        ("joelho_D", (15.0, 0.0, 34.5), ["right_thigh_frame"],
+         ["right_shin", "right_boot"], JOINT_R),
+        ("tornozelo_E", (-15.0, 0.0, 17.25), ["left_shin_frame"], ["left_boot"], JOINT_R),
+        ("tornozelo_D", (15.0, 0.0, 17.25), ["right_shin_frame"], ["right_boot"], JOINT_R),
+    ]
+    result = []
+    for name, pivot, parent_parts, moving_groups, radius in axes:
+        y = pivot[1]
+        result.append(dict(
+            name=name, pivot_xyz_mm=pivot, axis=(0, 1, 0),
+            parent_parts=parent_parts, moving_groups=moving_groups,
+            bore_diameter_mm=PIN_D, ear_thickness_mm=EAR_T,
+            ear_center_offsets_y_mm=(-EAR_Y, EAR_Y),
+            clevis_gap_mm=2 * EAR_Y - EAR_T,
+            clevis_outside_width_mm=2 * EAR_Y + EAR_T,
+            tongue_thickness_mm=TONGUE_T,
+            free_gap_each_side_mm=(2 * EAR_Y - EAR_T - TONGUE_T) / 2,
+            pivot_outer_radius_mm=radius,
+            screw="ISO 4762 M3x16", screw_head_diameter_mm=5.5,
+            screw_head_height_mm=3.0, allen_key_af_mm=2.5,
+            washer="ISO 7092 M3 3.2x6x0.5", washer_count=2,
+            nut="ISO 4032 M3 normal", nut_af_mm=5.5, nut_height_mm=2.4,
+            screw_head_y_mm=(y - 9.2, y - 6.2),
+            front_washer_y_mm=(y - 6.2, y - 5.7),
+            ear_front_y_mm=(y - 5.7, y - 2.7),
+            tongue_y_mm=(y - 2.4, y + 2.4),
+            ear_rear_y_mm=(y + 2.7, y + 5.7),
+            rear_washer_y_mm=(y + 5.7, y + 6.2),
+            nut_y_mm=(y + 6.2, y + 8.6),
+            screw_shank_y_mm=(y - 6.2, y + 9.8),
+            purchased_hardware=True, fixed_fingers=True,
+        ))
+    return result
 
 
 def _v(p):
@@ -343,6 +405,20 @@ def _relieve_pose(parts):
         if p["group"] in ("left_forearm", "right_forearm") and p not in frames:
             wrist = left_wrist if p["group"] == "left_forearm" else (31, -1, 59.75)
             p["shape"] = p["shape"].cut(_cy(wrist, 5.45, 50)).clean()
+    # The right hand rests near its forearm axis. The actual front washer and
+    # ISO 4762 head occupied a small outer palm/cyan-ring volume that the frame
+    # alone could not reveal. Clear a 6.2 mm diameter axial tool corridor only
+    # ahead of the front bearing face. Tongue Y=-3.4..1.4 and clevis faces are
+    # untouched; a driver reaches the AF2.5 screw socket from the front.
+    wrist = (31.0, -1.0, 59.75)
+    front_stop = wrist[1] - 5.7 + .2
+    access = cq.Solid.makeCylinder(
+        HARDWARE_ACCESS_R, 30.0, cq.Vector(wrist[0], front_stop - 30.0, wrist[2]),
+        cq.Vector(0, 1, 0))
+    for p in parts:
+        if p["group"] == "right_hand" and _bbox_overlap(p["shape"], access):
+            p["shape"] = p["shape"].cut(access).clean()
+            p["notes"] += " Front M3 head/washer and Allen-key access pocket diameter 6.2 mm; structural tongue preserved."
     result = []
     for p in parts:
         if p in frames or p["name"].endswith("_navy"):

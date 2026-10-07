@@ -2,13 +2,15 @@
 
 Reconstrução CAD da ilustração fornecida, destinada à Bambu Lab A1 e à impressão de peças separadas por cor. O boneco tem 180 mm sem a base; a base mede Ø126 × 11 mm, dando 191 mm ao conjunto.
 
-O STEP é uma montagem com corpos sólidos nomeados e cores. As peças são separadas, e os pivôs têm furos e linguetas reais. STEP não armazena aqui uma simulação cinemática: aplique juntas no seu CAD se quiser simular movimentos. A montagem mostrada é uma pose de referência.
+O STEP é uma montagem com corpos sólidos nomeados e cores, incluindo as peças impressas e **52 componentes de ferragens** agrupados por articulação. Cabeças de parafusos com sextavado interno, porcas, arruelas, furos, orelhas e linguetas são sólidos reais. STEP não armazena aqui uma simulação cinemática: aplique juntas no seu CAD se quiser simular movimentos. A montagem mostrada é uma pose de referência.
 
 ## Downloads
 
 - [Baixar STEP — montagem CAD](https://github.com/brunoandersonlidera/Impress-o3d/raw/refs/heads/main/exports/Lidera_articulado_180mm.step)
 - [Baixar ZIP — STLs, cupons, fontes e guia](https://github.com/brunoandersonlidera/Impress-o3d/raw/refs/heads/main/exports/Lidera_A1_180mm.zip)
 - [Decalque da marca oficial — PDF em escala real](exports/decal_logo_escala_real.pdf)
+- [Guia técnico das articulações — cortes e vistas explodidas](exports/Guia_articulacoes_M3.pdf)
+- [STEP de inspeção — sete articulações explodidas](exports/Articulacoes_explodidas.step)
 - [Notas de impressão e montagem](cad/PRINT_NOTES.md)
 
 Se o download direto exigir acesso, abra [o ZIP no GitHub](exports/Lidera_A1_180mm.zip) e use **Download raw file**. Em um repositório privado, entre na conta com acesso ao projeto.
@@ -18,6 +20,8 @@ Se o download direto exigir acesso, abra [o ZIP no GitHub](exports/Lidera_A1_180
 ## Arquivos
 
 - `exports/Lidera_articulado_180mm.step`: montagem principal em milímetros.
+- `exports/Articulacoes_explodidas.step`: recortes de sete tipos de junta, afastados para inspeção; não são peças para imprimir.
+- `exports/Guia_articulacoes_M3.pdf`: cortes e vistas explodidas dos mecanismos, com cotas e sequência de montagem.
 - `exports/STL/`: peças individuais, colocadas sobre Z=0 e centralizadas em XY; orientações iniciais para fatiamento.
 - `exports/cupons/`: prova de furos Ø3,2/3,3/3,4 e prova de lingueta 4,8 / vão 5,4 mm.
 - `exports/Lidera_preview.png`: renderização da geometria CAD entregue.
@@ -25,12 +29,16 @@ Se o download direto exigir acesso, abra [o ZIP no GitHub](exports/Lidera_A1_180
 - `exports/validacao.json`: resultados de integridade e reimportação do STEP.
 - `exports/validacao_STL.json`: fechamento das malhas e dimensões de cada STL.
 - `exports/validacao_logo.json`: volumes comparados às áreas vetoriais e apoio da marca na face do peito.
+- `exports/validacao_articulacoes.json`: engate das porcas, apoio das arruelas e acesso às ferramentas.
+- `exports/lista_ferragens.csv`: compra de ferragens separada da lista de peças impressas.
+- `exports/articulacoes.json` e `exports/ferragens.json`: posições, eixos, cotas dos encaixes e pilhas de cada pivô.
 - `exports/decal_logo_escala_real.pdf`: decalques da marca; imprimir a 100%.
 - `exports/logo_peito_38mm.svg`: marca oficial com tamanho físico de 38 × 20,30 mm.
 - `exports/logo_peito_detalhe.png`: vista ampliada do relevo no peito, renderizada a partir do CAD.
 - `assets/logo_lidera_vetor01.svg`: arquivo vetorial original fornecido, sem alterações.
 - `cad/`: fontes CadQuery que geram a montagem e os arquivos.
 - `cad/PRINT_NOTES.md`: detalhes de impressão, limites e montagem.
+- `cad/JOINTS.md`: guia mecânico, ferragens e montagem de cada junta.
 
 ## Impressão na A1
 
@@ -50,11 +58,15 @@ O PDF e o SVG de 38 mm preservam os degradês da arte original. As peças 3D uti
 
 São 13 pivôs: pescoço; dois ombros, cotovelos, punhos, quadris, joelhos e tornozelos. O pescoço gira em Z. As outras juntas têm eixo Y e movimento no plano XZ. Os dedos são fixos e as carenagens de cor são coladas às estruturas; elas não são outras articulações.
 
-Como lista de compra inicial, reserve 13 parafusos M3 e 13 porcas, com arruelas. Nos 12 pivôs dos membros o pacote nominal do encaixe é 11,4 mm: M3 × 20 mm é um ponto de partida com arruelas e porca. Os quadris possuem acesso rebaixado para a cabeça e a porca. Para o pescoço, M3 × 16 mm é uma estimativa inicial. Confira os comprimentos antes de apertar; a porca precisa engatar sem o parafuso atingir outra parede.
+A montagem detalhada usa **13 parafusos ISO 4762 M3 × 16 mm**, **13 porcas normais ISO 4032 M3**, **25 arruelas estreitas DIN 433 / ISO 7092 (Ø3,2 × Ø6 × 0,5 mm)** e **uma arruela deslizante recortada de PTFE/PET (Ø3,3 × Ø12 × 0,3 mm)** no pescoço. As ferragens são compradas; a arruela deslizante é recortada de lâmina. Elas aparecem no STEP e nas prévias, mas não são exportadas em STL nem entram na lista de impressão. As roscas são representadas por cilindros nominais; a cabeça Allen e os envelopes das porcas e arruelas têm dimensões de montagem.
+
+Nos membros, as orelhas de 3 mm recebem uma lingueta de 4,8 mm em vão de 5,4 mm, com folga nominal de 0,3 mm por lado. O pacote de 11,4 mm, duas arruelas e a porca de 2,4 mm deixa 1,2 mm de ponta com M3 × 16. Os quadris têm alojamentos para a arruela, porca e ferramenta; o punho direito tem um acesso específico para a cabeça do parafuso. Uma arruela comum de Ø7 mm ou uma porca com inserto de náilon, mais alta, exige rever os alojamentos e o comprimento.
+
+A porca do pescoço fica retida entre piso e teto do casco. O conjunto parafuso/porca acompanha a cabeça, que desliza nas arruelas; trave apenas a conexão metálica depois de ajustar a fricção, conforme o [guia](cad/JOINTS.md). O furo de serviço de Ø4 mm na pelve permite alcançar a cabeça Allen de baixo para cima após unir a cintura. Confira as ferragens reais e a montagem a seco antes de colar as partes fixas.
 
 1. Teste cupons e encaixes a seco. Remova suportes e rebarbas sem danificar as faces móveis.
 2. Coloque a porca no alojamento interno do casco da cabeça ainda aberto.
-3. Introduza o parafuso do pescoço pelo acesso inferior do torso, antes de unir torso e pelve. Monte os colares e fixe a cabeça, deixando rotação livre.
+3. Introduza o parafuso e a arruela de aço do pescoço pelo acesso inferior do torso, antes de unir torso e pelve. Monte os colares e a arruela deslizante; ajuste a cabeça e a conexão metálica conforme o guia, preservando as faces de giro.
 4. Monte as linguetas nos clevis dos ombros e quadris; continue pelos cotovelos/punhos e joelhos/tornozelos. Aperte o mínimo para manter a pose.
 5. Cole as capas por cor ao redor das estruturas. A cola não deve alcançar os pivôs.
 6. Feche os cascos da cabeça, instale o visor e os detalhes do rosto, depois orelhas, painéis e antenas. Cole partes decorativas, preservando o acesso necessário à manutenção.
@@ -64,7 +76,7 @@ Como lista de compra inicial, reserve 13 parafusos M3 e 13 porcas, com arruelas.
 
 A imagem não fornece cotas, superfícies ocultas nem mecanismos internos. Esta é uma interpretação visual com uma proposta de articulações, não uma réplica dimensional certificada. Não houve impressão física, ensaio de resistência nem teste de amplitude completa. A validação CAD verifica sólidos e a pose montada; o cupom e a montagem a seco continuam necessários. Não force movimentos bloqueados pelo corpo ou pelas carenagens.
 
-O arquivo `exports/movimento_local.json` registra amostras digitais de dez juntas contra o componente imediatamente anterior. Não houve interferência local nas amostras de abertura de 20° dos cotovelos; de ±20° no punho esquerdo e −20°/+5° no direito; de 10° para fora nos quadris; e de ±10° nos joelhos e tornozelos. Algumas amostras no sentido oposto colidem com carenagens. Esses testes não avaliam o trajeto contínuo nem o movimento contra o boneco inteiro ou a base. Os furos dos ombros e do pescoço estão desobstruídos no CAD, mas essas juntas não receberam esse ensaio angular.
+O arquivo `exports/movimento_local.json` registra amostras digitais das 13 juntas, movendo também seus segmentos descendentes e ferragens contra os demais componentes da montagem. O relatório distingue colisões com a base e com o boneco. Os ângulos são relativos à pose entregue; posições sem interferência não certificam o trajeto contínuo nem a amplitude física completa. Algumas direções colidem com carenagens. Levante o boneco da base ao reposicionar pernas e pés e respeite os contatos encontrados na montagem real.
 
 ## Regenerar
 
@@ -79,6 +91,8 @@ python3 -m pip install -r requirements.txt
 export XDG_CACHE_HOME="$PWD/.cache"
 python3 cad/build.py
 python3 cad/check_stl.py
+python3 cad/motion_check.py
+python3 cad/joint_views.py
 python3 cad/decal.py
 blender --background --threads 4 --python cad/render.py
 python3 cad/package.py

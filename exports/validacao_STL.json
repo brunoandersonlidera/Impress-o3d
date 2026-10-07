@@ -578,7 +578,7 @@
     },
     {
       "file": "STL/head_white_front_shell.stl",
-      "triangles": 11714,
+      "triangles": 11930,
       "closed_two_manifold_edges": true,
       "nonmanifold_edges": 0,
       "size_mm": [
@@ -591,7 +591,7 @@
     },
     {
       "file": "STL/head_white_rear_shell.stl",
-      "triangles": 9284,
+      "triangles": 9500,
       "closed_two_manifold_edges": true,
       "nonmanifold_edges": 0,
       "size_mm": [
@@ -1098,7 +1098,7 @@
     },
     {
       "file": "STL/pelve_azul.stl",
-      "triangles": 9482,
+      "triangles": 11248,
       "closed_two_manifold_edges": true,
       "nonmanifold_edges": 0,
       "size_mm": [
@@ -1319,7 +1319,7 @@
     },
     {
       "file": "STL/right_hand_navy.stl",
-      "triangles": 18480,
+      "triangles": 17870,
       "closed_two_manifold_edges": true,
       "nonmanifold_edges": 0,
       "size_mm": [
@@ -1332,11 +1332,11 @@
     },
     {
       "file": "STL/right_hand_palm_cyan.stl",
-      "triangles": 1874,
+      "triangles": 1430,
       "closed_two_manifold_edges": true,
       "nonmanifold_edges": 0,
       "size_mm": [
-        6.549,
+        5.978,
         6.425,
         2.387
       ],

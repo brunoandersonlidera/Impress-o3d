@@ -1,7 +1,9 @@
 {
   "cadquery_version": "2.7.0",
-  "parts": 119,
-  "solids": 143,
+  "parts": 171,
+  "printable_parts": 119,
+  "hardware_components": 52,
+  "solids": 195,
   "all_valid": true,
   "bounds_mm": [
     -79.11125690969223,
@@ -92,11 +94,12 @@
       "hits": []
     }
   ],
+  "bore_scope": "printed pieces; purchased screw occupies each bore in assembled STEP",
   "physical_test": false,
   "range_of_motion_verified": false,
   "step_reimport_valid": true,
-  "step_reimport_solids": 143,
-  "step_volume_mm3": 341301.697,
+  "step_reimport_solids": 195,
+  "step_volume_mm3": 344403.526,
   "step_bounds_mm": [
     -79.11125690969,
     -63.0000001,

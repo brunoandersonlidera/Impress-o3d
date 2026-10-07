@@ -1,0 +1,655 @@
+[
+  {
+    "joint": "ombro_E",
+    "axis": "Y",
+    "position_mm": [
+      -28.0,
+      0.0,
+      84.75
+    ],
+    "thread": "M3x0.5",
+    "length_mm": 16.0,
+    "screw_standard": "ISO 4762",
+    "screw_quantity": 1,
+    "nut_standard": "ISO 4032",
+    "nut_quantity": 1,
+    "washer_standard": "DIN 433 / ISO 7092",
+    "washer_quantity": 2,
+    "washer_size_mm": [
+      3.2,
+      6.0,
+      0.5
+    ],
+    "shaft_range_mm": [
+      -6.2,
+      9.8
+    ],
+    "head_range_mm": [
+      -9.2,
+      -6.2
+    ],
+    "nut_range_mm": [
+      6.2,
+      8.6
+    ],
+    "washer_ranges_mm": [
+      [
+        -6.2,
+        -5.7
+      ],
+      [
+        5.7,
+        6.2
+      ]
+    ],
+    "bearing_quantity": 0,
+    "bearing_material": null,
+    "bearing_size_mm": null,
+    "bearing_range_mm": null,
+    "printable": false,
+    "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis."
+  },
+  {
+    "joint": "ombro_D",
+    "axis": "Y",
+    "position_mm": [
+      28.0,
+      0.0,
+      84.75
+    ],
+    "thread": "M3x0.5",
+    "length_mm": 16.0,
+    "screw_standard": "ISO 4762",
+    "screw_quantity": 1,
+    "nut_standard": "ISO 4032",
+    "nut_quantity": 1,
+    "washer_standard": "DIN 433 / ISO 7092",
+    "washer_quantity": 2,
+    "washer_size_mm": [
+      3.2,
+      6.0,
+      0.5
+    ],
+    "shaft_range_mm": [
+      -6.2,
+      9.8
+    ],
+    "head_range_mm": [
+      -9.2,
+      -6.2
+    ],
+    "nut_range_mm": [
+      6.2,
+      8.6
+    ],
+    "washer_ranges_mm": [
+      [
+        -6.2,
+        -5.7
+      ],
+      [
+        5.7,
+        6.2
+      ]
+    ],
+    "bearing_quantity": 0,
+    "bearing_material": null,
+    "bearing_size_mm": null,
+    "bearing_range_mm": null,
+    "printable": false,
+    "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis."
+  },
+  {
+    "joint": "cotovelo_E",
+    "axis": "Y",
+    "position_mm": [
+      -51.0,
+      0.0,
+      69.75
+    ],
+    "thread": "M3x0.5",
+    "length_mm": 16.0,
+    "screw_standard": "ISO 4762",
+    "screw_quantity": 1,
+    "nut_standard": "ISO 4032",
+    "nut_quantity": 1,
+    "washer_standard": "DIN 433 / ISO 7092",
+    "washer_quantity": 2,
+    "washer_size_mm": [
+      3.2,
+      6.0,
+      0.5
+    ],
+    "shaft_range_mm": [
+      -6.2,
+      9.8
+    ],
+    "head_range_mm": [
+      -9.2,
+      -6.2
+    ],
+    "nut_range_mm": [
+      6.2,
+      8.6
+    ],
+    "washer_ranges_mm": [
+      [
+        -6.2,
+        -5.7
+      ],
+      [
+        5.7,
+        6.2
+      ]
+    ],
+    "bearing_quantity": 0,
+    "bearing_material": null,
+    "bearing_size_mm": null,
+    "bearing_range_mm": null,
+    "printable": false,
+    "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis."
+  },
+  {
+    "joint": "cotovelo_D",
+    "axis": "Y",
+    "position_mm": [
+      43.0,
+      0.0,
+      66.75
+    ],
+    "thread": "M3x0.5",
+    "length_mm": 16.0,
+    "screw_standard": "ISO 4762",
+    "screw_quantity": 1,
+    "nut_standard": "ISO 4032",
+    "nut_quantity": 1,
+    "washer_standard": "DIN 433 / ISO 7092",
+    "washer_quantity": 2,
+    "washer_size_mm": [
+      3.2,
+      6.0,
+      0.5
+    ],
+    "shaft_range_mm": [
+      -6.2,
+      9.8
+    ],
+    "head_range_mm": [
+      -9.2,
+      -6.2
+    ],
+    "nut_range_mm": [
+      6.2,
+      8.6
+    ],
+    "washer_ranges_mm": [
+      [
+        -6.2,
+        -5.7
+      ],
+      [
+        5.7,
+        6.2
+      ]
+    ],
+    "bearing_quantity": 0,
+    "bearing_material": null,
+    "bearing_size_mm": null,
+    "bearing_range_mm": null,
+    "printable": false,
+    "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis."
+  },
+  {
+    "joint": "punho_E",
+    "axis": "Y",
+    "position_mm": [
+      -61.027119,
+      0.0,
+      88.065481
+    ],
+    "thread": "M3x0.5",
+    "length_mm": 16.0,
+    "screw_standard": "ISO 4762",
+    "screw_quantity": 1,
+    "nut_standard": "ISO 4032",
+    "nut_quantity": 1,
+    "washer_standard": "DIN 433 / ISO 7092",
+    "washer_quantity": 2,
+    "washer_size_mm": [
+      3.2,
+      6.0,
+      0.5
+    ],
+    "shaft_range_mm": [
+      -6.2,
+      9.8
+    ],
+    "head_range_mm": [
+      -9.2,
+      -6.2
+    ],
+    "nut_range_mm": [
+      6.2,
+      8.6
+    ],
+    "washer_ranges_mm": [
+      [
+        -6.2,
+        -5.7
+      ],
+      [
+        5.7,
+        6.2
+      ]
+    ],
+    "bearing_quantity": 0,
+    "bearing_material": null,
+    "bearing_size_mm": null,
+    "bearing_range_mm": null,
+    "printable": false,
+    "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis."
+  },
+  {
+    "joint": "punho_D",
+    "axis": "Y",
+    "position_mm": [
+      31.0,
+      -1.0,
+      59.75
+    ],
+    "thread": "M3x0.5",
+    "length_mm": 16.0,
+    "screw_standard": "ISO 4762",
+    "screw_quantity": 1,
+    "nut_standard": "ISO 4032",
+    "nut_quantity": 1,
+    "washer_standard": "DIN 433 / ISO 7092",
+    "washer_quantity": 2,
+    "washer_size_mm": [
+      3.2,
+      6.0,
+      0.5
+    ],
+    "shaft_range_mm": [
+      -7.2,
+      8.8
+    ],
+    "head_range_mm": [
+      -10.2,
+      -7.2
+    ],
+    "nut_range_mm": [
+      5.2,
+      7.6
+    ],
+    "washer_ranges_mm": [
+      [
+        -7.2,
+        -6.7
+      ],
+      [
+        4.7,
+        5.2
+      ]
+    ],
+    "bearing_quantity": 0,
+    "bearing_material": null,
+    "bearing_size_mm": null,
+    "bearing_range_mm": null,
+    "printable": false,
+    "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis."
+  },
+  {
+    "joint": "quadril_E",
+    "axis": "Y",
+    "position_mm": [
+      -14.0,
+      0.0,
+      54.75
+    ],
+    "thread": "M3x0.5",
+    "length_mm": 16.0,
+    "screw_standard": "ISO 4762",
+    "screw_quantity": 1,
+    "nut_standard": "ISO 4032",
+    "nut_quantity": 1,
+    "washer_standard": "DIN 433 / ISO 7092",
+    "washer_quantity": 2,
+    "washer_size_mm": [
+      3.2,
+      6.0,
+      0.5
+    ],
+    "shaft_range_mm": [
+      -6.2,
+      9.8
+    ],
+    "head_range_mm": [
+      -9.2,
+      -6.2
+    ],
+    "nut_range_mm": [
+      6.2,
+      8.6
+    ],
+    "washer_ranges_mm": [
+      [
+        -6.2,
+        -5.7
+      ],
+      [
+        5.7,
+        6.2
+      ]
+    ],
+    "bearing_quantity": 0,
+    "bearing_material": null,
+    "bearing_size_mm": null,
+    "bearing_range_mm": null,
+    "printable": false,
+    "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis."
+  },
+  {
+    "joint": "quadril_D",
+    "axis": "Y",
+    "position_mm": [
+      14.0,
+      0.0,
+      54.75
+    ],
+    "thread": "M3x0.5",
+    "length_mm": 16.0,
+    "screw_standard": "ISO 4762",
+    "screw_quantity": 1,
+    "nut_standard": "ISO 4032",
+    "nut_quantity": 1,
+    "washer_standard": "DIN 433 / ISO 7092",
+    "washer_quantity": 2,
+    "washer_size_mm": [
+      3.2,
+      6.0,
+      0.5
+    ],
+    "shaft_range_mm": [
+      -6.2,
+      9.8
+    ],
+    "head_range_mm": [
+      -9.2,
+      -6.2
+    ],
+    "nut_range_mm": [
+      6.2,
+      8.6
+    ],
+    "washer_ranges_mm": [
+      [
+        -6.2,
+        -5.7
+      ],
+      [
+        5.7,
+        6.2
+      ]
+    ],
+    "bearing_quantity": 0,
+    "bearing_material": null,
+    "bearing_size_mm": null,
+    "bearing_range_mm": null,
+    "printable": false,
+    "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis."
+  },
+  {
+    "joint": "joelho_E",
+    "axis": "Y",
+    "position_mm": [
+      -15.0,
+      0.0,
+      34.5
+    ],
+    "thread": "M3x0.5",
+    "length_mm": 16.0,
+    "screw_standard": "ISO 4762",
+    "screw_quantity": 1,
+    "nut_standard": "ISO 4032",
+    "nut_quantity": 1,
+    "washer_standard": "DIN 433 / ISO 7092",
+    "washer_quantity": 2,
+    "washer_size_mm": [
+      3.2,
+      6.0,
+      0.5
+    ],
+    "shaft_range_mm": [
+      -6.2,
+      9.8
+    ],
+    "head_range_mm": [
+      -9.2,
+      -6.2
+    ],
+    "nut_range_mm": [
+      6.2,
+      8.6
+    ],
+    "washer_ranges_mm": [
+      [
+        -6.2,
+        -5.7
+      ],
+      [
+        5.7,
+        6.2
+      ]
+    ],
+    "bearing_quantity": 0,
+    "bearing_material": null,
+    "bearing_size_mm": null,
+    "bearing_range_mm": null,
+    "printable": false,
+    "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis."
+  },
+  {
+    "joint": "joelho_D",
+    "axis": "Y",
+    "position_mm": [
+      15.0,
+      0.0,
+      34.5
+    ],
+    "thread": "M3x0.5",
+    "length_mm": 16.0,
+    "screw_standard": "ISO 4762",
+    "screw_quantity": 1,
+    "nut_standard": "ISO 4032",
+    "nut_quantity": 1,
+    "washer_standard": "DIN 433 / ISO 7092",
+    "washer_quantity": 2,
+    "washer_size_mm": [
+      3.2,
+      6.0,
+      0.5
+    ],
+    "shaft_range_mm": [
+      -6.2,
+      9.8
+    ],
+    "head_range_mm": [
+      -9.2,
+      -6.2
+    ],
+    "nut_range_mm": [
+      6.2,
+      8.6
+    ],
+    "washer_ranges_mm": [
+      [
+        -6.2,
+        -5.7
+      ],
+      [
+        5.7,
+        6.2
+      ]
+    ],
+    "bearing_quantity": 0,
+    "bearing_material": null,
+    "bearing_size_mm": null,
+    "bearing_range_mm": null,
+    "printable": false,
+    "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis."
+  },
+  {
+    "joint": "tornozelo_E",
+    "axis": "Y",
+    "position_mm": [
+      -15.0,
+      0.0,
+      17.25
+    ],
+    "thread": "M3x0.5",
+    "length_mm": 16.0,
+    "screw_standard": "ISO 4762",
+    "screw_quantity": 1,
+    "nut_standard": "ISO 4032",
+    "nut_quantity": 1,
+    "washer_standard": "DIN 433 / ISO 7092",
+    "washer_quantity": 2,
+    "washer_size_mm": [
+      3.2,
+      6.0,
+      0.5
+    ],
+    "shaft_range_mm": [
+      -6.2,
+      9.8
+    ],
+    "head_range_mm": [
+      -9.2,
+      -6.2
+    ],
+    "nut_range_mm": [
+      6.2,
+      8.6
+    ],
+    "washer_ranges_mm": [
+      [
+        -6.2,
+        -5.7
+      ],
+      [
+        5.7,
+        6.2
+      ]
+    ],
+    "bearing_quantity": 0,
+    "bearing_material": null,
+    "bearing_size_mm": null,
+    "bearing_range_mm": null,
+    "printable": false,
+    "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis."
+  },
+  {
+    "joint": "tornozelo_D",
+    "axis": "Y",
+    "position_mm": [
+      15.0,
+      0.0,
+      17.25
+    ],
+    "thread": "M3x0.5",
+    "length_mm": 16.0,
+    "screw_standard": "ISO 4762",
+    "screw_quantity": 1,
+    "nut_standard": "ISO 4032",
+    "nut_quantity": 1,
+    "washer_standard": "DIN 433 / ISO 7092",
+    "washer_quantity": 2,
+    "washer_size_mm": [
+      3.2,
+      6.0,
+      0.5
+    ],
+    "shaft_range_mm": [
+      -6.2,
+      9.8
+    ],
+    "head_range_mm": [
+      -9.2,
+      -6.2
+    ],
+    "nut_range_mm": [
+      6.2,
+      8.6
+    ],
+    "washer_ranges_mm": [
+      [
+        -6.2,
+        -5.7
+      ],
+      [
+        5.7,
+        6.2
+      ]
+    ],
+    "bearing_quantity": 0,
+    "bearing_material": null,
+    "bearing_size_mm": null,
+    "bearing_range_mm": null,
+    "printable": false,
+    "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis."
+  },
+  {
+    "joint": "pescoco",
+    "axis": "Z",
+    "position_mm": [
+      0.0,
+      0.0,
+      86.75
+    ],
+    "thread": "M3x0.5",
+    "length_mm": 16.0,
+    "screw_standard": "ISO 4762",
+    "screw_quantity": 1,
+    "nut_standard": "ISO 4032",
+    "nut_quantity": 1,
+    "washer_standard": "DIN 433 / ISO 7092",
+    "washer_quantity": 1,
+    "washer_size_mm": [
+      3.2,
+      6.0,
+      0.5
+    ],
+    "shaft_range_mm": [
+      86.25,
+      102.25
+    ],
+    "head_range_mm": [
+      83.25,
+      86.25
+    ],
+    "nut_range_mm": [
+      98.8,
+      101.2
+    ],
+    "washer_ranges_mm": [
+      [
+        86.25,
+        86.75
+      ]
+    ],
+    "bearing_quantity": 1,
+    "bearing_material": "0.3 mm PTFE or PET sheet",
+    "bearing_size_mm": [
+      3.3,
+      12.0,
+      0.3
+    ],
+    "bearing_range_mm": [
+      95.5,
+      95.8
+    ],
+    "printable": false,
+    "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Only lower steel washer; nut sits in head pocket. One cut PTFE/PET sliding washer supports the head."
+  }
+]

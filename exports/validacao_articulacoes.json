@@ -1,0 +1,1113 @@
+{
+  "hardware_components": 52,
+  "joints": [
+    {
+      "joint": "ombro_E",
+      "axis": "Y",
+      "position_mm": [
+        -28.0,
+        0.0,
+        84.75
+      ],
+      "thread": "M3x0.5",
+      "length_mm": 16.0,
+      "screw_standard": "ISO 4762",
+      "screw_quantity": 1,
+      "nut_standard": "ISO 4032",
+      "nut_quantity": 1,
+      "washer_standard": "DIN 433 / ISO 7092",
+      "washer_quantity": 2,
+      "washer_size_mm": [
+        3.2,
+        6.0,
+        0.5
+      ],
+      "shaft_range_mm": [
+        -6.2,
+        9.8
+      ],
+      "head_range_mm": [
+        -9.2,
+        -6.2
+      ],
+      "nut_range_mm": [
+        6.2,
+        8.6
+      ],
+      "washer_ranges_mm": [
+        [
+          -6.2,
+          -5.7
+        ],
+        [
+          5.7,
+          6.2
+        ]
+      ],
+      "bearing_quantity": 0,
+      "bearing_material": null,
+      "bearing_size_mm": null,
+      "bearing_range_mm": null,
+      "printable": false,
+      "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis.",
+      "thread_protrusion_mm": 1.200000000000001,
+      "full_nut_engagement": true
+    },
+    {
+      "joint": "ombro_D",
+      "axis": "Y",
+      "position_mm": [
+        28.0,
+        0.0,
+        84.75
+      ],
+      "thread": "M3x0.5",
+      "length_mm": 16.0,
+      "screw_standard": "ISO 4762",
+      "screw_quantity": 1,
+      "nut_standard": "ISO 4032",
+      "nut_quantity": 1,
+      "washer_standard": "DIN 433 / ISO 7092",
+      "washer_quantity": 2,
+      "washer_size_mm": [
+        3.2,
+        6.0,
+        0.5
+      ],
+      "shaft_range_mm": [
+        -6.2,
+        9.8
+      ],
+      "head_range_mm": [
+        -9.2,
+        -6.2
+      ],
+      "nut_range_mm": [
+        6.2,
+        8.6
+      ],
+      "washer_ranges_mm": [
+        [
+          -6.2,
+          -5.7
+        ],
+        [
+          5.7,
+          6.2
+        ]
+      ],
+      "bearing_quantity": 0,
+      "bearing_material": null,
+      "bearing_size_mm": null,
+      "bearing_range_mm": null,
+      "printable": false,
+      "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis.",
+      "thread_protrusion_mm": 1.200000000000001,
+      "full_nut_engagement": true
+    },
+    {
+      "joint": "cotovelo_E",
+      "axis": "Y",
+      "position_mm": [
+        -51.0,
+        0.0,
+        69.75
+      ],
+      "thread": "M3x0.5",
+      "length_mm": 16.0,
+      "screw_standard": "ISO 4762",
+      "screw_quantity": 1,
+      "nut_standard": "ISO 4032",
+      "nut_quantity": 1,
+      "washer_standard": "DIN 433 / ISO 7092",
+      "washer_quantity": 2,
+      "washer_size_mm": [
+        3.2,
+        6.0,
+        0.5
+      ],
+      "shaft_range_mm": [
+        -6.2,
+        9.8
+      ],
+      "head_range_mm": [
+        -9.2,
+        -6.2
+      ],
+      "nut_range_mm": [
+        6.2,
+        8.6
+      ],
+      "washer_ranges_mm": [
+        [
+          -6.2,
+          -5.7
+        ],
+        [
+          5.7,
+          6.2
+        ]
+      ],
+      "bearing_quantity": 0,
+      "bearing_material": null,
+      "bearing_size_mm": null,
+      "bearing_range_mm": null,
+      "printable": false,
+      "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis.",
+      "thread_protrusion_mm": 1.200000000000001,
+      "full_nut_engagement": true
+    },
+    {
+      "joint": "cotovelo_D",
+      "axis": "Y",
+      "position_mm": [
+        43.0,
+        0.0,
+        66.75
+      ],
+      "thread": "M3x0.5",
+      "length_mm": 16.0,
+      "screw_standard": "ISO 4762",
+      "screw_quantity": 1,
+      "nut_standard": "ISO 4032",
+      "nut_quantity": 1,
+      "washer_standard": "DIN 433 / ISO 7092",
+      "washer_quantity": 2,
+      "washer_size_mm": [
+        3.2,
+        6.0,
+        0.5
+      ],
+      "shaft_range_mm": [
+        -6.2,
+        9.8
+      ],
+      "head_range_mm": [
+        -9.2,
+        -6.2
+      ],
+      "nut_range_mm": [
+        6.2,
+        8.6
+      ],
+      "washer_ranges_mm": [
+        [
+          -6.2,
+          -5.7
+        ],
+        [
+          5.7,
+          6.2
+        ]
+      ],
+      "bearing_quantity": 0,
+      "bearing_material": null,
+      "bearing_size_mm": null,
+      "bearing_range_mm": null,
+      "printable": false,
+      "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis.",
+      "thread_protrusion_mm": 1.200000000000001,
+      "full_nut_engagement": true
+    },
+    {
+      "joint": "punho_E",
+      "axis": "Y",
+      "position_mm": [
+        -61.027119,
+        0.0,
+        88.065481
+      ],
+      "thread": "M3x0.5",
+      "length_mm": 16.0,
+      "screw_standard": "ISO 4762",
+      "screw_quantity": 1,
+      "nut_standard": "ISO 4032",
+      "nut_quantity": 1,
+      "washer_standard": "DIN 433 / ISO 7092",
+      "washer_quantity": 2,
+      "washer_size_mm": [
+        3.2,
+        6.0,
+        0.5
+      ],
+      "shaft_range_mm": [
+        -6.2,
+        9.8
+      ],
+      "head_range_mm": [
+        -9.2,
+        -6.2
+      ],
+      "nut_range_mm": [
+        6.2,
+        8.6
+      ],
+      "washer_ranges_mm": [
+        [
+          -6.2,
+          -5.7
+        ],
+        [
+          5.7,
+          6.2
+        ]
+      ],
+      "bearing_quantity": 0,
+      "bearing_material": null,
+      "bearing_size_mm": null,
+      "bearing_range_mm": null,
+      "printable": false,
+      "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis.",
+      "thread_protrusion_mm": 1.200000000000001,
+      "full_nut_engagement": true
+    },
+    {
+      "joint": "punho_D",
+      "axis": "Y",
+      "position_mm": [
+        31.0,
+        -1.0,
+        59.75
+      ],
+      "thread": "M3x0.5",
+      "length_mm": 16.0,
+      "screw_standard": "ISO 4762",
+      "screw_quantity": 1,
+      "nut_standard": "ISO 4032",
+      "nut_quantity": 1,
+      "washer_standard": "DIN 433 / ISO 7092",
+      "washer_quantity": 2,
+      "washer_size_mm": [
+        3.2,
+        6.0,
+        0.5
+      ],
+      "shaft_range_mm": [
+        -7.2,
+        8.8
+      ],
+      "head_range_mm": [
+        -10.2,
+        -7.2
+      ],
+      "nut_range_mm": [
+        5.2,
+        7.6
+      ],
+      "washer_ranges_mm": [
+        [
+          -7.2,
+          -6.7
+        ],
+        [
+          4.7,
+          5.2
+        ]
+      ],
+      "bearing_quantity": 0,
+      "bearing_material": null,
+      "bearing_size_mm": null,
+      "bearing_range_mm": null,
+      "printable": false,
+      "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis.",
+      "thread_protrusion_mm": 1.200000000000001,
+      "full_nut_engagement": true
+    },
+    {
+      "joint": "quadril_E",
+      "axis": "Y",
+      "position_mm": [
+        -14.0,
+        0.0,
+        54.75
+      ],
+      "thread": "M3x0.5",
+      "length_mm": 16.0,
+      "screw_standard": "ISO 4762",
+      "screw_quantity": 1,
+      "nut_standard": "ISO 4032",
+      "nut_quantity": 1,
+      "washer_standard": "DIN 433 / ISO 7092",
+      "washer_quantity": 2,
+      "washer_size_mm": [
+        3.2,
+        6.0,
+        0.5
+      ],
+      "shaft_range_mm": [
+        -6.2,
+        9.8
+      ],
+      "head_range_mm": [
+        -9.2,
+        -6.2
+      ],
+      "nut_range_mm": [
+        6.2,
+        8.6
+      ],
+      "washer_ranges_mm": [
+        [
+          -6.2,
+          -5.7
+        ],
+        [
+          5.7,
+          6.2
+        ]
+      ],
+      "bearing_quantity": 0,
+      "bearing_material": null,
+      "bearing_size_mm": null,
+      "bearing_range_mm": null,
+      "printable": false,
+      "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis.",
+      "thread_protrusion_mm": 1.200000000000001,
+      "full_nut_engagement": true
+    },
+    {
+      "joint": "quadril_D",
+      "axis": "Y",
+      "position_mm": [
+        14.0,
+        0.0,
+        54.75
+      ],
+      "thread": "M3x0.5",
+      "length_mm": 16.0,
+      "screw_standard": "ISO 4762",
+      "screw_quantity": 1,
+      "nut_standard": "ISO 4032",
+      "nut_quantity": 1,
+      "washer_standard": "DIN 433 / ISO 7092",
+      "washer_quantity": 2,
+      "washer_size_mm": [
+        3.2,
+        6.0,
+        0.5
+      ],
+      "shaft_range_mm": [
+        -6.2,
+        9.8
+      ],
+      "head_range_mm": [
+        -9.2,
+        -6.2
+      ],
+      "nut_range_mm": [
+        6.2,
+        8.6
+      ],
+      "washer_ranges_mm": [
+        [
+          -6.2,
+          -5.7
+        ],
+        [
+          5.7,
+          6.2
+        ]
+      ],
+      "bearing_quantity": 0,
+      "bearing_material": null,
+      "bearing_size_mm": null,
+      "bearing_range_mm": null,
+      "printable": false,
+      "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis.",
+      "thread_protrusion_mm": 1.200000000000001,
+      "full_nut_engagement": true
+    },
+    {
+      "joint": "joelho_E",
+      "axis": "Y",
+      "position_mm": [
+        -15.0,
+        0.0,
+        34.5
+      ],
+      "thread": "M3x0.5",
+      "length_mm": 16.0,
+      "screw_standard": "ISO 4762",
+      "screw_quantity": 1,
+      "nut_standard": "ISO 4032",
+      "nut_quantity": 1,
+      "washer_standard": "DIN 433 / ISO 7092",
+      "washer_quantity": 2,
+      "washer_size_mm": [
+        3.2,
+        6.0,
+        0.5
+      ],
+      "shaft_range_mm": [
+        -6.2,
+        9.8
+      ],
+      "head_range_mm": [
+        -9.2,
+        -6.2
+      ],
+      "nut_range_mm": [
+        6.2,
+        8.6
+      ],
+      "washer_ranges_mm": [
+        [
+          -6.2,
+          -5.7
+        ],
+        [
+          5.7,
+          6.2
+        ]
+      ],
+      "bearing_quantity": 0,
+      "bearing_material": null,
+      "bearing_size_mm": null,
+      "bearing_range_mm": null,
+      "printable": false,
+      "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis.",
+      "thread_protrusion_mm": 1.200000000000001,
+      "full_nut_engagement": true
+    },
+    {
+      "joint": "joelho_D",
+      "axis": "Y",
+      "position_mm": [
+        15.0,
+        0.0,
+        34.5
+      ],
+      "thread": "M3x0.5",
+      "length_mm": 16.0,
+      "screw_standard": "ISO 4762",
+      "screw_quantity": 1,
+      "nut_standard": "ISO 4032",
+      "nut_quantity": 1,
+      "washer_standard": "DIN 433 / ISO 7092",
+      "washer_quantity": 2,
+      "washer_size_mm": [
+        3.2,
+        6.0,
+        0.5
+      ],
+      "shaft_range_mm": [
+        -6.2,
+        9.8
+      ],
+      "head_range_mm": [
+        -9.2,
+        -6.2
+      ],
+      "nut_range_mm": [
+        6.2,
+        8.6
+      ],
+      "washer_ranges_mm": [
+        [
+          -6.2,
+          -5.7
+        ],
+        [
+          5.7,
+          6.2
+        ]
+      ],
+      "bearing_quantity": 0,
+      "bearing_material": null,
+      "bearing_size_mm": null,
+      "bearing_range_mm": null,
+      "printable": false,
+      "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis.",
+      "thread_protrusion_mm": 1.200000000000001,
+      "full_nut_engagement": true
+    },
+    {
+      "joint": "tornozelo_E",
+      "axis": "Y",
+      "position_mm": [
+        -15.0,
+        0.0,
+        17.25
+      ],
+      "thread": "M3x0.5",
+      "length_mm": 16.0,
+      "screw_standard": "ISO 4762",
+      "screw_quantity": 1,
+      "nut_standard": "ISO 4032",
+      "nut_quantity": 1,
+      "washer_standard": "DIN 433 / ISO 7092",
+      "washer_quantity": 2,
+      "washer_size_mm": [
+        3.2,
+        6.0,
+        0.5
+      ],
+      "shaft_range_mm": [
+        -6.2,
+        9.8
+      ],
+      "head_range_mm": [
+        -9.2,
+        -6.2
+      ],
+      "nut_range_mm": [
+        6.2,
+        8.6
+      ],
+      "washer_ranges_mm": [
+        [
+          -6.2,
+          -5.7
+        ],
+        [
+          5.7,
+          6.2
+        ]
+      ],
+      "bearing_quantity": 0,
+      "bearing_material": null,
+      "bearing_size_mm": null,
+      "bearing_range_mm": null,
+      "printable": false,
+      "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis.",
+      "thread_protrusion_mm": 1.200000000000001,
+      "full_nut_engagement": true
+    },
+    {
+      "joint": "tornozelo_D",
+      "axis": "Y",
+      "position_mm": [
+        15.0,
+        0.0,
+        17.25
+      ],
+      "thread": "M3x0.5",
+      "length_mm": 16.0,
+      "screw_standard": "ISO 4762",
+      "screw_quantity": 1,
+      "nut_standard": "ISO 4032",
+      "nut_quantity": 1,
+      "washer_standard": "DIN 433 / ISO 7092",
+      "washer_quantity": 2,
+      "washer_size_mm": [
+        3.2,
+        6.0,
+        0.5
+      ],
+      "shaft_range_mm": [
+        -6.2,
+        9.8
+      ],
+      "head_range_mm": [
+        -9.2,
+        -6.2
+      ],
+      "nut_range_mm": [
+        6.2,
+        8.6
+      ],
+      "washer_ranges_mm": [
+        [
+          -6.2,
+          -5.7
+        ],
+        [
+          5.7,
+          6.2
+        ]
+      ],
+      "bearing_quantity": 0,
+      "bearing_material": null,
+      "bearing_size_mm": null,
+      "bearing_range_mm": null,
+      "printable": false,
+      "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Two small-series washers outside the 11.4 mm clevis.",
+      "thread_protrusion_mm": 1.200000000000001,
+      "full_nut_engagement": true
+    },
+    {
+      "joint": "pescoco",
+      "axis": "Z",
+      "position_mm": [
+        0.0,
+        0.0,
+        86.75
+      ],
+      "thread": "M3x0.5",
+      "length_mm": 16.0,
+      "screw_standard": "ISO 4762",
+      "screw_quantity": 1,
+      "nut_standard": "ISO 4032",
+      "nut_quantity": 1,
+      "washer_standard": "DIN 433 / ISO 7092",
+      "washer_quantity": 1,
+      "washer_size_mm": [
+        3.2,
+        6.0,
+        0.5
+      ],
+      "shaft_range_mm": [
+        86.25,
+        102.25
+      ],
+      "head_range_mm": [
+        83.25,
+        86.25
+      ],
+      "nut_range_mm": [
+        98.8,
+        101.2
+      ],
+      "washer_ranges_mm": [
+        [
+          86.25,
+          86.75
+        ]
+      ],
+      "bearing_quantity": 1,
+      "bearing_material": "0.3 mm PTFE or PET sheet",
+      "bearing_size_mm": [
+        3.3,
+        12.0,
+        0.3
+      ],
+      "bearing_range_mm": [
+        95.5,
+        95.8
+      ],
+      "printable": false,
+      "notes": "Commercial hardware. Thread represented by nominal cylinders; verify real fasteners and physical fit. Only lower steel washer; nut sits in head pocket. One cut PTFE/PET sliding washer supports the head.",
+      "thread_protrusion_mm": 1.0499999999999972,
+      "full_nut_engagement": true
+    }
+  ],
+  "thread_geometry": "nominal cylinders, not a helical thread fit",
+  "physical_test": false,
+  "washer_contacts": [
+    {
+      "part": "arruela_M3_frontal_ombro_E",
+      "offset": [
+        0,
+        0.001,
+        0
+      ],
+      "supported_fraction": 0.974767080745387,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_traseira_ombro_E",
+      "offset": [
+        0,
+        -0.001,
+        0
+      ],
+      "supported_fraction": 0.9747670807454492,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_frontal_ombro_D",
+      "offset": [
+        0,
+        0.001,
+        0
+      ],
+      "supported_fraction": 0.974767080745387,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_traseira_ombro_D",
+      "offset": [
+        0,
+        -0.001,
+        0
+      ],
+      "supported_fraction": 0.9747670807454467,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_frontal_cotovelo_E",
+      "offset": [
+        0,
+        0.001,
+        0
+      ],
+      "supported_fraction": 0.9747670807453869,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_traseira_cotovelo_E",
+      "offset": [
+        0,
+        -0.001,
+        0
+      ],
+      "supported_fraction": 0.9747670807454466,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_frontal_cotovelo_D",
+      "offset": [
+        0,
+        0.001,
+        0
+      ],
+      "supported_fraction": 0.9747670807453872,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_traseira_cotovelo_D",
+      "offset": [
+        0,
+        -0.001,
+        0
+      ],
+      "supported_fraction": 0.9747670807454466,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_frontal_punho_E",
+      "offset": [
+        0,
+        0.001,
+        0
+      ],
+      "supported_fraction": 0.9747670807453881,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_traseira_punho_E",
+      "offset": [
+        0,
+        -0.001,
+        0
+      ],
+      "supported_fraction": 0.9747670807454466,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_frontal_punho_D",
+      "offset": [
+        0,
+        0.001,
+        0
+      ],
+      "supported_fraction": 0.9747670807453874,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_traseira_punho_D",
+      "offset": [
+        0,
+        -0.001,
+        0
+      ],
+      "supported_fraction": 0.9747670807454473,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_frontal_quadril_E",
+      "offset": [
+        0,
+        0.001,
+        0
+      ],
+      "supported_fraction": 0.9747670807442714,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_traseira_quadril_E",
+      "offset": [
+        0,
+        -0.001,
+        0
+      ],
+      "supported_fraction": 0.9747670807455616,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_frontal_quadril_D",
+      "offset": [
+        0,
+        0.001,
+        0
+      ],
+      "supported_fraction": 0.9747670807442714,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_traseira_quadril_D",
+      "offset": [
+        0,
+        -0.001,
+        0
+      ],
+      "supported_fraction": 0.9747670807455616,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_frontal_joelho_E",
+      "offset": [
+        0,
+        0.001,
+        0
+      ],
+      "supported_fraction": 0.9747670807453872,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_traseira_joelho_E",
+      "offset": [
+        0,
+        -0.001,
+        0
+      ],
+      "supported_fraction": 0.9747670807454469,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_frontal_joelho_D",
+      "offset": [
+        0,
+        0.001,
+        0
+      ],
+      "supported_fraction": 0.9747670807453875,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_traseira_joelho_D",
+      "offset": [
+        0,
+        -0.001,
+        0
+      ],
+      "supported_fraction": 0.9747670807454473,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_frontal_tornozelo_E",
+      "offset": [
+        0,
+        0.001,
+        0
+      ],
+      "supported_fraction": 0.974767080745387,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_traseira_tornozelo_E",
+      "offset": [
+        0,
+        -0.001,
+        0
+      ],
+      "supported_fraction": 0.9747670807454467,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_frontal_tornozelo_D",
+      "offset": [
+        0,
+        0.001,
+        0
+      ],
+      "supported_fraction": 0.9747670807453874,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_traseira_tornozelo_D",
+      "offset": [
+        0,
+        -0.001,
+        0
+      ],
+      "supported_fraction": 0.974767080745447,
+      "supported": true
+    },
+    {
+      "part": "arruela_M3_inferior_pescoco",
+      "offset": [
+        0,
+        0,
+        0.001
+      ],
+      "supported_fraction": 0.974767080749996,
+      "supported": true
+    },
+    {
+      "part": "arruela_deslizamento_PTFE_PET_pescoco",
+      "offset": [
+        0,
+        0,
+        -0.001
+      ],
+      "supported_fraction": 1.000000000004778,
+      "supported": true
+    },
+    {
+      "part": "arruela_deslizamento_PTFE_PET_pescoco",
+      "offset": [
+        0,
+        0,
+        0.001
+      ],
+      "supported_fraction": 1.0000000000104587,
+      "supported": true
+    }
+  ],
+  "tool_access": [
+    {
+      "joint": "ombro_E",
+      "tool": "Allen_2p5",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "ombro_E",
+      "tool": "socket_traseiro_OD8p2",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "ombro_D",
+      "tool": "Allen_2p5",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "ombro_D",
+      "tool": "socket_traseiro_OD8p2",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "cotovelo_E",
+      "tool": "Allen_2p5",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "cotovelo_E",
+      "tool": "socket_traseiro_OD8p2",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "cotovelo_D",
+      "tool": "Allen_2p5",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "cotovelo_D",
+      "tool": "socket_traseiro_OD8p2",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "punho_E",
+      "tool": "Allen_2p5",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "punho_E",
+      "tool": "socket_traseiro_OD8p2",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "punho_D",
+      "tool": "Allen_2p5",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "punho_D",
+      "tool": "socket_traseiro_OD8p2",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "quadril_E",
+      "tool": "Allen_2p5",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "quadril_E",
+      "tool": "socket_traseiro_OD8p2",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "quadril_D",
+      "tool": "Allen_2p5",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "quadril_D",
+      "tool": "socket_traseiro_OD8p2",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "joelho_E",
+      "tool": "Allen_2p5",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "joelho_E",
+      "tool": "socket_traseiro_OD8p2",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "joelho_D",
+      "tool": "Allen_2p5",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "joelho_D",
+      "tool": "socket_traseiro_OD8p2",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "tornozelo_E",
+      "tool": "Allen_2p5",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "tornozelo_E",
+      "tool": "socket_traseiro_OD8p2",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "tornozelo_D",
+      "tool": "Allen_2p5",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "tornozelo_D",
+      "tool": "socket_traseiro_OD8p2",
+      "clear": true,
+      "hits": []
+    },
+    {
+      "joint": "pescoco",
+      "tool": "Allen_2p5_via_pelve",
+      "clear": true,
+      "hits": []
+    }
+  ],
+  "all_washers_supported": true,
+  "all_tools_accessible": true,
+  "all_nuts_engaged": true
+}
