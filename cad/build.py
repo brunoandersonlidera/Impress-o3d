@@ -12,6 +12,7 @@ from body import build_body, build_base
 from head import build_head
 from limbs import build_limbs
 from fit_coupon import build_coupons
+from logo import logo_metadata
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'exports'
@@ -94,6 +95,22 @@ def main():
     previous=json.loads((OUT/'pecas.json').read_text()) if (OUT/'pecas.json').exists() else []
     print('Modelando peças...',flush=True)
     parts=build_body()+build_base()+build_head()+build_limbs()
+    brand=logo_metadata()
+    by_name={p['name']:p for p in parts}
+    torso=by_name['torso_branco']['shape']
+    for record in brand['paths']:
+        shape=by_name[record['name']]['shape']
+        record['actual_volume_mm3']=shape.Volume()
+        record['volume_error_mm3']=abs(shape.Volume()-record['expected_volume_mm3'])
+        record['bounds_cad_mm']=exact_bounds(shape)
+        # Move the flat applique into the badge by its thickness: its complete
+        # footprint must be supported by the unmodified white mounting face.
+        outside=shape.translate((0,record['relief_mm'],0)).cut(torso)
+        record['unsupported_volume_mm3']=outside.Volume() if outside.Solids() else 0.0
+        record['supported_by_chest']=record['unsupported_volume_mm3']<1e-6
+        if not record['supported_by_chest']:
+            raise ValueError('Marca fora da face do peito: '+record['name'])
+    (OUT/'validacao_logo.json').write_text(json.dumps(brand,indent=2,ensure_ascii=False))
     coupons=build_coupons()
     if len({p['name'] for p in parts})!=len(parts): raise ValueError('Nomes duplicados')
     rows=[]; mesh=[]

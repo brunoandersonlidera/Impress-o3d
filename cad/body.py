@@ -1,5 +1,6 @@
 """Corpo e base do mascote Lidera. Unidades: mm; frente: -Y."""
 import cadquery as cq
+from logo import build_logo
 
 WHITE=(0.93,0.94,0.97)
 NAVY=(0.025,0.06,0.27)
@@ -76,37 +77,12 @@ def build_body():
         s=cq.Workplane('XZ',origin=(0,-18,0)).polyline([(x1+nx,z1+nz),(x2+nx,z2+nz),(x2-nx,z2-nz),(x1-nx,z1-nz)]).close().extrude(0.8).val()
         strip=s if strip is None else strip.fuse(s)
     parts.append(part('friso_peito_ciano',strip.clean(),CYAN,'body','Aplique; ajustar/colar ao contorno inferior do peito.'))
-    # Individual colored logo solids. Typography is reconstructed, not source vector artwork.
-    font='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
-    logo=cq.Workplane('XZ',origin=(4.5,-18,96.8)).text('Lidera',6.5,0.7,fontPath=font,kind='bold',combine=False).val()
-    parts.append(part('logo_Lidera_azul',logo,NAVY,'graphics','Letras soltas; preferir decalque se montagem com bico0.4 for difícil.'))
-    subtitle=cq.Workplane('XZ',origin=(5,-18,91.8)).text('Tecnologia e Gestão',1.55,0.55,fontPath=font,combine=False).val()
-    parts.append(part('logo_subtitulo_azul',subtitle,NAVY,'graphics','Texto fino: decalque recomendado ou bico0.2; não se garante legibilidade com0.4.'))
-    import math
-    for label,rr,start,end,col in [('ciano',7.7,85,280,CYAN),('laranja',5.9,115,300,ORANGE)]:
-        x0,z0=-12,96
-        n=40
-        outer=[(x0+(rr+.5)*math.cos(math.radians(start+(end-start)*i/n)),z0+(rr+.5)*math.sin(math.radians(start+(end-start)*i/n))) for i in range(n+1)]
-        inner=[(x0+(rr-.5)*math.cos(math.radians(start+(end-start)*i/n)),z0+(rr-.5)*math.sin(math.radians(start+(end-start)*i/n))) for i in reversed(range(n+1))]
-        s=cq.Workplane('XZ',origin=(0,-18,0)).polyline(outer+inner).close().extrude(.7).val()
-        parts.append(part('logo_arco_'+label,s,col,'graphics'))
-        arc_idx=len(parts)-1
-        for i,a in enumerate((start,end)):
-            px=x0+rr*math.cos(math.radians(a)); pz=z0+rr*math.sin(math.radians(a))
-            ring=cq.Workplane('XZ',origin=(px,-18,pz)).circle(1.45).circle(.65).extrude(.7).val()
-            # Trim underlying arc to avoid overlap with hollow circle applique.
-            parts[arc_idx]['shape']=parts[arc_idx]['shape'].cut(cyl_y(px,pz,1.48,-19,-17.9))
-            parts.append(part('logo_no_'+label+'_'+str(i),ring,col,'graphics'))
+    # Original SVG contours, extruded as separately colored chest graphics.
+    parts.extend(build_logo())
     # Rear chest accent mirrors the blue/cyan language of the reference.
     rear=rounded_plate(25,10,3,0,86,14.9,-0.9)
     parts[0]['shape']=parts[0]['shape'].cut(rear).clean()
     parts.append(part('painel_dorsal_azul',rear,NAVY,'body'))
-    # Colored logo arcs give way to every node; assembled inserts do not overlap.
-    nodes=[p['shape'] for p in parts if p['name'].startswith('logo_no_')]
-    for p in parts:
-        if p['name'].startswith('logo_arco_'):
-            for node in nodes: p['shape']=p['shape'].cut(node)
-            p['shape']=p['shape'].clean()
     # Reference has a large head and short legs: keep body proportions and M3
     # geometry intact, move the complete rigid body down instead of stretching.
     for p in parts: p['shape']=p['shape'].translate((0,0,-18.25))

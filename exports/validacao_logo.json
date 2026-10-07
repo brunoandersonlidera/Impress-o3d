@@ -1,0 +1,189 @@
+{
+  "bounds_svg": [
+    -0.001346369770422129,
+    1128.16,
+    0.0018609594039284971,
+    602.7317314251445
+  ],
+  "scale_mm_per_svg_unit": 0.03368312531029137,
+  "total_width_mm": 38.0,
+  "total_height_mm": 20.301825755153224,
+  "transforms": 0,
+  "paths": [
+    {
+      "name": "logo_Lidera_azul",
+      "bounds_svg": [
+        282.18,
+        1128.16,
+        138.91,
+        382.2100000000001
+      ],
+      "width_mm": 28.495250350000294,
+      "height_mm": 8.195104387993894,
+      "outer_count": 7,
+      "hole_count": 0,
+      "filled_area_svg": 71620.7118049998,
+      "expected_volume_mm3": 56.88024193246318,
+      "relief_mm": 0.7,
+      "color_rgb": [
+        0.24705882352941178,
+        0.25098039215686274,
+        0.5882352941176471
+      ],
+      "line_count": 22,
+      "cubic_bezier_count": 137,
+      "actual_volume_mm3": 56.88024193246327,
+      "volume_error_mm3": 9.237055564881302e-14,
+      "bounds_cad_mm": [
+        -9.495250450000293,
+        -18.7000001,
+        74.27694813565896,
+        19.0000001,
+        -17.9999999,
+        82.47205272365284
+      ],
+      "unsupported_volume_mm3": 0.0,
+      "supported_by_chest": true
+    },
+    {
+      "name": "logo_subtitulo_azul",
+      "bounds_svg": [
+        455.35,
+        1114.8000000000004,
+        409.03000000000003,
+        461.1900000000003
+      ],
+      "width_mm": 22.21233698587166,
+      "height_mm": 1.7569118161848063,
+      "outer_count": 19,
+      "hole_count": 9,
+      "filled_area_svg": 9544.569185000008,
+      "expected_volume_mm3": 5.955850417447038,
+      "relief_mm": 0.55,
+      "color_rgb": [
+        0.24705882352941178,
+        0.25098039215686274,
+        0.5882352941176471
+      ],
+      "line_count": 90,
+      "cubic_bezier_count": 273,
+      "actual_volume_mm3": 5.9558504174470155,
+      "volume_error_mm3": 2.220446049250313e-14,
+      "bounds_cad_mm": [
+        -3.6623435400171376,
+        -18.550000100000002,
+        71.61665489865214,
+        18.54999354585452,
+        -17.9999999,
+        73.37356691483693
+      ],
+      "unsupported_volume_mm3": 0.0,
+      "supported_by_chest": true
+    },
+    {
+      "name": "logo_simbolo_laranja_superior",
+      "bounds_svg": [
+        88.23652703346824,
+        356.3500000000002,
+        99.49421020414923,
+        243.46034902184067
+      ],
+      "width_mm": 9.030899707309114,
+      "height_mm": 4.849229494235104,
+      "outer_count": 1,
+      "hole_count": 1,
+      "filled_area_svg": 8693.970629999998,
+      "expected_volume_mm3": 6.904638900190426,
+      "relief_mm": 0.7,
+      "color_rgb": [
+        0.9058823529411765,
+        0.3058823529411765,
+        0.23137254901960785
+      ],
+      "line_count": 3,
+      "cubic_bezier_count": 13,
+      "actual_volume_mm3": 6.90463890019042,
+      "volume_error_mm3": 5.329070518200751e-15,
+      "bounds_cad_mm": [
+        -16.02787275304509,
+        -18.7000001,
+        78.95047001631549,
+        -6.996972845735983,
+        -17.9999999,
+        83.79969971055057
+      ],
+      "unsupported_volume_mm3": 0.0,
+      "supported_by_chest": true
+    },
+    {
+      "name": "logo_simbolo_laranja_inferior",
+      "bounds_svg": [
+        103.64999999999975,
+        425.670332599795,
+        338.4,
+        531.6209509550076
+      ],
+      "width_mm": 10.846651215420609,
+      "height_mm": 6.5082855035911855,
+      "outer_count": 1,
+      "hole_count": 1,
+      "filled_area_svg": 10556.033160000074,
+      "expected_volume_mm3": 8.383464850540516,
+      "relief_mm": 0.7,
+      "color_rgb": [
+        0.9058823529411765,
+        0.3058823529411765,
+        0.23137254901960785
+      ],
+      "line_count": 2,
+      "cubic_bezier_count": 10,
+      "actual_volume_mm3": 8.38346485054045,
+      "volume_error_mm3": 6.572520305780927e-14,
+      "bounds_cad_mm": [
+        -15.508698811646616,
+        -18.7000001,
+        69.24432035191164,
+        -4.662047396226012,
+        -17.9999999,
+        75.75260605550281
+      ],
+      "unsupported_volume_mm3": 0.0,
+      "supported_by_chest": true
+    },
+    {
+      "name": "logo_simbolo_ciano",
+      "bounds_svg": [
+        -0.001346369770422129,
+        565.4707174796308,
+        0.0018609594039284971,
+        602.7317314251445
+      ],
+      "width_mm": 19.046866386108466,
+      "height_mm": 20.301825755153224,
+      "outer_count": 1,
+      "hole_count": 1,
+      "filled_area_svg": 31957.306979999892,
+      "expected_volume_mm3": 25.380079403308763,
+      "relief_mm": 0.7,
+      "color_rgb": [
+        0.043137254901960784,
+        0.7098039215686275,
+        0.9529411764705882
+      ],
+      "line_count": 2,
+      "cubic_bezier_count": 17,
+      "actual_volume_mm3": 25.38007940330888,
+      "volume_error_mm3": 1.1723955140041653e-13,
+      "bounds_cad_mm": [
+        -19.000000100000005,
+        -18.7000001,
+        66.84908702242339,
+        0.04686648610845917,
+        -17.9999999,
+        87.15091297757661
+      ],
+      "unsupported_volume_mm3": 0.0,
+      "supported_by_chest": true
+    }
+  ]
+}

@@ -49,9 +49,9 @@ floor.data.materials.append(mat)
 
 camd=bpy.data.cameras.new('Camera'); cam=bpy.data.objects.new('Camera',camd)
 bpy.context.collection.objects.link(cam); scene.camera=cam; camd.type='ORTHO'; camd.ortho_scale=220
-def render(name,position,scale=220):
+def render(name,position,scale=220,target=(0,0,83)):
     cam.location=position; camd.ortho_scale=scale
-    cam.rotation_euler=(Vector((0,0,83))-cam.location).to_track_quat('-Z','Y').to_euler()
+    cam.rotation_euler=(Vector(target)-cam.location).to_track_quat('-Z','Y').to_euler()
     scene.render.filepath=str(ROOT/name); bpy.ops.render.render(write_still=True)
 
 render('Lidera_preview.png',(215,-380,190))
@@ -59,4 +59,6 @@ scene.render.resolution_x=900; scene.render.resolution_y=1100
 render('vista_frontal.png',(0,-400,90))
 render('vista_lateral.png',(400,0,90))
 render('vista_traseira.png',(0,400,90))
+scene.render.resolution_x=1200; scene.render.resolution_y=800
+render('logo_peito_detalhe.png',(8,-240,82),52,(0,-18,77))
 bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'Lidera_preview.blend'))

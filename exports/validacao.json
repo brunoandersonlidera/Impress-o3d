@@ -1,7 +1,7 @@
 {
   "cadquery_version": "2.7.0",
-  "parts": 122,
-  "solids": 146,
+  "parts": 119,
+  "solids": 143,
   "all_valid": true,
   "bounds_mm": [
     -79.11125690969223,
@@ -95,8 +95,8 @@
   "physical_test": false,
   "range_of_motion_verified": false,
   "step_reimport_valid": true,
-  "step_reimport_solids": 146,
-  "step_volume_mm3": 341261.96,
+  "step_reimport_solids": 143,
+  "step_volume_mm3": 341301.697,
   "step_bounds_mm": [
     -79.11125690969,
     -63.0000001,

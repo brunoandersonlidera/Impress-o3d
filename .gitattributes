@@ -3,3 +3,5 @@
 *.zip binary
 *.png binary
 *.pdf binary
+*.csv whitespace=cr-at-eol
+*.svg whitespace=cr-at-eol

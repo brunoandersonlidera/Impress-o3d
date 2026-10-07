@@ -8,6 +8,7 @@ O STEP é uma montagem com corpos sólidos nomeados e cores. As peças são sepa
 
 - [Baixar STEP — montagem CAD](https://github.com/brunoandersonlidera/Impress-o3d/raw/refs/heads/main/exports/Lidera_articulado_180mm.step)
 - [Baixar ZIP — STLs, cupons, fontes e guia](https://github.com/brunoandersonlidera/Impress-o3d/raw/refs/heads/main/exports/Lidera_A1_180mm.zip)
+- [Decalque da marca oficial — PDF em escala real](exports/decal_logo_escala_real.pdf)
 - [Notas de impressão e montagem](cad/PRINT_NOTES.md)
 
 Se o download direto exigir acesso, abra [o ZIP no GitHub](exports/Lidera_A1_180mm.zip) e use **Download raw file**. Em um repositório privado, entre na conta com acesso ao projeto.
@@ -23,19 +24,27 @@ Se o download direto exigir acesso, abra [o ZIP no GitHub](exports/Lidera_A1_180
 - `exports/pecas.json`: nomes, cores, volumes e notas por componente.
 - `exports/validacao.json`: resultados de integridade e reimportação do STEP.
 - `exports/validacao_STL.json`: fechamento das malhas e dimensões de cada STL.
+- `exports/validacao_logo.json`: volumes comparados às áreas vetoriais e apoio da marca na face do peito.
 - `exports/decal_logo_escala_real.pdf`: decalques da marca; imprimir a 100%.
+- `exports/logo_peito_38mm.svg`: marca oficial com tamanho físico de 38 × 20,30 mm.
+- `exports/logo_peito_detalhe.png`: vista ampliada do relevo no peito, renderizada a partir do CAD.
+- `assets/logo_lidera_vetor01.svg`: arquivo vetorial original fornecido, sem alterações.
 - `cad/`: fontes CadQuery que geram a montagem e os arquivos.
 - `cad/PRINT_NOTES.md`: detalhes de impressão, limites e montagem.
 
 ## Impressão na A1
 
-Use PLA ou PLA+ para as carenagens, azul-marinho, branco e ciano; rosa/coral para a língua e laranja para detalhes da marca. A pupila pode usar o mesmo azul bem escuro. Não é necessário AMS Lite. Comece com bico 0,4 mm, camada 0,16 mm no corpo e 0,12 mm no rosto. Use 4 paredes, aumentando para 5–6 nas estruturas dos pivôs. Preenchimento inicial: 15–20% no corpo e 30–50% nas estruturas, conforme o material e os modificadores do fatiador.
+Use PLA ou PLA+ para as carenagens, azul-marinho, branco e ciano; rosa/coral para a língua; na marca oficial, violeta-azulado, ciano e coral. A pupila pode usar o mesmo azul bem escuro. Não é necessário AMS Lite. Comece com bico 0,4 mm, camada 0,16 mm no corpo e 0,12 mm no rosto. Use 4 paredes, aumentando para 5–6 nas estruturas dos pivôs. Preenchimento inicial: 15–20% no corpo e 30–50% nas estruturas, conforme o material e os modificadores do fatiador.
 
 Imprima primeiro os cupons. O furo nominal M3 é Ø3,3 mm; a folga lateral nominal é 0,3 mm por lado. Essas dimensões precisam de calibração na sua impressora. Não escale os STLs no Bambu Studio para mudar a altura: isso também altera furos e encaixes.
 
 Importe as peças separadamente e organize placas por cor. Examine cada orientação no fatiador: algumas conchas precisam de suporte, e a posição sobre a mesa é uma sugestão, não um perfil Bambu Studio validado. Os STLs têm unidades implícitas; interprete como mm. Não use o STEP como uma peça única para imprimir com as articulações já montadas.
 
-Há peças pequenas de rosto, dedos e letras. O subtítulo “Tecnologia e Gestão” foi modelado, mas um decalque é a recomendação para conservar a legibilidade. O logo é uma reconstrução tipográfica; um arquivo vetorial original permitiria maior exatidão.
+Há peças pequenas de rosto, dedos e letras. A marca do peito agora usa os contornos Bézier do SVG oficial fornecido, com proporção preservada e largura de 38 mm. O texto “Lidera”, o subtítulo e os três elementos do símbolo são corpos separados no STEP e nos STLs; o relevo tem 0,70 mm, ou 0,55 mm no subtítulo. O texto principal mede aproximadamente 8,20 mm de altura; o subtítulo completo, 1,76 mm. Para conservar os traços finos na A1 com bico 0,4 mm, prefira o decalque vetorial completo sobre o peito branco. Ao usar decalque, deixe de instalar os cinco componentes `logo_*` em relevo.
+
+O PDF e o SVG de 38 mm preservam os degradês da arte original. As peças 3D utilizam tons sólidos: texto violeta-azulado `#3F4096`, símbolo ciano `#0BB5F3` e coral `#E74E3B`. A escolha do filamento aproxima essas cores. As curvas da marca não foram substituídas por outra fonte ou engrossadas para impressão.
+
+![Detalhe do relevo da marca oficial](exports/logo_peito_detalhe.png)
 
 ## Articulações e ferragens
 
@@ -59,7 +68,7 @@ O arquivo `exports/movimento_local.json` registra amostras digitais de dez junta
 
 ## Regenerar
 
-O modelo foi gerado com Python 3.12, CadQuery 2.7.0 e as versões em `requirements.txt`. A renderização usa Blender 4.3.2. Os scripts de texto usam a fonte DejaVu Sans em `/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf`; o fluxo foi testado em Linux.
+O modelo foi gerado com Python 3.12, CadQuery 2.7.0 e as versões em `requirements.txt`. A renderização usa Blender 4.3.2. O texto explicativo do PDF usa DejaVu Sans em `/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf`; as letras da marca são curvas vetoriais do arquivo em `assets/`, sem dependência de fonte instalada. O fluxo foi testado em Linux.
 
 Após clonar este repositório, instale as dependências em um ambiente virtual. Comandos executados na raiz do projeto:
 

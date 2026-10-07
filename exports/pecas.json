@@ -150,169 +150,106 @@
     "name": "logo_Lidera_azul",
     "group": "graphics",
     "color": [
-      0.025,
-      0.06,
-      0.27
+      0.24705882352941178,
+      0.25098039215686274,
+      0.5882352941176471
     ],
-    "volume_mm3": 19.465,
+    "volume_mm3": 56.88,
     "solids": 7,
     "bbox_mm": [
-      -4.966,
+      -9.495,
       -18.7,
-      76.208,
-      14.014,
+      74.277,
+      19.0,
       -18.0,
-      81.238
+      82.472
     ],
     "stl_degenerate_facets_removed": 0,
-    "notes": "Letras soltas; preferir decalque se montagem com bico0.4 for difícil."
+    "notes": "Official SVG contours, exact cubic Beziers and original holes; 7 solid(s), 0.7 mm relief. Official text colour #3F4096; loose letter solids."
   },
   {
     "name": "logo_subtitulo_azul",
     "group": "graphics",
     "color": [
-      0.025,
-      0.06,
-      0.27
+      0.24705882352941178,
+      0.25098039215686274,
+      0.5882352941176471
     ],
-    "volume_mm3": 2.771,
+    "volume_mm3": 5.956,
     "solids": 19,
     "bbox_mm": [
-      -2.79,
+      -3.662,
       -18.55,
-      72.691,
-      12.7,
+      71.617,
+      18.55,
       -18.0,
-      74.218
+      73.374
     ],
     "stl_degenerate_facets_removed": 0,
-    "notes": "Texto fino: decalque recomendado ou bico0.2; não se garante legibilidade com0.4."
+    "notes": "Official SVG contours, exact cubic Beziers and original holes; 19 solid(s), 0.55 mm relief. Subtitle only 1.757 mm high at 38 mm total logo width; strokes around 0.31 mm. Use the official SVG as a decal for faithful small text; a 0.4 mm nozzle cannot reproduce it reliably."
   },
   {
-    "name": "logo_arco_ciano",
+    "name": "logo_simbolo_laranja_superior",
     "group": "graphics",
     "color": [
-      0.0,
-      0.77,
-      0.95
+      0.9058823529411765,
+      0.3058823529411765,
+      0.23137254901960785
     ],
-    "volume_mm3": 16.184,
+    "volume_mm3": 6.905,
     "solids": 1,
     "bbox_mm": [
-      -20.193,
+      -16.028,
       -18.7,
-      69.552,
-      -12.009,
+      78.95,
+      -6.997,
       -18.0,
-      85.916
+      83.8
     ],
     "stl_degenerate_facets_removed": 0,
-    "notes": ""
+    "notes": "Official SVG contours, exact cubic Beziers and original holes; 1 solid(s), 0.7 mm relief. SVG orange gradient represented by its #E74E3B middle stop."
   },
   {
-    "name": "logo_no_ciano_0",
+    "name": "logo_simbolo_laranja_inferior",
     "group": "graphics",
     "color": [
-      0.0,
-      0.77,
-      0.95
+      0.9058823529411765,
+      0.3058823529411765,
+      0.23137254901960785
     ],
-    "volume_mm3": 3.695,
+    "volume_mm3": 8.383,
     "solids": 1,
     "bbox_mm": [
-      -12.779,
+      -15.509,
       -18.7,
-      83.971,
-      -9.879,
+      69.244,
+      -4.662,
       -18.0,
-      86.871
+      75.753
     ],
     "stl_degenerate_facets_removed": 0,
-    "notes": ""
+    "notes": "Official SVG contours, exact cubic Beziers and original holes; 1 solid(s), 0.7 mm relief. SVG orange gradient represented by its #E74E3B middle stop."
   },
   {
-    "name": "logo_no_ciano_1",
+    "name": "logo_simbolo_ciano",
     "group": "graphics",
     "color": [
-      0.0,
-      0.77,
-      0.95
+      0.043137254901960784,
+      0.7098039215686275,
+      0.9529411764705882
     ],
-    "volume_mm3": 3.695,
+    "volume_mm3": 25.38,
     "solids": 1,
     "bbox_mm": [
-      -12.113,
+      -19.0,
       -18.7,
-      68.717,
-      -9.213,
+      66.849,
+      0.047,
       -18.0,
-      71.617
+      87.151
     ],
     "stl_degenerate_facets_removed": 0,
-    "notes": ""
-  },
-  {
-    "name": "logo_arco_laranja",
-    "group": "graphics",
-    "color": [
-      1.0,
-      0.22,
-      0.05
-    ],
-    "volume_mm3": 11.207,
-    "solids": 1,
-    "bbox_mm": [
-      -18.4,
-      -18.7,
-      71.355,
-      -10.133,
-      -18.0,
-      82.789
-    ],
-    "stl_degenerate_facets_removed": 0,
-    "notes": ""
-  },
-  {
-    "name": "logo_no_laranja_0",
-    "group": "graphics",
-    "color": [
-      1.0,
-      0.22,
-      0.05
-    ],
-    "volume_mm3": 3.695,
-    "solids": 1,
-    "bbox_mm": [
-      -15.943,
-      -18.7,
-      81.647,
-      -13.043,
-      -18.0,
-      84.547
-    ],
-    "stl_degenerate_facets_removed": 0,
-    "notes": ""
-  },
-  {
-    "name": "logo_no_laranja_1",
-    "group": "graphics",
-    "color": [
-      1.0,
-      0.22,
-      0.05
-    ],
-    "volume_mm3": 3.695,
-    "solids": 1,
-    "bbox_mm": [
-      -10.5,
-      -18.7,
-      71.19,
-      -7.6,
-      -18.0,
-      74.09
-    ],
-    "stl_degenerate_facets_removed": 0,
-    "notes": ""
+    "notes": "Official SVG contours, exact cubic Beziers and original holes; 1 solid(s), 0.7 mm relief. SVG gradient represented by solid midpoint colour #0BB5F3."
   },
   {
     "name": "painel_dorsal_azul",

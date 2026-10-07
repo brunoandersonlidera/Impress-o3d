@@ -1,5 +1,5 @@
 {
-  "stl_files": 125,
+  "stl_files": 122,
   "all_closed": true,
   "all_fit_A1": true,
   "all_on_bed": true,
@@ -1020,90 +1020,51 @@
     },
     {
       "file": "STL/logo_Lidera_azul.stl",
-      "triangles": 4214,
+      "triangles": 5638,
       "closed_two_manifold_edges": true,
       "nonmanifold_edges": 0,
       "size_mm": [
-        18.979,
-        5.031,
+        28.495,
+        8.195,
         0.7
       ],
       "fits_A1": true,
       "bed_z_mm": 0.0
     },
     {
-      "file": "STL/logo_arco_ciano.stl",
-      "triangles": 444,
+      "file": "STL/logo_simbolo_ciano.stl",
+      "triangles": 2074,
       "closed_two_manifold_edges": true,
       "nonmanifold_edges": 0,
       "size_mm": [
-        8.184,
-        16.364,
+        19.043,
+        20.297,
         0.7
       ],
       "fits_A1": true,
       "bed_z_mm": 0.0
     },
     {
-      "file": "STL/logo_arco_laranja.stl",
-      "triangles": 424,
+      "file": "STL/logo_simbolo_laranja_inferior.stl",
+      "triangles": 1512,
       "closed_two_manifold_edges": true,
       "nonmanifold_edges": 0,
       "size_mm": [
-        8.267,
-        11.434,
+        10.846,
+        6.508,
         0.7
       ],
       "fits_A1": true,
       "bed_z_mm": 0.0
     },
     {
-      "file": "STL/logo_no_ciano_0.stl",
-      "triangles": 840,
+      "file": "STL/logo_simbolo_laranja_superior.stl",
+      "triangles": 1498,
       "closed_two_manifold_edges": true,
       "nonmanifold_edges": 0,
       "size_mm": [
-        2.899,
-        2.9,
-        0.7
-      ],
-      "fits_A1": true,
-      "bed_z_mm": 0.0
-    },
-    {
-      "file": "STL/logo_no_ciano_1.stl",
-      "triangles": 840,
-      "closed_two_manifold_edges": true,
-      "nonmanifold_edges": 0,
-      "size_mm": [
-        2.899,
-        2.9,
-        0.7
-      ],
-      "fits_A1": true,
-      "bed_z_mm": 0.0
-    },
-    {
-      "file": "STL/logo_no_laranja_0.stl",
-      "triangles": 840,
-      "closed_two_manifold_edges": true,
-      "nonmanifold_edges": 0,
-      "size_mm": [
-        2.899,
-        2.9,
-        0.7
-      ],
-      "fits_A1": true,
-      "bed_z_mm": 0.0
-    },
-    {
-      "file": "STL/logo_no_laranja_1.stl",
-      "triangles": 840,
-      "closed_two_manifold_edges": true,
-      "nonmanifold_edges": 0,
-      "size_mm": [
-        2.899,
-        2.9,
+        9.03,
+        4.847,
         0.7
       ],
       "fits_A1": true,
@@ -1111,12 +1072,12 @@
     },
     {
       "file": "STL/logo_subtitulo_azul.stl",
-      "triangles": 19450,
+      "triangles": 22330,
       "closed_two_manifold_edges": true,
       "nonmanifold_edges": 0,
       "size_mm": [
-        15.49,
-        1.527,
+        22.212,
+        1.757,
         0.55
       ],
       "fits_A1": true,

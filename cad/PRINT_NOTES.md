@@ -1,4 +1,4 @@
-# Lídera — notas de impressão e montagem
+# Lidera — notas de impressão e montagem
 
 ## Escala e limite da reprodução
 
@@ -11,11 +11,19 @@ Características visuais prioritárias:
 - Cabeça grande e arredondada; casco branco, faixa azul-marinho no topo e na parte traseira.
 - Visor azul-marinho com contorno ciano; olhos grandes com branco, íris ciano, pupila escura e brilho; sobrancelhas ciano e sorriso com dentes brancos e língua rosa.
 - Discos laterais concêntricos em branco, azul-marinho e ciano; duas antenas de haste azul-marinho e esfera ciano.
-- Peitoral branco com identificação Lídera; cintura azul-marinho e pequenos detalhes ciano no pescoço e na borda do peitoral.
+- Peitoral branco com a marca Lidera extraída do SVG oficial; cintura azul-marinho e pequenos detalhes ciano no pescoço e na borda do peitoral.
 - Braços e pernas segmentados, com carenagens brancas e juntas azul-marinho; mão estilizada com detalhe circular ciano na palma.
 - Botas brancas com ponteira e sola azul-marinho; base circular com topo branco e faixa ciano na lateral.
 
 As poses da referência ajudam a avaliar a silhueta, mas não demonstram a amplitude ou a resistência de uma articulação. Olhos, sorriso e logotipo são elementos decorativos fixos. Letras pequenas como “Tecnologia e Gestão” exigem avaliação em escala real: com bico de 0,4 mm, uma impressão ou decalque costuma reproduzi-las melhor que letras minúsculas em plástico.
+
+## Marca oficial no peito
+
+O arquivo `assets/logo_lidera_vetor01.svg` conserva a arte original enviada. Os contornos cúbicos, os vazios e a proporção foram transferidos para o CAD sem trocar a fonte. A aplicação mede 38 × 20,30 mm e está centralizada sobre a face plana do peito. São cinco componentes de cor (`logo_*`): nome, subtítulo e três elementos do símbolo. O nome e o símbolo têm relevo de 0,70 mm; o subtítulo, 0,55 mm.
+
+O subtítulo tem altura total de 1,76 mm, com minúsculas de aproximadamente 0,98 mm e traços de 0,18–0,32 mm. A espessura do relevo não aumenta a largura desses traços. Recomenda-se **decalque da marca completa** com bico de 0,4 mm: use `exports/decal_logo_escala_real.pdf` a 100%, confira a régua de 50 mm e aplique sobre o peito branco, omitindo os cinco componentes em relevo. O `exports/logo_peito_38mm.svg` também está em escala real. Ambos preservam os degradês do SVG oficial. Bico de 0,2 mm pode melhorar as letras em plástico, mas a legibilidade e os pequenos vazios ainda precisam ser conferidos no fatiador e em uma prova física.
+
+Nos componentes 3D, a marca usa cores sólidas: violeta-azulado `#3F4096`, ciano intermediário `#0BB5F3` e coral `#E74E3B`. Esses tons não equivalem a um degradê de filamento. Para colar letras soltas, use um gabarito impresso a 100% do SVG; não altere a escala de cada arquivo STL individualmente.
 
 ## Bambu Lab A1
 
@@ -54,7 +62,7 @@ Cola serve para unir os elementos decorativos por cor. Ela não deve atingir fur
 ## Orientação e montagem
 
 1. Imprima os três cupons de tolerância e ajuste o perfil se necessário.
-2. Separe as placas por material e cor: branco, azul-marinho e ciano; olhos, sorriso e marca podem acrescentar branco, preto, rosa e laranja em peças pequenas ou acabamento superficial.
+2. Separe as placas por material e cor: branco, azul-marinho e ciano; olhos, sorriso e marca podem acrescentar branco, preto, rosa, coral e violeta-azulado em peças pequenas ou acabamento superficial.
 3. Priorize a face visível livre de suportes. Na máscara facial, cabeça e botas, compare as orientações no fatiador para preservar superfícies curvas e reduzir marcas.
 4. Posicione linguetas e suportes dos pivôs para reduzir esforços que separem as camadas. Inspecione no fatiador o material em torno de cada furo; o sentido de impressão deve ser escolhido por peça.
 5. Faça montagem a seco de todas as carenagens. Para o pescoço, coloque a porca M3 no alojamento interno da cabeça **antes de fechar as duas metades do casco**. Insira o parafuso **por baixo do torso, antes de colar a pelve**. O torso possui furo passante de 3,3 mm e acesso inferior de 6,2 mm para a cabeça do parafuso. Confira se a sua cabeça de parafuso e sua ferramenta cabem nesse acesso. Posicione os colares ciano e azul, engate a porca e ajuste a fricção do pescoço com a cabeça ainda acessível.
