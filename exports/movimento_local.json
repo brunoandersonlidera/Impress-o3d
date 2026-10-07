@@ -1,0 +1,716 @@
+{
+  "method": "Rigid rotation of final BREP child groups around the Y axis against the immediate parent group only. Common volume tolerance 0.01 mm3; discrete angle samples.",
+  "physical_test": false,
+  "full_range_verified": false,
+  "other_robot_components_checked": false,
+  "joints": [
+    {
+      "joint": "left_elbow",
+      "pivot_xyz_mm": [
+        -51,
+        0,
+        69.75
+      ],
+      "axis": "Y",
+      "fixed_groups": [
+        "left_upper_arm"
+      ],
+      "moving_groups": [
+        "left_forearm",
+        "left_hand"
+      ],
+      "tests": [
+        {
+          "angle_deg_from_delivered_pose": -10,
+          "collision_free_local": true,
+          "collision_pairs": []
+        },
+        {
+          "angle_deg_from_delivered_pose": 10,
+          "collision_free_local": false,
+          "collision_pairs": [
+            {
+              "moving": "left_forearm_frame",
+              "fixed": "left_upper_arm_white_front",
+              "common_volume_mm3": 2.01265
+            },
+            {
+              "moving": "left_forearm_frame",
+              "fixed": "left_upper_arm_white_back",
+              "common_volume_mm3": 2.01265
+            },
+            {
+              "moving": "left_forearm_white_front",
+              "fixed": "left_upper_arm_white_front",
+              "common_volume_mm3": 31.71242
+            },
+            {
+              "moving": "left_forearm_white_front",
+              "fixed": "left_upper_arm_cyan_front",
+              "common_volume_mm3": 8.61616
+            },
+            {
+              "moving": "left_forearm_white_back",
+              "fixed": "left_upper_arm_white_back",
+              "common_volume_mm3": 31.71293
+            },
+            {
+              "moving": "left_forearm_white_back",
+              "fixed": "left_upper_arm_cyan_back",
+              "common_volume_mm3": 8.61616
+            }
+          ]
+        },
+        {
+          "angle_deg_from_delivered_pose": -20,
+          "collision_free_local": true,
+          "collision_pairs": []
+        },
+        {
+          "angle_deg_from_delivered_pose": 5,
+          "collision_free_local": false,
+          "collision_pairs": [
+            {
+              "moving": "left_forearm_frame",
+              "fixed": "left_upper_arm_white_front",
+              "common_volume_mm3": 0.33983
+            },
+            {
+              "moving": "left_forearm_frame",
+              "fixed": "left_upper_arm_white_back",
+              "common_volume_mm3": 0.33983
+            },
+            {
+              "moving": "left_forearm_white_front",
+              "fixed": "left_upper_arm_white_front",
+              "common_volume_mm3": 11.3532
+            },
+            {
+              "moving": "left_forearm_white_front",
+              "fixed": "left_upper_arm_cyan_front",
+              "common_volume_mm3": 3.88327
+            },
+            {
+              "moving": "left_forearm_white_back",
+              "fixed": "left_upper_arm_white_back",
+              "common_volume_mm3": 11.35316
+            },
+            {
+              "moving": "left_forearm_white_back",
+              "fixed": "left_upper_arm_cyan_back",
+              "common_volume_mm3": 3.88327
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "joint": "right_elbow",
+      "pivot_xyz_mm": [
+        43,
+        0,
+        66.75
+      ],
+      "axis": "Y",
+      "fixed_groups": [
+        "right_upper_arm"
+      ],
+      "moving_groups": [
+        "right_forearm",
+        "right_hand"
+      ],
+      "tests": [
+        {
+          "angle_deg_from_delivered_pose": -10,
+          "collision_free_local": true,
+          "collision_pairs": []
+        },
+        {
+          "angle_deg_from_delivered_pose": 10,
+          "collision_free_local": false,
+          "collision_pairs": [
+            {
+              "moving": "right_forearm_frame",
+              "fixed": "right_upper_arm_white_front",
+              "common_volume_mm3": 10.02746
+            },
+            {
+              "moving": "right_forearm_frame",
+              "fixed": "right_upper_arm_white_back",
+              "common_volume_mm3": 9.78082
+            },
+            {
+              "moving": "right_forearm_white_front",
+              "fixed": "right_upper_arm_white_front",
+              "common_volume_mm3": 19.85691
+            },
+            {
+              "moving": "right_forearm_white_front",
+              "fixed": "right_upper_arm_cyan_front",
+              "common_volume_mm3": 11.28668
+            },
+            {
+              "moving": "right_forearm_white_back",
+              "fixed": "right_upper_arm_white_front",
+              "common_volume_mm3": 2.24649
+            },
+            {
+              "moving": "right_forearm_white_back",
+              "fixed": "right_upper_arm_white_back",
+              "common_volume_mm3": 19.60259
+            },
+            {
+              "moving": "right_forearm_white_back",
+              "fixed": "right_upper_arm_cyan_front",
+              "common_volume_mm3": 0.89964
+            },
+            {
+              "moving": "right_forearm_white_back",
+              "fixed": "right_upper_arm_cyan_back",
+              "common_volume_mm3": 9.74194
+            },
+            {
+              "moving": "right_forearm_cyan_front",
+              "fixed": "right_upper_arm_white_front",
+              "common_volume_mm3": 2.3259
+            },
+            {
+              "moving": "right_forearm_cyan_front",
+              "fixed": "right_upper_arm_cyan_front",
+              "common_volume_mm3": 0.77681
+            },
+            {
+              "moving": "right_forearm_cyan_back",
+              "fixed": "right_upper_arm_white_back",
+              "common_volume_mm3": 1.36794
+            },
+            {
+              "moving": "right_forearm_cyan_back",
+              "fixed": "right_upper_arm_cyan_back",
+              "common_volume_mm3": 1.78608
+            }
+          ]
+        },
+        {
+          "angle_deg_from_delivered_pose": -20,
+          "collision_free_local": true,
+          "collision_pairs": []
+        },
+        {
+          "angle_deg_from_delivered_pose": 5,
+          "collision_free_local": false,
+          "collision_pairs": [
+            {
+              "moving": "right_forearm_frame",
+              "fixed": "right_upper_arm_white_front",
+              "common_volume_mm3": 2.9763
+            },
+            {
+              "moving": "right_forearm_frame",
+              "fixed": "right_upper_arm_white_back",
+              "common_volume_mm3": 2.9638
+            },
+            {
+              "moving": "right_forearm_white_front",
+              "fixed": "right_upper_arm_white_front",
+              "common_volume_mm3": 7.78801
+            },
+            {
+              "moving": "right_forearm_white_front",
+              "fixed": "right_upper_arm_cyan_front",
+              "common_volume_mm3": 4.65551
+            },
+            {
+              "moving": "right_forearm_white_back",
+              "fixed": "right_upper_arm_white_front",
+              "common_volume_mm3": 0.88373
+            },
+            {
+              "moving": "right_forearm_white_back",
+              "fixed": "right_upper_arm_white_back",
+              "common_volume_mm3": 7.86353
+            },
+            {
+              "moving": "right_forearm_white_back",
+              "fixed": "right_upper_arm_cyan_front",
+              "common_volume_mm3": 0.48638
+            },
+            {
+              "moving": "right_forearm_white_back",
+              "fixed": "right_upper_arm_cyan_back",
+              "common_volume_mm3": 3.98537
+            },
+            {
+              "moving": "right_forearm_cyan_front",
+              "fixed": "right_upper_arm_white_front",
+              "common_volume_mm3": 0.81667
+            },
+            {
+              "moving": "right_forearm_cyan_front",
+              "fixed": "right_upper_arm_cyan_front",
+              "common_volume_mm3": 0.65933
+            },
+            {
+              "moving": "right_forearm_cyan_back",
+              "fixed": "right_upper_arm_white_back",
+              "common_volume_mm3": 0.33371
+            },
+            {
+              "moving": "right_forearm_cyan_back",
+              "fixed": "right_upper_arm_cyan_back",
+              "common_volume_mm3": 1.15674
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "joint": "left_wrist",
+      "pivot_xyz_mm": [
+        -61.02711942075802,
+        0,
+        88.06548186976956
+      ],
+      "axis": "Y",
+      "fixed_groups": [
+        "left_forearm"
+      ],
+      "moving_groups": [
+        "left_hand"
+      ],
+      "tests": [
+        {
+          "angle_deg_from_delivered_pose": -10,
+          "collision_free_local": true,
+          "collision_pairs": []
+        },
+        {
+          "angle_deg_from_delivered_pose": 10,
+          "collision_free_local": true,
+          "collision_pairs": []
+        },
+        {
+          "angle_deg_from_delivered_pose": -20,
+          "collision_free_local": true,
+          "collision_pairs": []
+        },
+        {
+          "angle_deg_from_delivered_pose": 20,
+          "collision_free_local": true,
+          "collision_pairs": []
+        }
+      ]
+    },
+    {
+      "joint": "right_wrist",
+      "pivot_xyz_mm": [
+        31,
+        -1,
+        59.75
+      ],
+      "axis": "Y",
+      "fixed_groups": [
+        "right_forearm"
+      ],
+      "moving_groups": [
+        "right_hand"
+      ],
+      "tests": [
+        {
+          "angle_deg_from_delivered_pose": -10,
+          "collision_free_local": true,
+          "collision_pairs": []
+        },
+        {
+          "angle_deg_from_delivered_pose": 10,
+          "collision_free_local": false,
+          "collision_pairs": [
+            {
+              "moving": "right_hand_navy",
+              "fixed": "right_forearm_white_front",
+              "common_volume_mm3": 0.1482
+            }
+          ]
+        },
+        {
+          "angle_deg_from_delivered_pose": -20,
+          "collision_free_local": true,
+          "collision_pairs": []
+        },
+        {
+          "angle_deg_from_delivered_pose": 5,
+          "collision_free_local": true,
+          "collision_pairs": []
+        }
+      ]
+    },
+    {
+      "joint": "left_hip",
+      "pivot_xyz_mm": [
+        -14,
+        0,
+        54.75
+      ],
+      "axis": "Y",
+      "fixed_groups": [
+        "pelve_azul"
+      ],
+      "moving_groups": [
+        "left_thigh",
+        "left_shin",
+        "left_boot"
+      ],
+      "tests": [
+        {
+          "angle_deg_from_delivered_pose": -10,
+          "collision_free_local": false,
+          "collision_pairs": [
+            {
+              "moving": "left_thigh_white_front",
+              "fixed": "pelve_azul",
+              "common_volume_mm3": 16.73186
+            },
+            {
+              "moving": "left_thigh_white_back",
+              "fixed": "pelve_azul",
+              "common_volume_mm3": 16.7322
+            }
+          ]
+        },
+        {
+          "angle_deg_from_delivered_pose": 10,
+          "collision_free_local": true,
+          "collision_pairs": []
+        }
+      ]
+    },
+    {
+      "joint": "left_knee",
+      "pivot_xyz_mm": [
+        -15,
+        0,
+        34.5
+      ],
+      "axis": "Y",
+      "fixed_groups": [
+        "left_thigh"
+      ],
+      "moving_groups": [
+        "left_shin",
+        "left_boot"
+      ],
+      "tests": [
+        {
+          "angle_deg_from_delivered_pose": -10,
+          "collision_free_local": true,
+          "collision_pairs": []
+        },
+        {
+          "angle_deg_from_delivered_pose": 10,
+          "collision_free_local": true,
+          "collision_pairs": []
+        }
+      ]
+    },
+    {
+      "joint": "left_ankle",
+      "pivot_xyz_mm": [
+        -15,
+        0,
+        17.25
+      ],
+      "axis": "Y",
+      "fixed_groups": [
+        "left_shin"
+      ],
+      "moving_groups": [
+        "left_boot"
+      ],
+      "tests": [
+        {
+          "angle_deg_from_delivered_pose": -10,
+          "collision_free_local": true,
+          "collision_pairs": []
+        },
+        {
+          "angle_deg_from_delivered_pose": 10,
+          "collision_free_local": true,
+          "collision_pairs": []
+        }
+      ],
+      "boot_revision": "Outer dome centered Z3.18, semi-height14; ankle axis unchanged Z17.25."
+    },
+    {
+      "joint": "right_hip",
+      "pivot_xyz_mm": [
+        14,
+        0,
+        54.75
+      ],
+      "axis": "Y",
+      "fixed_groups": [
+        "pelve_azul"
+      ],
+      "moving_groups": [
+        "right_thigh",
+        "right_shin",
+        "right_boot"
+      ],
+      "tests": [
+        {
+          "angle_deg_from_delivered_pose": -10,
+          "collision_free_local": true,
+          "collision_pairs": []
+        },
+        {
+          "angle_deg_from_delivered_pose": 10,
+          "collision_free_local": false,
+          "collision_pairs": [
+            {
+              "moving": "right_thigh_white_front",
+              "fixed": "pelve_azul",
+              "common_volume_mm3": 16.73201
+            },
+            {
+              "moving": "right_thigh_white_back",
+              "fixed": "pelve_azul",
+              "common_volume_mm3": 16.73209
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "joint": "right_knee",
+      "pivot_xyz_mm": [
+        15,
+        0,
+        34.5
+      ],
+      "axis": "Y",
+      "fixed_groups": [
+        "right_thigh"
+      ],
+      "moving_groups": [
+        "right_shin",
+        "right_boot"
+      ],
+      "tests": [
+        {
+          "angle_deg_from_delivered_pose": -10,
+          "collision_free_local": true,
+          "collision_pairs": []
+        },
+        {
+          "angle_deg_from_delivered_pose": 10,
+          "collision_free_local": true,
+          "collision_pairs": []
+        }
+      ]
+    },
+    {
+      "joint": "right_ankle",
+      "pivot_xyz_mm": [
+        15,
+        0,
+        17.25
+      ],
+      "axis": "Y",
+      "fixed_groups": [
+        "right_shin"
+      ],
+      "moving_groups": [
+        "right_boot"
+      ],
+      "tests": [
+        {
+          "angle_deg_from_delivered_pose": -10,
+          "collision_free_local": true,
+          "collision_pairs": []
+        },
+        {
+          "angle_deg_from_delivered_pose": 10,
+          "collision_free_local": true,
+          "collision_pairs": []
+        }
+      ],
+      "boot_revision": "Outer dome centered Z3.18, semi-height14; ankle axis unchanged Z17.25."
+    }
+  ],
+  "all_tested_joints_have_a_collision_free_nonzero_sample": true,
+  "base_checked": false,
+  "sampling_does_not_certify_continuous_motion_between_angles": true,
+  "boot_revision_validation": {
+    "all_valid_single_solids": true,
+    "parts": [
+      {
+        "name": "left_boot_sole_and_joint",
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 3346.27494,
+        "bbox_mm": [
+          -27.8,
+          -21.5,
+          0.0,
+          -2.2,
+          12.5,
+          23.25
+        ]
+      },
+      {
+        "name": "left_boot_toe_navy",
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1259.59586,
+        "bbox_mm": [
+          -26.5035,
+          -20.5,
+          3.18,
+          -3.4965,
+          -10.0,
+          14.4796
+        ]
+      },
+      {
+        "name": "left_boot_white_left",
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1570.89967,
+        "bbox_mm": [
+          -27.25,
+          -10.0,
+          3.1799,
+          -15.0,
+          11.5001,
+          15.2621
+        ]
+      },
+      {
+        "name": "left_boot_white_right",
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1570.87344,
+        "bbox_mm": [
+          -15.0,
+          -10.0,
+          3.1799,
+          -2.75,
+          11.5001,
+          15.2621
+        ]
+      },
+      {
+        "name": "left_boot_cyan_left",
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 39.13952,
+        "bbox_mm": [
+          -24.9162,
+          -10.0,
+          11.4,
+          -17.8333,
+          7.9118,
+          13.0
+        ]
+      },
+      {
+        "name": "left_boot_cyan_right",
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 39.15054,
+        "bbox_mm": [
+          -12.1667,
+          -10.0,
+          11.4,
+          -5.0838,
+          7.9118,
+          13.0
+        ]
+      },
+      {
+        "name": "right_boot_sole_and_joint",
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 3346.27494,
+        "bbox_mm": [
+          2.2,
+          -21.5,
+          0.0,
+          27.8,
+          12.5,
+          23.25
+        ]
+      },
+      {
+        "name": "right_boot_toe_navy",
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1259.59586,
+        "bbox_mm": [
+          3.4965,
+          -20.5,
+          3.18,
+          26.5035,
+          -10.0,
+          14.4796
+        ]
+      },
+      {
+        "name": "right_boot_white_left",
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1570.89967,
+        "bbox_mm": [
+          2.75,
+          -10.0,
+          3.1799,
+          15.0,
+          11.5001,
+          15.2621
+        ]
+      },
+      {
+        "name": "right_boot_white_right",
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1570.87344,
+        "bbox_mm": [
+          15.0,
+          -10.0,
+          3.1799,
+          27.25,
+          11.5001,
+          15.2621
+        ]
+      },
+      {
+        "name": "right_boot_cyan_left",
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 39.13952,
+        "bbox_mm": [
+          5.0838,
+          -10.0,
+          11.4,
+          12.1667,
+          7.9118,
+          13.0
+        ]
+      },
+      {
+        "name": "right_boot_cyan_right",
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 39.15054,
+        "bbox_mm": [
+          17.8333,
+          -10.0,
+          11.4,
+          24.9162,
+          7.9118,
+          13.0
+        ]
+      }
+    ]
+  }
+}

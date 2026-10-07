@@ -1,0 +1,11 @@
+.venv/
+.cache/
+cache/
+__pycache__/
+*.py[cod]
+exports/BREP/
+exports/head_check_BREP/
+exports/render_meshes.json
+exports/*.log
+exports/*.blend
+exports/*.blend1

@@ -1,0 +1,109 @@
+{
+  "cadquery_version": "2.7.0",
+  "parts": 122,
+  "solids": 146,
+  "all_valid": true,
+  "bounds_mm": [
+    -79.11125690969223,
+    -63.0000001,
+    -11.0000001,
+    63.0,
+    63.0000001,
+    180.0
+  ],
+  "overlaps": [],
+  "bore_tests": [
+    {
+      "joint": "ombro_E",
+      "probe_diameter_mm": 3.0,
+      "unobstructed": true,
+      "hits": []
+    },
+    {
+      "joint": "ombro_D",
+      "probe_diameter_mm": 3.0,
+      "unobstructed": true,
+      "hits": []
+    },
+    {
+      "joint": "cotovelo_E",
+      "probe_diameter_mm": 3.0,
+      "unobstructed": true,
+      "hits": []
+    },
+    {
+      "joint": "cotovelo_D",
+      "probe_diameter_mm": 3.0,
+      "unobstructed": true,
+      "hits": []
+    },
+    {
+      "joint": "punho_E",
+      "probe_diameter_mm": 3.0,
+      "unobstructed": true,
+      "hits": []
+    },
+    {
+      "joint": "punho_D",
+      "probe_diameter_mm": 3.0,
+      "unobstructed": true,
+      "hits": []
+    },
+    {
+      "joint": "quadril_E",
+      "probe_diameter_mm": 3.0,
+      "unobstructed": true,
+      "hits": []
+    },
+    {
+      "joint": "quadril_D",
+      "probe_diameter_mm": 3.0,
+      "unobstructed": true,
+      "hits": []
+    },
+    {
+      "joint": "joelho_E",
+      "probe_diameter_mm": 3.0,
+      "unobstructed": true,
+      "hits": []
+    },
+    {
+      "joint": "joelho_D",
+      "probe_diameter_mm": 3.0,
+      "unobstructed": true,
+      "hits": []
+    },
+    {
+      "joint": "tornozelo_E",
+      "probe_diameter_mm": 3.0,
+      "unobstructed": true,
+      "hits": []
+    },
+    {
+      "joint": "tornozelo_D",
+      "probe_diameter_mm": 3.0,
+      "unobstructed": true,
+      "hits": []
+    },
+    {
+      "joint": "pescoco",
+      "probe_diameter_mm": 3.0,
+      "unobstructed": true,
+      "hits": []
+    }
+  ],
+  "physical_test": false,
+  "range_of_motion_verified": false,
+  "step_reimport_valid": true,
+  "step_reimport_solids": 146,
+  "step_volume_mm3": 341261.96,
+  "step_bounds_mm": [
+    -79.11125690969,
+    -63.0000001,
+    -11.0,
+    63.0,
+    63.0000001,
+    180.0
+  ],
+  "step_bounds_error_mm": 9.99999993922529e-08
+}

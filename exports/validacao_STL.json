@@ -1,0 +1,1633 @@
+{
+  "stl_files": 125,
+  "all_closed": true,
+  "all_fit_A1": true,
+  "all_on_bed": true,
+  "parts": [
+    {
+      "file": "STL/alinhador_cintura_D.stl",
+      "triangles": 416,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        2.999,
+        3.0,
+        6.0
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/alinhador_cintura_E.stl",
+      "triangles": 416,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        2.999,
+        3.0,
+        6.0
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/base_faixa_ciano.stl",
+      "triangles": 840,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        125.572,
+        125.586,
+        1.7
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/base_inferior_azul.stl",
+      "triangles": 11756,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        125.972,
+        125.986,
+        6.0
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/base_superior_azul.stl",
+      "triangles": 6086,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        125.572,
+        125.586,
+        2.0
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/base_tampo_branco.stl",
+      "triangles": 6086,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        118.573,
+        118.587,
+        1.3
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/colar_azul.stl",
+      "triangles": 840,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        16.996,
+        16.998,
+        4.45
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/colar_ciano.stl",
+      "triangles": 840,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        19.996,
+        19.998,
+        1.3
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/friso_peito_ciano.stl",
+      "triangles": 76,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        36.316,
+        0.8,
+        5.277
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_antenna_left_ball.stl",
+      "triangles": 6106,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        9.999,
+        9.997,
+        9.911
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_antenna_left_stem.stl",
+      "triangles": 1794,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        7.826,
+        4.999,
+        14.178
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_antenna_right_ball.stl",
+      "triangles": 6158,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        9.998,
+        9.997,
+        9.911
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_antenna_right_stem.stl",
+      "triangles": 1794,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        7.826,
+        4.999,
+        14.178
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_back_navy_panel.stl",
+      "triangles": 108,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        44.2,
+        31.2,
+        2.08
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_brow_left_cyan.stl",
+      "triangles": 216,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        16.9,
+        5.59,
+        1.3
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_brow_right_cyan.stl",
+      "triangles": 216,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        16.9,
+        5.59,
+        1.3
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_ear_left_cyan_ring.stl",
+      "triangles": 840,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        27.814,
+        27.817,
+        1.3
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_ear_left_navy_center.stl",
+      "triangles": 416,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        22.615,
+        22.617,
+        1.3
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_ear_left_navy_ring.stl",
+      "triangles": 840,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        33.792,
+        33.796,
+        1.3
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_ear_left_outer_navy.stl",
+      "triangles": 840,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        43.67,
+        43.675,
+        6.24
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_ear_left_white.stl",
+      "triangles": 1256,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        41.591,
+        41.595,
+        10.4
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_ear_right_cyan_ring.stl",
+      "triangles": 840,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        27.814,
+        27.817,
+        1.3
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_ear_right_navy_center.stl",
+      "triangles": 416,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        22.615,
+        22.617,
+        1.3
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_ear_right_navy_ring.stl",
+      "triangles": 840,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        33.792,
+        33.796,
+        1.3
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_ear_right_outer_navy.stl",
+      "triangles": 840,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        43.67,
+        43.675,
+        6.24
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_ear_right_white.stl",
+      "triangles": 1256,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        41.591,
+        41.595,
+        10.4
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_eye_left_cyan.stl",
+      "triangles": 1076,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        14.3,
+        19.498,
+        1.56
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_eye_left_highlight_large.stl",
+      "triangles": 416,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        3.51,
+        3.509,
+        1.56
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_eye_left_highlight_small.stl",
+      "triangles": 416,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        1.56,
+        1.56,
+        1.56
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_eye_left_pupil.stl",
+      "triangles": 1384,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        10.92,
+        15.079,
+        1.56
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_eye_left_white.stl",
+      "triangles": 1048,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        20.795,
+        23.4,
+        1.56
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_eye_right_cyan.stl",
+      "triangles": 1076,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        14.3,
+        19.498,
+        1.56
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_eye_right_highlight_large.stl",
+      "triangles": 416,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        3.51,
+        3.509,
+        1.56
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_eye_right_highlight_small.stl",
+      "triangles": 416,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        1.56,
+        1.56,
+        1.56
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_eye_right_pupil.stl",
+      "triangles": 1384,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        10.92,
+        15.079,
+        1.56
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_eye_right_white.stl",
+      "triangles": 1048,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        20.795,
+        23.4,
+        1.56
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_lash_left_cyan.stl",
+      "triangles": 24,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        4.403,
+        4.414,
+        1.17
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_lash_right_cyan.stl",
+      "triangles": 24,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        4.403,
+        4.414,
+        1.17
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_smile_mouth_dark.stl",
+      "triangles": 520,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        31.253,
+        12.277,
+        1.56
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_smile_teeth_white.stl",
+      "triangles": 104,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        27.992,
+        5.174,
+        1.56
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_smile_tongue_coral.stl",
+      "triangles": 380,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        18.2,
+        5.799,
+        1.56
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_top_navy_panel.stl",
+      "triangles": 444,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        44.2,
+        29.9,
+        1.56
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_visor_cyan_bezel.stl",
+      "triangles": 896,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        85.8,
+        57.2,
+        9.1
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_visor_navy.stl",
+      "triangles": 444,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        83.2,
+        54.6,
+        2.6
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_white_front_shell.stl",
+      "triangles": 11714,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        101.4,
+        70.2,
+        38.194
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/head_white_rear_shell.stl",
+      "triangles": 9284,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        101.4,
+        70.2,
+        33.8
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_boot_cyan_left.stl",
+      "triangles": 306,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        1.6,
+        17.912,
+        7.082
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_boot_cyan_right.stl",
+      "triangles": 296,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        1.6,
+        17.912,
+        7.082
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_boot_sole_and_joint.stl",
+      "triangles": 1684,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        25.6,
+        34.0,
+        23.247
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_boot_toe_navy.stl",
+      "triangles": 888,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        23.007,
+        10.499,
+        11.3
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_boot_white_left.stl",
+      "triangles": 1288,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        12.078,
+        21.5,
+        12.248
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_boot_white_right.stl",
+      "triangles": 1322,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        12.081,
+        21.5,
+        12.25
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_forearm_cyan_back.stl",
+      "triangles": 626,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        15.24,
+        9.326,
+        8.648
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_forearm_cyan_front.stl",
+      "triangles": 622,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        15.24,
+        9.326,
+        8.648
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_forearm_frame.stl",
+      "triangles": 2818,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        20.525,
+        28.814,
+        11.4
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_forearm_white_back.stl",
+      "triangles": 2386,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        17.75,
+        20.257,
+        8.969
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_forearm_white_front.stl",
+      "triangles": 2320,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        17.75,
+        20.257,
+        8.968
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_hand_glove_white_back_1.stl",
+      "triangles": 1468,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        14.69,
+        9.134,
+        3.49
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_hand_glove_white_back_2.stl",
+      "triangles": 232,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        3.243,
+        2.433,
+        3.35
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_hand_glove_white_front_1.stl",
+      "triangles": 1440,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        14.675,
+        9.004,
+        3.259
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_hand_glove_white_front_2.stl",
+      "triangles": 274,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        4.203,
+        3.319,
+        3.36
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_hand_navy.stl",
+      "triangles": 21402,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        22.582,
+        27.226,
+        12.394
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_hand_palm_cyan.stl",
+      "triangles": 992,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        8.699,
+        8.7,
+        1.097
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_shin_cyan_back.stl",
+      "triangles": 644,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        17.033,
+        1.6,
+        8.687
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_shin_cyan_front.stl",
+      "triangles": 632,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        17.033,
+        1.6,
+        8.687
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_shin_frame.stl",
+      "triangles": 2796,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        11.999,
+        29.247,
+        11.4
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_shin_white_back.stl",
+      "triangles": 1956,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        17.199,
+        12.77,
+        8.764
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_shin_white_front.stl",
+      "triangles": 1956,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        17.199,
+        12.77,
+        8.764
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_thigh_cyan_back.stl",
+      "triangles": 622,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        17.192,
+        2.428,
+        8.779
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_thigh_cyan_front.stl",
+      "triangles": 600,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        17.192,
+        2.428,
+        8.778
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_thigh_frame.stl",
+      "triangles": 2420,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        12.999,
+        32.249,
+        11.4
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_thigh_white_back.stl",
+      "triangles": 1148,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        17.596,
+        7.663,
+        8.971
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_thigh_white_front.stl",
+      "triangles": 1144,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        17.596,
+        7.663,
+        8.97
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_upper_arm_cyan_back.stl",
+      "triangles": 604,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        10.016,
+        14.177,
+        8.259
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_upper_arm_cyan_front.stl",
+      "triangles": 620,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        10.016,
+        14.177,
+        8.26
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_upper_arm_frame.stl",
+      "triangles": 2866,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        34.999,
+        26.999,
+        11.4
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_upper_arm_white_back.stl",
+      "triangles": 2380,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        23.872,
+        21.223,
+        8.562
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/left_upper_arm_white_front.stl",
+      "triangles": 2396,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        23.872,
+        21.223,
+        8.562
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/logo_Lidera_azul.stl",
+      "triangles": 4214,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        18.979,
+        5.031,
+        0.7
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/logo_arco_ciano.stl",
+      "triangles": 444,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        8.184,
+        16.364,
+        0.7
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/logo_arco_laranja.stl",
+      "triangles": 424,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        8.267,
+        11.434,
+        0.7
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/logo_no_ciano_0.stl",
+      "triangles": 840,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        2.899,
+        2.9,
+        0.7
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/logo_no_ciano_1.stl",
+      "triangles": 840,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        2.899,
+        2.9,
+        0.7
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/logo_no_laranja_0.stl",
+      "triangles": 840,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        2.899,
+        2.9,
+        0.7
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/logo_no_laranja_1.stl",
+      "triangles": 840,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        2.899,
+        2.9,
+        0.7
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/logo_subtitulo_azul.stl",
+      "triangles": 19450,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        15.49,
+        1.527,
+        0.55
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/painel_dorsal_azul.stl",
+      "triangles": 444,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        25.0,
+        0.9,
+        10.0
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/pelve_azul.stl",
+      "triangles": 9482,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        41.043,
+        30.164,
+        18.0
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_boot_cyan_left.stl",
+      "triangles": 306,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        1.6,
+        17.912,
+        7.082
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_boot_cyan_right.stl",
+      "triangles": 296,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        1.6,
+        17.912,
+        7.082
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_boot_sole_and_joint.stl",
+      "triangles": 1684,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        25.6,
+        34.0,
+        23.247
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_boot_toe_navy.stl",
+      "triangles": 888,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        23.007,
+        10.499,
+        11.3
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_boot_white_left.stl",
+      "triangles": 1288,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        12.078,
+        21.5,
+        12.248
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_boot_white_right.stl",
+      "triangles": 1322,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        12.081,
+        21.5,
+        12.25
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_forearm_cyan_back.stl",
+      "triangles": 944,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        9.341,
+        13.361,
+        8.641
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_forearm_cyan_front.stl",
+      "triangles": 1012,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        9.495,
+        13.822,
+        8.642
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_forearm_frame.stl",
+      "triangles": 2484,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        22.498,
+        17.499,
+        11.4
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_forearm_white_back.stl",
+      "triangles": 1758,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        15.123,
+        13.504,
+        8.657
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_forearm_white_front.stl",
+      "triangles": 1910,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        15.123,
+        13.988,
+        8.656
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_hand_glove_white_back_1.stl",
+      "triangles": 340,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        1.646,
+        2.077,
+        2.993
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_hand_glove_white_back_2.stl",
+      "triangles": 542,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        5.301,
+        3.086,
+        2.975
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_hand_glove_white_back_3.stl",
+      "triangles": 234,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        2.203,
+        3.656,
+        3.423
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_hand_glove_white_front_1.stl",
+      "triangles": 1488,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        11.96,
+        4.706,
+        3.657
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_hand_glove_white_front_2.stl",
+      "triangles": 490,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        6.53,
+        4.602,
+        2.688
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_hand_navy.stl",
+      "triangles": 18480,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        14.799,
+        15.2,
+        11.199
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_hand_palm_cyan.stl",
+      "triangles": 1874,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        6.549,
+        6.425,
+        2.387
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_shin_cyan_back.stl",
+      "triangles": 644,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        17.033,
+        1.6,
+        8.687
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_shin_cyan_front.stl",
+      "triangles": 632,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        17.033,
+        1.6,
+        8.687
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_shin_frame.stl",
+      "triangles": 2796,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        11.999,
+        29.247,
+        11.4
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_shin_white_back.stl",
+      "triangles": 1956,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        17.199,
+        12.77,
+        8.764
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_shin_white_front.stl",
+      "triangles": 1956,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        17.199,
+        12.77,
+        8.764
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_thigh_cyan_back.stl",
+      "triangles": 622,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        17.192,
+        2.428,
+        8.779
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_thigh_cyan_front.stl",
+      "triangles": 600,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        17.192,
+        2.428,
+        8.778
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_thigh_frame.stl",
+      "triangles": 2420,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        12.999,
+        32.249,
+        11.4
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_thigh_white_back.stl",
+      "triangles": 1150,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        17.596,
+        7.663,
+        8.97
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_thigh_white_front.stl",
+      "triangles": 1146,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        17.596,
+        7.663,
+        8.97
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_upper_arm_cyan_back.stl",
+      "triangles": 618,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        13.217,
+        11.39,
+        8.281
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_upper_arm_cyan_front.stl",
+      "triangles": 612,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        13.217,
+        11.39,
+        8.281
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_upper_arm_frame.stl",
+      "triangles": 2866,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        26.999,
+        29.999,
+        11.4
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_upper_arm_white_back.stl",
+      "triangles": 2242,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        20.386,
+        20.391,
+        8.562
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/right_upper_arm_white_front.stl",
+      "triangles": 2230,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        20.386,
+        20.391,
+        8.562
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "STL/torso_branco.stl",
+      "triangles": 8190,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        68.0,
+        32.75,
+        34.845
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "cupons/cupom_clevis_5p4.stl",
+      "triangles": 1556,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        16.0,
+        11.4,
+        14.0
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "cupons/cupom_furos_M3.stl",
+      "triangles": 8904,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        40.0,
+        15.0,
+        6.45
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    },
+    {
+      "file": "cupons/cupom_lingueta_4p8.stl",
+      "triangles": 436,
+      "closed_two_manifold_edges": true,
+      "nonmanifold_edges": 0,
+      "size_mm": [
+        10.0,
+        4.8,
+        11.0
+      ],
+      "fits_A1": true,
+      "bed_z_mm": 0.0
+    }
+  ]
+}
